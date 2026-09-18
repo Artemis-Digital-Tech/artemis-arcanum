@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "mechanism": "Mechanism",
+    "deck": "The Deck",
+    "reading": "A Reading",
+    "compare": "Why Arcanum",
+    "cta": "Draw a Card"
+  },
+  "hero": {
+    "plateLabel": "Plate I — The Instrument",
+    "titlePre": "An oracle that reads",
+    "titleEm": "your",
+    "titlePost": "question, not the calendar.",
+    "lede": "Arcanum is an AI tarot reader that answers the question you actually have, not today's daily card and not a wait for a human reader. Ask, and the deck responds in the time it takes to shuffle.",
+    "ctaPrimary": "Begin a reading",
+    "ctaGhost": "See how the reading is built ↓",
+    "readout": {
+      "wait": { "value": "0 min", "label": "wait for a reader" },
+      "cards": { "value": "78", "label": "cards in the working deck" },
+      "uptime": { "value": "24 / 7", "label": "the instrument is lit" }
+    },
+    "dialCaption": "reading in progress — live instrument"
+  },
+  "mechanism": {
+    "tag": "Plate II — Mechanism",
+    "title": "Three moves, one continuous instrument.",
+    "subtitle": "No sign-up flow, no scrolling through a list of readers you don't know. Say what you're asking, and watch the mechanism do the rest.",
+    "steps": {
+      "ask": {
+        "idx": "01 / ASK",
+        "title": "Name the question",
+        "body": "Not your birth chart. Not a vague mood. The actual decision in front of you. Arcanum reads for that, the same way a good reader would push you to get specific."
+      },
+      "draw": {
+        "idx": "02 / DRAW",
+        "title": "The deck draws itself",
+        "body": "A real shuffle of the full seventy-eight cards, major and minor arcana, upright and reversed, pulled fresh for your spread. Never a cached \"card of the day.\""
+      },
+      "read": {
+        "idx": "03 / READ",
+        "title": "Interpretation, tied to your words",
+        "body": "The reading comes from what you asked and the cards that landed, with meanings tied to their position. Not a generic paragraph that could answer anyone's question."
+      }
+    }
+  },
+  "deck": {
+    "tag": "Plate III — The Deck",
+    "title": "Seventy-eight cards, catalogued and current.",
+    "subtitle": "Every card the instrument can draw is real, from the major arcana through the court cards, each with its own upright and reversed meaning. No shortened \"app deck.\"",
+    "scrollLabel": "Sample of the tarot deck",
+    "cards": {
+      "fool": "The Fool",
+      "magician": "The Magician",
+      "highPriestess": "The High Priestess",
+      "empress": "The Empress",
+      "emperor": "The Emperor",
+      "hierophant": "The Hierophant",
+      "lovers": "The Lovers",
+      "chariot": "The Chariot",
+      "strength": "Strength",
+      "hermit": "The Hermit",
+      "wheelOfFortune": "Wheel of Fortune"
+    }
+  },
+  "reading": {
+    "tag": "Plate IV — A Reading, In Progress",
+    "title": "What the instrument actually gives back.",
+    "subtitle": "Not a horoscope-style paragraph — a reading built from the cards that fell and the question you asked.",
+    "questionLabel": "The question asked",
+    "question": "“Should I take the new role, or stay where things are steady?”",
+    "spread": "Spread: Past · Present · Advice",
+    "resultLabel": "Arcanum reads",
+    "results": {
+      "chariot": {
+        "title": "The Chariot, upright",
+        "body": "you've already been steering this, deliberately, longer than you're giving yourself credit for."
+      },
+      "wheel": {
+        "title": "Wheel of Fortune, upright",
+        "body": "the timing isn't yours to control, but it is turning; staying still doesn't keep it from moving."
+      },
+      "strength": {
+        "title": "Strength, upright",
+        "body": "the steadier choice isn't the safer one here. It asks for patience with a version of yourself you're trying to outgrow"
+      }
+    }
+  },
+  "compare": {
+    "tag": "Plate V — Why Arcanum",
+    "title": "No horoscope feed. No booking calendar either.",
+    "subtitle": "Both existing paths cost you something Arcanum doesn't ask for.",
+    "columns": {
+      "arcanum": "Arcanum",
+      "horoscope": "Horoscope apps",
+      "human": "Human readers"
+    },
+    "rows": {
+      "answers": {
+        "label": "Answers the question you asked",
+        "arcanum": "Every time",
+        "horoscope": "Same card for everyone",
+        "human": "Yes, eventually"
+      },
+      "available": {
+        "label": "Available right now",
+        "arcanum": "Always, no queue",
+        "horoscope": "Always",
+        "human": "Booked slots only"
+      },
+      "cost": {
+        "label": "Cost per reading",
+        "arcanum": "Fraction of a session",
+        "horoscope": "Free / ad-supported",
+        "human": "Per-session rate"
+      },
+      "deck": {
+        "label": "Full 78-card deck",
+        "arcanum": "Complete deck",
+        "horoscope": "Rarely used",
+        "human": "Depends on reader"
+      }
+    }
+  },
+  "final": {
+    "titlePre": "The deck is already",
+    "titleEm": "shuffled.",
+    "body": "Bring the question that's really on your mind. Arcanum reads for that, not for whichever mood happens to match yours today.",
+    "cta": "Begin a reading"
+  },
+  "footer": {
+    "copyright": "© Arcanum — an instrument, not an oracle of certainty."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "mechanism": "Mecanismo",
+    "deck": "O Baralho",
+    "reading": "Uma Leitura",
+    "compare": "Por que Arcanum",
+    "cta": "Tirar uma Carta"
+  },
+  "hero": {
+    "plateLabel": "Prancha I — O Instrumento",
+    "titlePre": "Um oráculo que enxerga",
+    "titleEm": "sua",
+    "titlePost": "pergunta, não o calendário.",
+    "lede": "Arcanum é um oráculo movido por inteligência artificial, afinado para a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Pergunte, e as cartas falam no tempo de um embaralhar.",
+    "ctaPrimary": "Começar uma leitura",
+    "ctaGhost": "Veja como a leitura é construída ↓",
+    "readout": {
+      "wait": { "value": "0 min", "label": "de espera pelo oráculo" },
+      "cards": { "value": "78", "label": "cartas vivas no baralho" },
+      "uptime": { "value": "24 / 7", "label": "o instrumento nunca dorme" }
+    },
+    "dialCaption": "leitura em curso — o instrumento respira"
+  },
+  "mechanism": {
+    "tag": "Prancha II — Mecanismo",
+    "title": "Três movimentos. Um só instrumento, em ritual contínuo.",
+    "subtitle": "Sem cadastro, sem percorrer uma lista de estranhos. Diga sua pergunta — em voz alta ou só no pensamento — e observe o mecanismo revelar o resto.",
+    "steps": {
+      "ask": {
+        "idx": "01 / PERGUNTE",
+        "title": "Nomeie a pergunta",
+        "body": "Não é o seu mapa astral, nem um humor passageiro — é a encruzilhada real diante de você. Arcanum lê exatamente para isso, do mesmo modo que um bom tarólogo pediria que você fosse direto ao ponto."
+      },
+      "draw": {
+        "idx": "02 / TIRE",
+        "title": "O baralho se embaralha sozinho",
+        "body": "Setenta e oito cartas embaralhadas de verdade — arcanos maiores e menores, normais e invertidas — tiradas na hora, só para o seu jogo. Nunca uma \"carta do dia\" arquivada à espera de qualquer um."
+      },
+      "read": {
+        "idx": "03 / LEIA",
+        "title": "Interpretação, atrelada às suas palavras",
+        "body": "A leitura nasce do que você perguntou e das cartas que caíram — sentidos tecidos à posição de cada uma. Nada de parágrafo genérico que serviria para a pergunta de qualquer pessoa."
+      }
+    }
+  },
+  "deck": {
+    "tag": "Prancha III — O Baralho",
+    "title": "Setenta e oito cartas, cada uma com sua própria voz.",
+    "subtitle": "Toda carta que o instrumento pode tirar pertence ao baralho completo — dos arcanos maiores às cartas de corte — cada uma com seu significado normal e invertido. Nada de baralho reduzido para caber num app.",
+    "scrollLabel": "Amostra do baralho de tarô",
+    "cards": {
+      "fool": "O Louco",
+      "magician": "O Mago",
+      "highPriestess": "A Sacerdotisa",
+      "empress": "A Imperatriz",
+      "emperor": "O Imperador",
+      "hierophant": "O Hierofante",
+      "lovers": "Os Enamorados",
+      "chariot": "O Carro",
+      "strength": "A Força",
+      "hermit": "O Eremita",
+      "wheelOfFortune": "A Roda da Fortuna"
+    }
+  },
+  "reading": {
+    "tag": "Prancha IV — Uma Leitura, em Andamento",
+    "title": "O que o instrumento realmente revela.",
+    "subtitle": "Nada de parágrafo estilo horóscopo — uma leitura tecida a partir das cartas que caíram e da pergunta que você trouxe.",
+    "questionLabel": "A pergunta trazida",
+    "question": "“Devo aceitar o novo cargo, ou ficar onde as coisas estão estáveis?”",
+    "spread": "Tiragem: Passado · Presente · Conselho",
+    "resultLabel": "Arcanum revela",
+    "results": {
+      "chariot": {
+        "title": "O Carro, normal",
+        "body": "você já vem conduzindo isso, deliberadamente, por mais tempo do que se dá crédito."
+      },
+      "wheel": {
+        "title": "A Roda da Fortuna, normal",
+        "body": "o momento não está sob seu controle, mas está girando; ficar parado não impede que ele se mova."
+      },
+      "strength": {
+        "title": "A Força, normal",
+        "body": "a escolha mais estável não é a mais segura aqui. Ela pede paciência com uma versão de você mesmo que está tentando superar"
+      }
+    }
+  },
+  "compare": {
+    "tag": "Prancha V — Por que Arcanum",
+    "title": "Nada de feed de horóscopo. Nada de agenda de reservas.",
+    "subtitle": "Os dois caminhos que já existem cobram um preço que o Arcanum não pede.",
+    "columns": {
+      "arcanum": "Arcanum",
+      "horoscope": "Apps de horóscopo",
+      "human": "Taróloga(o)s humanos"
+    },
+    "rows": {
+      "answers": {
+        "label": "Responde à pergunta que você fez",
+        "arcanum": "Sempre",
+        "horoscope": "Mesma carta para todo mundo",
+        "human": "Sim, eventualmente"
+      },
+      "available": {
+        "label": "Disponível agora mesmo",
+        "arcanum": "Sempre, sem fila",
+        "horoscope": "Sempre",
+        "human": "Apenas horários agendados"
+      },
+      "cost": {
+        "label": "Custo por leitura",
+        "arcanum": "Fração de uma sessão",
+        "horoscope": "Grátis / com anúncios",
+        "human": "Valor por sessão"
+      },
+      "deck": {
+        "label": "Baralho completo de 78 cartas",
+        "arcanum": "Baralho completo",
+        "horoscope": "Raramente usado",
+        "human": "Depende do tarólogo"
+      }
+    }
+  },
+  "final": {
+    "titlePre": "O baralho já está",
+    "titleEm": "embaralhado.",
+    "body": "Traga a pergunta que realmente pulsa em você. Arcanum lê para ela — não para o humor de quem quer que combine com o seu, hoje.",
+    "cta": "Começar uma leitura"
+  },
+  "footer": {
+    "copyright": "© Arcanum — um instrumento, não um oráculo de certezas."
+  }
+}
