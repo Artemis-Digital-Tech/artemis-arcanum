@@ -7,11 +7,11 @@
     "cta": "Tirar uma Carta"
   },
   "hero": {
-    "plateLabel": "Prancha I — O Instrumento",
+    "plateLabel": "Lâmina I — O Instrumento",
     "titlePre": "Um oráculo que enxerga",
     "titleEm": "sua",
     "titlePost": "pergunta, não o calendário.",
-    "lede": "Arcanum é um oráculo movido por inteligência artificial, afinado para a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Pergunte, e as cartas falam no tempo de um embaralhar.",
+    "lede": "Arcanum é um oráculo afinado para a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Pergunte, e as cartas falam no tempo de um embaralhar.",
     "ctaPrimary": "Começar uma leitura",
     "ctaGhost": "Veja como a leitura é construída ↓",
     "readout": {
@@ -22,7 +22,7 @@
     "dialCaption": "leitura em curso — o instrumento respira"
   },
   "mechanism": {
-    "tag": "Prancha II — Mecanismo",
+    "tag": "Lâmina II — Mecanismo",
     "title": "Três movimentos. Um só instrumento, em ritual contínuo.",
     "subtitle": "Sem cadastro, sem percorrer uma lista de estranhos. Diga sua pergunta — em voz alta ou só no pensamento — e observe o mecanismo revelar o resto.",
     "steps": {
@@ -44,7 +44,7 @@
     }
   },
   "deck": {
-    "tag": "Prancha III — O Baralho",
+    "tag": "Lâmina III — O Baralho",
     "title": "Setenta e oito cartas, cada uma com sua própria voz.",
     "subtitle": "Toda carta que o instrumento pode tirar pertence ao baralho completo — dos arcanos maiores às cartas de corte — cada uma com seu significado normal e invertido. Nada de baralho reduzido para caber num app.",
     "scrollLabel": "Amostra do baralho de tarô",
@@ -63,7 +63,7 @@
     }
   },
   "reading": {
-    "tag": "Prancha IV — Uma Leitura, em Andamento",
+    "tag": "Lâmina IV — Uma Leitura, em Andamento",
     "title": "O que o instrumento realmente revela.",
     "subtitle": "Nada de parágrafo estilo horóscopo — uma leitura tecida a partir das cartas que caíram e da pergunta que você trouxe.",
     "questionLabel": "A pergunta trazida",
@@ -86,7 +86,7 @@
     }
   },
   "compare": {
-    "tag": "Prancha V — Por que Arcanum",
+    "tag": "Lâmina V — Por que Arcanum",
     "title": "Nada de feed de horóscopo. Nada de agenda de reservas.",
     "subtitle": "Os dois caminhos que já existem cobram um preço que o Arcanum não pede.",
     "columns": {
