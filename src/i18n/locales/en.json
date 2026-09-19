@@ -8,7 +8,7 @@
     "cta": "Draw a Card"
   },
   "hero": {
-    "plateLabel": "Plate I — The Instrument",
+    "plateLabel": "Plate I — The Tarot Instrument",
     "titlePre": "An oracle that reads",
     "titleEm": "your",
     "titlePost": "question, not the calendar.",
@@ -392,7 +392,7 @@
         "name": "Free",
         "cta": "Stay on Free",
         "features": {
-          "readingsPerMonth": "3 AI readings per month",
+          "readingsPerMonth": "3 tarot readings per month",
           "shortSpreadsOnly": "One- and three-card spreads only",
           "historyDays": "History kept for 7 days"
         }
@@ -422,7 +422,7 @@
   "seo": {
     "landing": {
       "title": "Arcanum — a tarot reader, always open",
-      "description": "Arcanum reads the cards for the question you actually have, the moment you ask it. No booking, no waiting room, no generic horoscope."
+      "description": "Arcanum is a tarot reader that reads the tarot cards for the question you actually have, the moment you ask it. No booking, no waiting room, no generic horoscope."
     },
     "gameSelect": {
       "title": "Choose your spread — Arcanum",

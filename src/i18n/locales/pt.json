@@ -8,11 +8,11 @@
     "cta": "Tirar uma Carta"
   },
   "hero": {
-    "plateLabel": "Lâmina I — O Instrumento",
+    "plateLabel": "Lâmina I — O Instrumento de Tarô",
     "titlePre": "Um oráculo que enxerga",
     "titleEm": "sua",
     "titlePost": "pergunta, não o calendário.",
-    "lede": "Arcanum é um oráculo afinado para a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Pergunte, e as cartas falam no tempo de um embaralhar.",
+    "lede": "Arcanum é um tarólogo que lê a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Pergunte, e as cartas de tarô falam no tempo de um embaralhar.",
     "ctaPrimary": "Começar uma leitura",
     "ctaGhost": "Veja como a leitura é construída ↓",
     "readout": {
@@ -392,7 +392,7 @@
         "name": "Grátis",
         "cta": "Continuar no grátis",
         "features": {
-          "readingsPerMonth": "3 leituras de IA por mês",
+          "readingsPerMonth": "3 leituras de tarô por mês",
           "shortSpreadsOnly": "Apenas tiragens de 1 e 3 cartas",
           "historyDays": "Histórico guardado por 7 dias"
         }
@@ -421,8 +421,8 @@
   },
   "seo": {
     "landing": {
-      "title": "Arcanum — um oráculo, sempre aberto",
-      "description": "Arcanum lê as cartas para a pergunta que você realmente tem, no momento em que você pergunta. Sem agendamento, sem sala de espera, sem horóscopo genérico."
+      "title": "Arcanum — um tarólogo, sempre aberto",
+      "description": "Arcanum é um tarólogo que lê as cartas de tarô para a pergunta que você realmente tem, no momento em que você pergunta. Sem agendamento, sem sala de espera, sem horóscopo genérico."
     },
     "gameSelect": {
       "title": "Escolha sua tiragem — Arcanum",
