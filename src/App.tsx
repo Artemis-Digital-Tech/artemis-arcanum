@@ -1,13 +1,30 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import { useReveal } from './useReveal'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
+import AccountMenu from './components/AccountMenu'
+import PricingNavLink from './components/PricingNavLink'
+import Seo from './components/Seo'
 
 function App() {
   useReveal()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <>
+      <Seo
+        title={t('seo.landing.title')}
+        description={t('seo.landing.description')}
+        path=""
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Arcanum',
+          url: `${window.location.origin}/${i18n.language}`,
+          description: t('seo.landing.description'),
+          inLanguage: i18n.language,
+        }}
+      />
       <div className="frame">
         <span className="c2"></span>
         <span className="c3"></span>
@@ -28,9 +45,13 @@ function App() {
             <a href="#deck">{t('nav.deck')}</a>
             <a href="#reading">{t('nav.reading')}</a>
             <a href="#compare">{t('nav.compare')}</a>
+            <PricingNavLink />
           </nav>
-          <LanguageSwitcher />
-          <a className="nav-cta" href="#reading">{t('nav.cta')}</a>
+          <div className="nav-utility">
+            <LanguageSwitcher />
+            <AccountMenu />
+            <Link className="nav-cta" to="jogo">{t('nav.cta')}</Link>
+          </div>
         </div>
         <hr className="rule" />
       </header>
@@ -45,10 +66,10 @@ function App() {
               <h1>{t('hero.titlePre')} <em>{t('hero.titleEm')}</em> {t('hero.titlePost')}</h1>
               <p className="lede">{t('hero.lede')}</p>
               <div className="hero-actions">
-                <a className="btn-primary" href="#reading">
+                <Link className="btn-primary" to="jogo">
                   {t('hero.ctaPrimary')}
                   <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                </a>
+                </Link>
                 <a className="btn-ghost" href="#mechanism">{t('hero.ctaGhost')}</a>
               </div>
               <div className="readout">
@@ -239,10 +260,10 @@ function App() {
             <div data-reveal="true">
               <h2>{t('final.titlePre')} <em>{t('final.titleEm')}</em></h2>
               <p>{t('final.body')}</p>
-              <a className="btn-primary" href="#top">
+              <Link className="btn-primary" to="jogo">
                 {t('final.cta')}
                 <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

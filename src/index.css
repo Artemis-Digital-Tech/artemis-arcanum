@@ -58,7 +58,9 @@ a{color:inherit;}
   position:fixed;
   inset:0;
   pointer-events:none;
-  z-index:40;
+  /* Below header/sticky-bar chrome (z-index 20–30): this is a background
+     flourish, not a layer that should ever cross real, readable content. */
+  z-index:10;
   padding:22px;
 }
 .frame::before,
@@ -118,6 +120,11 @@ header{
   letter-spacing:0.08em;
   text-transform:uppercase;
 }
+.nav-utility{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
 .navlinks a{
   text-decoration:none;
   color:var(--paper-dim);
@@ -157,7 +164,6 @@ header{
   font-size:0.72rem;
   letter-spacing:0.08em;
   text-transform:uppercase;
-  margin-left:28px;
 }
 .lang-switch a{
   text-decoration:none;
@@ -167,6 +173,137 @@ header{
 .lang-switch a:hover,
 .lang-switch a.is-active{ color:var(--brass-bright); }
 .lang-switch-sep{ color:var(--paper-dim); opacity:0.4; margin-right:6px; }
+
+.account-menu{
+  position:relative;
+}
+.account-menu-trigger{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:none;
+  border:none;
+  padding:6px 4px;
+  margin:-6px -4px;
+  color:inherit;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.04em;
+  cursor:pointer;
+}
+.account-menu-avatar{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  border:1px solid var(--brass-bright);
+  object-fit:cover;
+  flex-shrink:0;
+}
+.account-menu-avatar-fallback{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--ink);
+  color:var(--brass-bright);
+  font-family:var(--mono);
+  font-size:0.68rem;
+}
+.account-menu-name{ color:var(--paper-dim); }
+.account-menu-chevron{
+  width:13px;
+  height:13px;
+  color:var(--paper-dim);
+  transition:transform .25s cubic-bezier(.16,1,.3,1), color .2s ease;
+}
+.account-menu-trigger:hover .account-menu-chevron,
+.account-menu-trigger[aria-expanded="true"] .account-menu-chevron{ color:var(--brass-bright); }
+.account-menu-trigger[aria-expanded="true"] .account-menu-chevron{ transform:rotate(180deg); }
+.account-menu-dropdown{
+  position:absolute;
+  top:calc(100% + 14px);
+  right:0;
+  display:flex;
+  flex-direction:column;
+  min-width:180px;
+  background:var(--ink-2);
+  border:1px solid var(--line-bright);
+  box-shadow:0 16px 32px -16px rgba(0,0,0,0.6);
+  z-index:50;
+}
+.account-menu-dropdown-item{
+  background:none;
+  border:none;
+  padding:14px 18px;
+  color:var(--paper-dim);
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  text-decoration:none;
+  text-align:left;
+  cursor:pointer;
+  transition:background .2s ease, color .2s ease;
+}
+.account-menu-dropdown-item:not(:last-child){ border-bottom:1px solid var(--line); }
+.account-menu-dropdown-item:hover{ background:var(--ink); color:var(--brass-bright); }
+.account-menu-link{
+  background:none;
+  border:none;
+  padding:0;
+  color:var(--paper-dim);
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  text-decoration:none;
+  cursor:pointer;
+  transition:color .2s ease;
+}
+.account-menu-link:hover{ color:var(--brass-bright); }
+
+.auth-social{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:14px;
+  max-width:340px;
+}
+.btn-social{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+  background:none;
+  color:var(--paper);
+  font-family:var(--mono);
+  font-size:0.76rem;
+  letter-spacing:0.04em;
+  padding:14px 20px;
+  border:1px solid var(--line-bright);
+  cursor:pointer;
+  transition:border-color .2s ease, color .2s ease, transform .2s ease;
+}
+.btn-social svg{ width:18px; height:18px; flex:none; }
+.btn-social:hover{
+  border-color:var(--brass-bright);
+  color:var(--brass-bright);
+  transform:translateY(-1px);
+}
+.auth-social-divider{
+  align-self:center;
+  font-size:0.68rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  opacity:0.6;
+}
+
+.auth-notice{
+  font-size:0.85rem;
+  color:var(--paper-dim);
+  margin:0 0 32px;
+}
+.auth-notice.is-error{ color:var(--brass-bright); }
 
 /* ---------- Hero ---------- */
 
@@ -259,8 +396,20 @@ h1 em{
 }
 .btn-primary svg{ width:16px; height:16px; transition:transform .35s cubic-bezier(.16,1,.3,1); }
 .btn-primary:hover svg{ transform:translateX(4px); }
+.btn-primary[aria-disabled="true"],
+.btn-primary:disabled{
+  opacity:0.35;
+  cursor:not-allowed;
+  pointer-events:none;
+}
 
 .btn-ghost{
+  -webkit-appearance:none;
+  appearance:none;
+  background:none;
+  border:none;
+  font:inherit;
+  cursor:pointer;
   font-family:var(--mono);
   font-size:0.76rem;
   letter-spacing:0.06em;
@@ -571,8 +720,1000 @@ footer{
 }
 [data-reveal].is-visible{ opacity:1; transform:none; }
 
+/* ---------- Game select (spread depth chooser) ---------- */
+
+.game-select{
+  min-height: 100dvh;
+  display:flex;
+  flex-direction:column;
+}
+.game-select-main{
+  flex:1;
+  padding:72px 0 220px;
+}
+.game-select-head{
+  max-width:62ch;
+  margin-bottom:64px;
+}
+.game-select-head h1{
+  margin:0 0 18px;
+  font-weight:440;
+  font-size:clamp(2rem, 4vw, 3rem);
+  line-height:1.1;
+  letter-spacing:-0.01em;
+}
+.game-select-head p{
+  font-family:var(--mono);
+  font-size:0.92rem;
+  line-height:1.7;
+  color:var(--paper-dim);
+  margin:0;
+}
+.game-select-head .free-quota-notice{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:20px 0 0;
+  font-size:0.72rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  border:1px solid var(--brass);
+  padding:9px 16px;
+  width:fit-content;
+}
+
+.spread-list{
+  display:flex;
+  flex-direction:column;
+  border-top:1px solid var(--line);
+}
+
+.spread-row{
+  border-bottom:1px solid var(--line);
+}
+
+.spread-row-main{
+  width:100%;
+  display:grid;
+  grid-template-columns:120px 1fr auto;
+  align-items:center;
+  gap:32px;
+  padding:28px 4px 28px 20px;
+  background:none;
+  border:none;
+  border-left:1px solid transparent;
+  color:inherit;
+  font:inherit;
+  text-align:left;
+  cursor:pointer;
+  transition:border-color .25s ease, background-color .25s ease;
+}
+.spread-row-main:hover{ background:var(--line); }
+.spread-row.is-selected .spread-row-main{
+  border-left-color:var(--brass-bright);
+  background:rgba(232,183,104,0.06);
+}
+
+.depth-gauge{ width:96px; height:auto; display:block; }
+.depth-gauge-count{
+  display:block;
+  text-align:center;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.06em;
+  color:var(--paper-dim);
+  margin-top:-4px;
+}
+.spread-row.is-selected .depth-gauge-count{ color:var(--brass-bright); }
+
+.spread-info h3{
+  font-weight:440;
+  font-size:1.28rem;
+  margin:0 0 8px;
+  letter-spacing:-0.005em;
+}
+.spread-info p{
+  font-family:var(--mono);
+  font-size:0.84rem;
+  line-height:1.6;
+  color:var(--paper-dim);
+  margin:0;
+  max-width:60ch;
+}
+
+.spread-select-indicator{
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  border:1px solid var(--line-bright);
+  padding:9px 16px;
+  white-space:nowrap;
+  transition:color .2s ease, border-color .2s ease, background-color .2s ease;
+}
+.spread-row.is-selected .spread-select-indicator{
+  color:var(--ink);
+  background:var(--brass-bright);
+  border-color:var(--brass-bright);
+}
+
+.framing-panel{
+  padding:0 4px 32px 168px;
+}
+.framing-prompt{
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  margin-bottom:14px;
+}
+.framing-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.framing-chip{
+  font-family:var(--mono);
+  font-size:0.78rem;
+  letter-spacing:0.02em;
+  color:var(--paper-dim);
+  background:none;
+  border:1px solid var(--line-bright);
+  padding:9px 14px;
+  cursor:pointer;
+  transition:color .2s ease, border-color .2s ease, background-color .2s ease;
+}
+.framing-chip:hover{ color:var(--paper); border-color:var(--paper-dim); }
+.framing-chip.is-selected{
+  color:var(--ink);
+  background:var(--brass-bright);
+  border-color:var(--brass-bright);
+}
+
+.confirm-bar{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:20;
+  background:rgba(12,11,9,0.92);
+  backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);
+}
+.confirm-bar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:22px 0;
+}
+.confirm-summary{
+  font-family:var(--mono);
+  font-size:0.85rem;
+  color:var(--paper-dim);
+}
+/* ---------- Game board ---------- */
+
+.game-board{
+  --card-w: 108px;
+  --card-h: 172px;
+  --fan-panel-h: 214px;
+  --fan-h: var(--fan-panel-h);
+  min-height:100dvh;
+}
+.game-board{ --fan-handle-h: 32px; }
+.game-board.is-complete{ --fan-h: 0px; }
+/* Collapsed, the fan drops away but its handle stays on screen to bring it back. */
+.game-board.is-fan-collapsed{ --fan-h: var(--fan-handle-h); }
+
+.game-board-main{
+  /* Reserved scroll room only; the panel itself animates on transform. */
+  padding:72px 0 calc(var(--fan-h) + 48px);
+}
+
+/* ---------- Naming the question ---------- */
+
+.question-gate{
+  max-width:64ch;
+}
+.question-input{
+  display:block;
+  width:100%;
+  margin:8px 0 28px;
+  padding:24px 26px;
+  background:none;
+  border:1px solid var(--line-bright);
+  color:var(--paper);
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:1.22rem;
+  line-height:1.5;
+  resize:none;
+  height:280px;
+  transition:border-color .2s ease, background-color .2s ease;
+}
+.question-input::placeholder{ color:var(--paper-dim); opacity:0.6; }
+.question-input:hover{
+  border-color:var(--paper-dim);
+  background:rgba(242,237,226,0.02);
+}
+.question-input:focus{
+  outline:none;
+  border-color:var(--brass-bright);
+  background:none;
+}
+.question-gate-actions{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+.question-card{
+  padding:26px 0 30px;
+  margin-bottom:28px;
+  border-bottom:1px solid var(--line);
+}
+.question-card-label{
+  display:block;
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  margin-bottom:12px;
+}
+.question-card-text{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:1.3rem;
+  line-height:1.45;
+  color:var(--paper);
+  margin:0 0 14px;
+  max-width:52ch;
+}
+.question-card-edit{ font-size:0.72rem; }
+
+/* A readout in the page's own flow, so the floating layer carries only cards. */
+.board-readout{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:0 0 16px;
+  margin-bottom:24px;
+  border-bottom:1px solid var(--line);
+}
+.board-readout-actions{
+  display:flex;
+  align-items:flex-end;
+  gap:16px;
+}
+/* Plain underlined text reads as disabled/washed-out sitting next to a
+   filled primary button at the same spot — give these the same button
+   footprint (border, padding, uppercase) so both read as equally actionable. */
+.board-readout-actions .btn-ghost{
+  display:inline-flex;
+  align-items:center;
+  border:1px solid var(--line-bright);
+  border-bottom:1px solid var(--line-bright);
+  padding:11px 18px;
+  font-size:0.72rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.board-readout-actions .btn-ghost:hover{
+  background:var(--line);
+}
+
+.board-scroll{
+  position:relative;
+}
+
+/* Only the cards are filled shapes; the table is its hairline frame alone. */
+.board-frame{
+  position:relative;
+  width:100%;
+  border:1px solid var(--line);
+  background:none;
+  perspective:1400px;
+  transform-style:preserve-3d;
+}
+
+.board-slot{
+  position:absolute;
+  left:0;
+  top:0;
+  transform:translate(-50%, -50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  width:calc(var(--card-w) + 30px);
+  transform-style:preserve-3d;
+}
+
+/* A crossed position shares its coordinate with the card beneath it, so its
+   label goes the other way rather than stacking on its partner's. */
+.board-slot--label-above{
+  flex-direction:column-reverse;
+  z-index:2;
+}
+/* The crossing card sits on the one beneath it, and says so. */
+.board-slot--label-above .card-face{
+  box-shadow:0 22px 30px -14px rgba(0,0,0,1);
+}
+
+.board-slot-card-wrap{
+  position:relative;
+  width:var(--card-w);
+  height:var(--card-h);
+  transform-style:preserve-3d;
+}
+
+.board-slot-card{
+  position:absolute;
+  inset:0;
+  border:1px dashed var(--line-bright);
+  border-radius:3px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:border-color .3s ease, background-color .3s ease;
+}
+.board-slot-index{
+  font-family:var(--mono);
+  font-size:0.78rem;
+  color:var(--paper-dim);
+  opacity:0.45;
+}
+.board-slot.is-next .board-slot-card{
+  border-color:var(--brass-bright);
+}
+.board-slot.is-next .board-slot-index{ color:var(--brass-bright); opacity:1; }
+
+.board-card{
+  position:absolute;
+  inset:0;
+  transform-style:preserve-3d;
+}
+.board-card .card-face{
+  transition:transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s ease;
+}
+.board-card:hover .card-face,
+.board-card:focus-within .card-face{
+  transform:translateZ(44px) scale(1.06);
+  box-shadow:0 30px 44px -26px rgba(0,0,0,0.95), 0 0 0 1px var(--brass-bright);
+}
+
+.board-slot-label{
+  font-family:var(--mono);
+  font-size:0.66rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  text-align:center;
+  line-height:1.3;
+}
+.board-slot.is-next .board-slot-label{ color:var(--brass-bright); }
+
+/* A compact primary button for the readout strip, alongside its ghost siblings. */
+.btn-small{
+  padding:11px 18px;
+  font-size:0.72rem;
+}
+.reading-error{
+  color:var(--brass-bright);
+}
+
+.readout-cta{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:8px;
+}
+.reading-free-tier{
+  font-size:0.68rem;
+  letter-spacing:0.04em;
+  color:var(--paper-dim);
+}
+
+/* ---------- The reading takeover: loading ---------- */
+
+.reading-loader{
+  min-height:60vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  gap:8px;
+}
+.reading-loader-dial{
+  width:min(320px, 70vw);
+  margin-bottom:32px;
+}
+.reading-loader-text{
+  font-size:0.95rem;
+  letter-spacing:0.04em;
+  color:var(--paper);
+}
+.reading-loader-caption{
+  font-size:0.75rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+}
+
+/* ---------- The reading takeover: the finished page ---------- */
+
+.reading-page{
+  max-width:74ch;
+  margin:0 auto;
+  padding-bottom:64px;
+}
+.reading-page-title{
+  margin:0 0 20px;
+  font-weight:440;
+  font-style:italic;
+  font-size:clamp(2rem, 4vw, 2.9rem);
+  line-height:1.15;
+  letter-spacing:-0.01em;
+  color:var(--paper);
+}
+.reading-page-question{
+  font-family:var(--mono);
+  font-size:0.85rem;
+  color:var(--paper-dim);
+  margin:0 0 40px;
+}
+
+.reading-toggle{
+  display:inline-flex;
+  border:1px solid var(--line-bright);
+  margin-bottom:40px;
+}
+.reading-toggle button{
+  background:none;
+  border:none;
+  color:var(--paper-dim);
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:11px 20px;
+  cursor:pointer;
+  transition:color .2s ease, background-color .2s ease;
+}
+.reading-toggle button + button{ border-left:1px solid var(--line-bright); }
+.reading-toggle button:hover{ color:var(--paper); }
+.reading-toggle button.is-active{
+  color:var(--ink);
+  background:var(--brass-bright);
+}
+
+.reading-overview{ margin:0; }
+.reading-overview p{
+  font-size:1.1rem;
+  line-height:1.8;
+  color:var(--paper);
+  margin:0 0 26px;
+}
+.reading-closing{
+  margin-top:44px;
+  padding:28px 32px;
+  border:1px solid var(--line-bright);
+  background:rgba(232,183,104,0.04);
+}
+.reading-closing-label{
+  display:block;
+  font-size:0.7rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  margin-bottom:12px;
+}
+.reading-closing p{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:1.15rem;
+  line-height:1.6;
+  color:var(--paper);
+  margin:0;
+}
+
+.reading-cards{
+  display:flex;
+  flex-direction:column;
+  gap:36px;
+}
+.reading-card-row{
+  display:grid;
+  grid-template-columns:var(--card-w) 1fr;
+  gap:28px;
+  padding-bottom:36px;
+  border-bottom:1px solid var(--line);
+}
+.reading-cards .reading-card-row:last-child{ border-bottom:none; padding-bottom:0; }
+.reading-card-visual{
+  position:relative;
+  width:var(--card-w);
+  height:var(--card-h);
+  flex:none;
+}
+.reading-card-copy{ padding-top:4px; }
+.reading-card-position{
+  display:block;
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  margin-bottom:8px;
+}
+.reading-card-name{
+  font-weight:440;
+  font-style:italic;
+  font-size:1.3rem;
+  margin:0 0 12px;
+  color:var(--paper);
+}
+.reading-card-meaning{
+  font-size:1rem;
+  line-height:1.75;
+  color:var(--paper-dim);
+  margin:0;
+}
+
+.reading-page-reset{ margin-top:56px; }
+
+/* ---------- Saved-readings history ---------- */
+
+.readings-list{
+  --card-w: 108px;
+  --card-h: 172px;
+  display:flex;
+  flex-direction:column;
+  border-top:1px solid var(--line);
+}
+.reading-history-item{
+  border-bottom:1px solid var(--line);
+}
+.reading-history-head{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  gap:4px 20px;
+  background:none;
+  border:none;
+  padding:26px 0;
+  color:inherit;
+  text-align:left;
+  cursor:pointer;
+  font-family:var(--serif);
+}
+.reading-history-meta{
+  grid-column:1;
+  font-size:0.68rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+}
+.reading-history-question{
+  grid-column:1;
+  font-size:1.15rem;
+  line-height:1.4;
+  color:var(--paper);
+}
+.reading-history-chevron{
+  grid-column:2;
+  grid-row:1 / 3;
+  width:18px;
+  height:18px;
+  color:var(--paper-dim);
+  transition:transform .3s cubic-bezier(.16,1,.3,1), color .2s ease;
+}
+.reading-history-head[aria-expanded="true"] .reading-history-chevron{
+  transform:rotate(180deg);
+  color:var(--brass-bright);
+}
+.reading-history-head:hover .reading-history-question{ color:var(--brass-bright); }
+.reading-history-body{
+  padding:0 0 48px;
+  border-top:1px solid var(--line);
+  padding-top:36px;
+}
+.reading-history-body .reading-page-question{ margin-top:0; }
+
+/* ---------- Card faces (board, fan and flight share these) ---------- */
+
+.card-face{
+  position:absolute;
+  inset:0;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  border:1px solid var(--line-bright);
+  border-radius:3px;
+  background:var(--ink-2);
+  box-shadow:0 16px 26px -20px rgba(0,0,0,0.9);
+}
+.card-face-body{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  /* Everything inside a card is a ratio of the card's own width, so one
+     definition holds at every card size. */
+  padding:calc(var(--card-w) * 0.075) calc(var(--card-w) * 0.065) calc(var(--card-w) * 0.08);
+}
+.card-face-body::before{
+  content:"";
+  position:absolute;
+  inset:calc(var(--card-w) * 0.042);
+  border:1px solid var(--line);
+  border-radius:2px;
+  pointer-events:none;
+}
+
+.card-back-face{
+  /* --back-ink lets a densely overlapped fan quiet its own texture down. */
+  --back-ink: var(--line);
+  background:
+    repeating-linear-gradient(45deg, var(--back-ink) 0 1px, transparent 1px 9px),
+    repeating-linear-gradient(-45deg, var(--back-ink) 0 1px, transparent 1px 9px),
+    var(--ink-2);
+}
+.card-back-face .card-face-body{ align-items:center; justify-content:center; }
+.card-back-emblem{
+  width:calc(var(--card-w) * 0.36);
+  height:calc(var(--card-w) * 0.36);
+  color:var(--brass-bright);
+  background:var(--ink-2);
+  border:1px solid var(--line-bright);
+  border-radius:50%;
+  padding:calc(var(--card-w) * 0.07);
+  display:flex;
+}
+.card-back-emblem svg{ display:block; width:100%; height:auto; }
+
+.card-front-face .card-face-body{ justify-content:space-between; }
+.board-card-num{
+  align-self:flex-start;
+  font-family:var(--mono);
+  font-size:calc(var(--card-w) * 0.095);
+  line-height:1;
+  color:var(--brass-bright);
+  letter-spacing:0.04em;
+}
+.board-card-glyph{
+  width:72%;
+  height:auto;
+  color:var(--paper);
+  margin:auto;
+}
+.board-card-name{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:calc(var(--card-w) * 0.105);
+  line-height:1.2;
+  text-align:center;
+  text-wrap:balance;
+}
+
+/* Only the flip wrapper's front face needs the baked mirror-correction rotation. */
+.flying-card-flip > .card-front-face{
+  transform:rotateY(180deg);
+}
+
+/* ---------- The fan the reader draws from ---------- */
+
+.fan-panel{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:var(--fan-panel-h);
+  z-index:30;
+  /* No veil behind the fan: the cards float straight over the board. */
+  background:none;
+  pointer-events:none;
+  transition:transform .5s cubic-bezier(.16,1,.3,1);
+}
+.game-board.is-fan-collapsed .fan-panel{
+  transform:translateY(calc(100% - var(--fan-handle-h)));
+}
+
+/* The drawer pull: a labelled hairline tab on the fan's own top edge. */
+.fan-handle{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  height:var(--fan-handle-h);
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:0 18px;
+  background:var(--ink);
+  border:1px solid var(--line-bright);
+  border-bottom:none;
+  color:var(--paper-dim);
+  font-family:var(--mono);
+  font-size:0.68rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  cursor:pointer;
+  pointer-events:auto;
+  z-index:3;
+  transition:color .2s ease, border-color .2s ease;
+}
+.fan-handle:hover{ color:var(--brass-bright); border-color:var(--brass-bright); }
+.fan-handle svg{
+  width:15px;
+  height:15px;
+  flex:none;
+  transition:transform .45s cubic-bezier(.16,1,.3,1);
+}
+.game-board.is-fan-collapsed .fan-handle svg{ transform:rotate(180deg); }
+.fan-prompt{
+  font-family:var(--mono);
+  font-size:0.78rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+}
+.fan-count{
+  font-family:var(--mono);
+  font-size:0.78rem;
+  color:var(--paper-dim);
+}
+
+.card-fan{
+  position:absolute;
+  inset:0;
+  perspective:1500px;
+  pointer-events:auto;
+}
+.card-fan--ribbon{
+  overflow-x:auto;
+  overflow-y:hidden;
+  scrollbar-width:none;
+}
+.card-fan--ribbon::-webkit-scrollbar{ display:none; }
+.card-fan-track{
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style:preserve-3d;
+}
+
+.fan-card{
+  position:absolute;
+  left:0;
+  top:0;
+  width:var(--card-w);
+  height:var(--card-h);
+  padding:0;
+  border:none;
+  background:none;
+  cursor:pointer;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+.fan-card:disabled{ cursor:default; }
+.fan-card-inner{
+  position:absolute;
+  inset:0;
+  transform:rotateX(17deg);
+  transform-origin:50% 100%;
+  transition:transform .32s cubic-bezier(.16,1,.3,1), filter .32s ease;
+  will-change:transform;
+}
+/* Packed ten pixels apart, a full-strength back would read as moiré, so the
+   fan shows mostly a clean edge until a card is lifted out of it. */
+.fan-card .card-back-face{
+  --back-ink: rgba(242,237,226,0.045);
+  border-color:var(--line);
+  /* One brass thread along each card's leading edge; in the fan they stack
+     into a run of light following the arc. */
+  background-image:
+    linear-gradient(90deg, rgba(232,183,104,0.42) 0 1px, transparent 1px),
+    repeating-linear-gradient(45deg, var(--back-ink) 0 1px, transparent 1px 9px),
+    repeating-linear-gradient(-45deg, var(--back-ink) 0 1px, transparent 1px 9px);
+}
+.fan-card .card-face-body::before{ opacity:0; transition:opacity .32s ease; }
+.fan-card .card-back-emblem{ opacity:0; transition:opacity .32s ease; }
+
+.fan-card:not(:disabled):hover .fan-card-inner,
+.fan-card:not(:disabled):focus-visible .fan-card-inner{
+  transform:rotateX(0deg) translateY(-58px) translateZ(70px) scale(1.04);
+}
+.fan-card:not(:disabled):hover .card-back-face,
+.fan-card:not(:disabled):focus-visible .card-back-face{
+  --back-ink: var(--line);
+  border-color:var(--brass-bright);
+  box-shadow:0 36px 48px -26px rgba(0,0,0,0.95);
+}
+.fan-card:not(:disabled):hover .card-face-body::before,
+.fan-card:not(:disabled):focus-visible .card-face-body::before,
+.fan-card:not(:disabled):hover .card-back-emblem,
+.fan-card:not(:disabled):focus-visible .card-back-emblem{ opacity:1; }
+.fan-card:focus{ outline:none; }
+.fan-card:focus-visible .card-face{ outline:1.5px solid var(--brass-bright); outline-offset:3px; }
+
+/* ---------- The card in flight ---------- */
+
+.flying-card{
+  position:fixed;
+  left:0;
+  top:0;
+  perspective:1400px;
+  pointer-events:none;
+  z-index:60;
+  will-change:transform;
+}
+.flying-card-flip{
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style:preserve-3d;
+}
+.flying-card .card-face{
+  box-shadow:0 40px 60px -30px rgba(0,0,0,0.95);
+}
+
+/* ---------- Pricing ---------- */
+
+.pricing-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap:2px;
+  border:1px solid var(--line-bright);
+  padding:4px;
+  margin-bottom:56px;
+}
+.pricing-toggle button{
+  font-family:var(--mono);
+  font-size:0.76rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  background:none;
+  border:none;
+  padding:10px 18px;
+  cursor:pointer;
+  transition:color .2s ease, background-color .2s ease;
+}
+.pricing-toggle button.is-active{
+  color:var(--ink);
+  background:var(--brass-bright);
+}
+.pricing-toggle-savings{
+  font-family:var(--mono);
+  font-size:0.7rem;
+  color:var(--brass-bright);
+  margin-left:2px;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.pricing-card{
+  background:var(--ink);
+  padding:36px 30px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+.pricing-card.is-highlighted{
+  background:rgba(232,183,104,0.05);
+}
+.pricing-card-badge{
+  position:absolute;
+  top:0;
+  right:0;
+  font-family:var(--mono);
+  font-size:0.66rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--ink);
+  background:var(--brass-bright);
+  padding:6px 12px;
+}
+.pricing-card-name{
+  font-family:var(--mono);
+  font-size:0.78rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  margin-bottom:18px;
+}
+.pricing-card-price{
+  font-weight:440;
+  font-size:2.4rem;
+  letter-spacing:-0.01em;
+  margin-bottom:4px;
+}
+.pricing-card-price span{
+  font-family:var(--mono);
+  font-size:0.82rem;
+  color:var(--paper-dim);
+  letter-spacing:0;
+}
+.pricing-card-annual-note{
+  font-family:var(--mono);
+  font-size:0.76rem;
+  color:var(--paper-dim);
+  margin-bottom:28px;
+  min-height:1.4em;
+}
+.pricing-card-features{
+  list-style:none;
+  margin:0 0 32px;
+  padding:0;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.pricing-card-features li{
+  font-family:var(--mono);
+  font-size:0.84rem;
+  line-height:1.5;
+  color:var(--paper-dim);
+  padding-left:22px;
+  position:relative;
+}
+.pricing-card-features li::before{
+  content:"—";
+  position:absolute;
+  left:0;
+  color:var(--brass-bright);
+}
+.pricing-card .btn-primary,
+.pricing-card .btn-ghost{
+  justify-content:center;
+  text-align:center;
+}
+.pricing-card .btn-ghost{
+  border:1px solid var(--line-bright);
+  padding:17px 26px;
+  padding-bottom:17px;
+}
+.pricing-note{
+  margin-top:40px;
+  font-family:var(--mono);
+  font-size:0.78rem;
+  color:var(--paper-dim);
+  max-width:70ch;
+}
+
+.spread-row.is-locked .spread-row-main{ cursor:pointer; }
+.spread-lock-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:var(--mono);
+  font-size:0.7rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  border:1px solid var(--brass);
+  padding:9px 16px;
+  white-space:nowrap;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 980px){
+  .pricing-grid{ grid-template-columns:1fr; }
   .wrap{ padding:0 24px; }
   .navlinks{ display:none; }
   .hero{ padding:104px 0 64px; }
@@ -589,4 +1730,53 @@ footer{
   .compare-row.head{ display:none; }
   .readout{ flex-wrap:wrap; gap:24px 36px; }
   .foot-row{ flex-direction:column; gap:14px; text-align:center; }
+
+  .spread-row-main{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .depth-gauge{ width:88px; }
+  .spread-select-indicator{ justify-self:flex-start; }
+  .framing-panel{ padding-left:4px; }
+  .confirm-bar-inner{ flex-direction:column; align-items:stretch; gap:14px; text-align:center; }
+
+  /* The header carries three items and a long wordmark; let it breathe instead of colliding. */
+  .nav{ height:auto; flex-wrap:wrap; gap:10px 16px; padding:14px 24px; }
+  .wordmark{ font-size:1.05rem; }
+  .wordmark .idx{ display:none; }
+  .nav-utility{ gap:18px; flex-wrap:wrap; row-gap:8px; }
+  .frame{ padding:14px; }
+  .frame::before,
+  .frame::after,
+  .frame .c2,
+  .frame .c3{ width:16px; height:16px; }
+  .frame::before{ top:14px; left:14px; }
+  .frame::after{ top:14px; right:14px; }
+  .frame .c2{ bottom:14px; left:14px; }
+  .frame .c3{ bottom:14px; right:14px; }
+
+  .game-board{ --card-w: 74px; --card-h: 118px; --fan-h: 196px; }
+  .game-board.is-complete{ --fan-h: 74px; }
+  /* Keep the cards legible: the bigger spreads pan sideways instead of shrinking. */
+  .board-scroll{ overflow-x:auto; padding-bottom:10px; }
+  .board-frame{ min-width:640px; }
+  .board-slot{ gap:8px; width:calc(var(--card-w) + 6px); }
+  .board-slot-label{ font-size:0.55rem; letter-spacing:0.05em; }
+  .board-slot-index{ font-size:0.68rem; }
+  .game-board .nav .btn-ghost{ font-size:0.66rem; }
+  .fan-panel-status{ padding:10px 24px; flex-direction:column; align-items:flex-start; gap:2px; }
+  .fan-panel.is-complete .fan-panel-status{ flex-direction:row; align-items:center; padding:0 24px; }
+  .fan-prompt{ font-size:0.66rem; line-height:1.4; }
+  .fan-count{ font-size:0.66rem; }
+  .fan-card:not(:disabled):hover .fan-card-inner,
+  .fan-card:not(:disabled):focus-visible .fan-card-inner{
+    transform:rotateX(0deg) translateY(-40px) translateZ(50px) scale(1.04);
+  }
+
+  .reading-card-header{ flex-wrap:wrap; gap:6px 18px; }
+  .reading-card-position{ width:auto; }
+  .reading-card-meaning{ padding-left:4px; }
+
+  .readings-list{ --card-w: 74px; --card-h: 118px; }
+  .reading-history-head{ grid-template-columns:1fr auto; }
 }
