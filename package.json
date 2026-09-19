@@ -10,9 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.27.0",
+    "animejs": "^4.5.0",
     "i18next": "^26.4.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-grab": "^0.2.0",
     "react-i18next": "^17.0.14",
     "react-router-dom": "^7.18.4"
   },

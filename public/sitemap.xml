@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TODO: replace REPLACE_WITH_YOUR_DOMAIN with the real production domain
+  before deploying — see docs/seo.md. Only the two indexable,
+  language-equivalent pages are listed; /leitura and /entrar are excluded
+  (see public/robots.txt for why).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://REPLACE_WITH_YOUR_DOMAIN/pt</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://REPLACE_WITH_YOUR_DOMAIN/pt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE_WITH_YOUR_DOMAIN/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE_WITH_YOUR_DOMAIN/pt"/>
+  </url>
+  <url>
+    <loc>https://REPLACE_WITH_YOUR_DOMAIN/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://REPLACE_WITH_YOUR_DOMAIN/pt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE_WITH_YOUR_DOMAIN/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE_WITH_YOUR_DOMAIN/pt"/>
+  </url>
+  <url>
+    <loc>https://REPLACE_WITH_YOUR_DOMAIN/pt/jogo</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://REPLACE_WITH_YOUR_DOMAIN/pt/jogo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE_WITH_YOUR_DOMAIN/en/jogo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE_WITH_YOUR_DOMAIN/pt/jogo"/>
+  </url>
+  <url>
+    <loc>https://REPLACE_WITH_YOUR_DOMAIN/en/jogo</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://REPLACE_WITH_YOUR_DOMAIN/pt/jogo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE_WITH_YOUR_DOMAIN/en/jogo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE_WITH_YOUR_DOMAIN/pt/jogo"/>
+  </url>
+</urlset>

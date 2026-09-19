@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# AI coding agent local state/config (not project source)
+.agents/
+.factory/
+.impeccable/
+.kilocode/
+.kiro/
+.claude/skills/

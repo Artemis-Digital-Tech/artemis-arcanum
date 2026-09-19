@@ -4,6 +4,7 @@
     "deck": "The Deck",
     "reading": "A Reading",
     "compare": "Why Arcanum",
+    "pricing": "Pricing",
     "cta": "Draw a Card"
   },
   "hero": {
@@ -15,9 +16,18 @@
     "ctaPrimary": "Begin a reading",
     "ctaGhost": "See how the reading is built ↓",
     "readout": {
-      "wait": { "value": "0 min", "label": "wait for a reader" },
-      "cards": { "value": "78", "label": "cards in the working deck" },
-      "uptime": { "value": "24 / 7", "label": "the instrument is lit" }
+      "wait": {
+        "value": "0 min",
+        "label": "wait for a reader"
+      },
+      "cards": {
+        "value": "78",
+        "label": "cards in the working deck"
+      },
+      "uptime": {
+        "value": "24 / 7",
+        "label": "the instrument is lit"
+      }
     },
     "dialCaption": "reading in progress — live instrument"
   },
@@ -59,7 +69,18 @@
       "chariot": "The Chariot",
       "strength": "Strength",
       "hermit": "The Hermit",
-      "wheelOfFortune": "Wheel of Fortune"
+      "wheelOfFortune": "Wheel of Fortune",
+      "justice": "Justice",
+      "hangedMan": "The Hanged Man",
+      "death": "Death",
+      "temperance": "Temperance",
+      "devil": "The Devil",
+      "tower": "The Tower",
+      "star": "The Star",
+      "moon": "The Moon",
+      "sun": "The Sun",
+      "judgement": "Judgement",
+      "world": "The World"
     }
   },
   "reading": {
@@ -129,5 +150,296 @@
   },
   "footer": {
     "copyright": "© Arcanum — an instrument, not an oracle of certainty."
+  },
+  "gameSelect": {
+    "back": "Back",
+    "plateLabel": "Plate VI — Choose Your Spread",
+    "title": "How deep do you want to go?",
+    "lede": "Every spread reads the same seventy-eight cards. What changes is how much of the question they're asked to cover.",
+    "cardCount_one": "{{count}} card",
+    "cardCount_other": "{{count}} cards",
+    "spreads": {
+      "single": {
+        "name": "One Card",
+        "description": "Quick and direct. Good for a daily focus, a pointed piece of advice, or going deeper on one specific question."
+      },
+      "three": {
+        "name": "Three Cards",
+        "description": "Versatile. The same triad of cards can be framed several ways — choose the framing below."
+      },
+      "horseshoe": {
+        "name": "Horseshoe",
+        "description": "A middle ground between three cards and the Celtic Cross: past, present, hidden influences, obstacles, surrounding influences, advice, and likely outcome."
+      },
+      "celtic": {
+        "name": "Celtic Cross",
+        "description": "The classic ten-card spread for one specific question, in real depth: present, challenge, foundation, recent past, best outcome, near future, you, environment, hopes and fears, and outcome."
+      }
+    },
+    "chooseCta": "Choose",
+    "selectedBadge": "Selected",
+    "lockedBadge": "Plus only",
+    "quotaLockedBadge": "Subscribe to Plus",
+    "signInNotice": "Sign in to start a reading — that's how we can count your free readings per account, not per browser.",
+    "framingPrompt": "Choose a framing",
+    "framings": {
+      "pastPresentFuture": "Past — Present — Future",
+      "situationActionResult": "Situation — Action — Outcome",
+      "youOtherRelationship": "You — The Other — The Relationship",
+      "mindBodySpirit": "Mind — Body — Spirit",
+      "prosConsAdvice": "Pros — Cons — Advice"
+    },
+    "summary": {
+      "none": "Choose a spread to continue.",
+      "needsFraming": "{{spread}} — choose a framing to continue.",
+      "ready": "You've chosen: {{spread}}.",
+      "readyWithFraming": "You've chosen: {{spread}}, framed as {{framing}}."
+    },
+    "startCta": "Begin this reading"
+  },
+  "cards": {
+    "minorName": "{{rank}} of {{suit}}",
+    "suits": {
+      "wands": "Wands",
+      "cups": "Cups",
+      "swords": "Swords",
+      "pentacles": "Pentacles"
+    },
+    "ranks": {
+      "ace": "Ace",
+      "two": "Two",
+      "three": "Three",
+      "four": "Four",
+      "five": "Five",
+      "six": "Six",
+      "seven": "Seven",
+      "eight": "Eight",
+      "nine": "Nine",
+      "ten": "Ten"
+    },
+    "courts": {
+      "page": "Page",
+      "knight": "Knight",
+      "queen": "Queen",
+      "king": "King"
+    }
+  },
+  "gameBoard": {
+    "back": "Change spread",
+    "plateLabel": "Plate VIII — {{spread}}",
+    "title": "Draw your cards.",
+    "lede": "The deck is fanned out in front of you. Run along the cards, take the one that calls you, and watch where it lands in the spread.",
+    "questionStep": {
+      "plateLabel": "Plate VII — Name the Question",
+      "title": "What do you want to ask?",
+      "lede": "Open questions make for richer readings. Be specific about the actual decision in front of you — not a mood, not a yes or no.",
+      "placeholder": "Should I take the new role, or stay where things are steady?",
+      "cta": "Continue to the deck"
+    },
+    "questionCard": {
+      "label": "The question brought",
+      "edit": "Change question"
+    },
+    "deckRemaining_one": "{{count}} card in the fan",
+    "deckRemaining_other": "{{count}} cards in the fan",
+    "pickForPosition": "Choose the card for {{position}}",
+    "dealingMessage": "Fanning the deck…",
+    "collapseFan": "Collapse the fan",
+    "expandFan": "Open the fan",
+    "completeMessage": "Your spread is complete.",
+    "reading": {
+      "generateCta": "Generate the reading",
+      "freeTierNotice": "Your first 3 readings are free.",
+      "readingsRemainingNotice_one": "{{count}} free reading left this month.",
+      "readingsRemainingNotice_other": "{{count}} free readings left this month.",
+      "quotaReachedNotice": "You've used your free readings for this month.",
+      "upgradeCta": "Subscribe to continue",
+      "signInNotice": "Sign in to generate your reading — your first 3 are free.",
+      "signInCta": "Sign in to generate",
+      "loading": "Arcanum is reading the cards…",
+      "loadingCaption": "live reading in progress",
+      "closingLabel": "To carry with you",
+      "errorNetwork": "Couldn't reach the oracle. Check your connection and try again.",
+      "errorGeneric": "Something went wrong reading the cards. Try again.",
+      "retryCta": "Try again",
+      "plateLabel": "Plate IX — The Reading",
+      "title": "What the cards reveal.",
+      "viewFull": "Full reading",
+      "viewCards": "Card by card",
+      "cardToggleAria": "See the meaning of {{card}}"
+    },
+    "resetCta": "Shuffle again",
+    "cardAriaLabel": "Card {{index}} of {{total}}, face down",
+    "positions": {
+      "single": {
+        "card": "Your card"
+      },
+      "horseshoe": {
+        "past": "Past",
+        "present": "Present",
+        "hiddenInfluences": "Hidden influences",
+        "obstacles": "Obstacles",
+        "environment": "Surrounding influences",
+        "advice": "Advice",
+        "outcome": "Likely outcome"
+      },
+      "celtic": {
+        "present": "Present",
+        "challenge": "Challenge",
+        "foundation": "Foundation",
+        "recentPast": "Recent past",
+        "consciousGoal": "Conscious goal",
+        "nearFuture": "Near future",
+        "self": "You",
+        "environment": "Environment",
+        "hopesFears": "Hopes and fears",
+        "outcome": "Outcome"
+      }
+    },
+    "framingPositions": {
+      "pastPresentFuture": {
+        "past": "Past",
+        "present": "Present",
+        "future": "Future"
+      },
+      "situationActionResult": {
+        "situation": "Situation",
+        "action": "Action",
+        "result": "Outcome"
+      },
+      "youOtherRelationship": {
+        "you": "You",
+        "other": "The Other",
+        "relationship": "The Relationship"
+      },
+      "mindBodySpirit": {
+        "mind": "Mind",
+        "body": "Body",
+        "spirit": "Spirit"
+      },
+      "prosConsAdvice": {
+        "pros": "Pros",
+        "cons": "Cons",
+        "advice": "Advice"
+      }
+    }
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "account": "Account",
+    "backCta": "Back",
+    "plateLabel": "Plate X — Enter the Instrument",
+    "title": "Keep your readings.",
+    "lede": "Signing in is optional — you can ask for a reading without an account. An account is for keeping your readings and picking up where you left off.",
+    "notConfigured": "Sign-in hasn't been configured in this environment yet.",
+    "loading": "Checking your session…",
+    "error": "Couldn't sign you in. Try again.",
+    "retryCta": "Try again",
+    "signInCta": "Sign in to your account",
+    "signedInAs": "You're signed in as {{name}}.",
+    "continueCta": "Continue",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithGithub": "Continue with GitHub",
+    "orDivider": "or",
+    "continueWithEmail": "Continue with email"
+  },
+  "myReadings": {
+    "navLink": "My readings",
+    "plateLabel": "Plate XI — Your Readings",
+    "title": "Saved readings.",
+    "lede": "Every reading you generate while signed in is kept here, so you can come back to it later.",
+    "backCta": "Back",
+    "signInNotice": "Sign in to see your saved readings.",
+    "loading": "Loading your readings…",
+    "error": "Couldn't load your readings.",
+    "empty": "You don't have any saved readings yet.",
+    "emptyCta": "Start a reading",
+    "retentionNotice_one": "Your free plan keeps history for {{count}} day.",
+    "retentionNotice_other": "Your free plan keeps history for {{count}} days.",
+    "emptyAfterRetention": "Your most recent readings aren't showing, or they've expired from your free history.",
+    "hiddenByRetention_one": "{{count}} older reading isn't shown because it expired on the free plan.",
+    "hiddenByRetention_other": "{{count}} older readings aren't shown because they expired on the free plan.",
+    "upgradeCta": "See plans"
+  },
+  "pricing": {
+    "navLink": "Pricing",
+    "back": "Back",
+    "plateLabel": "Plate XII — Pricing",
+    "title": "Choose how deep the ritual goes.",
+    "lede": "One- and three-card spreads are always free in limited amounts. Subscribing unlocks the deeper spreads and a permanent history.",
+    "toggleLabel": "Billing cycle",
+    "billing": {
+      "monthly": "Monthly",
+      "annual": "Annual",
+      "savings": "-33%"
+    },
+    "mostPopular": "Most chosen",
+    "free": "Free",
+    "perMonth": "mo",
+    "perYear": "yr",
+    "annualEquivalent": "equals {{value}}/mo",
+    "currentPlan": "Your current plan",
+    "redirecting": "Taking you to checkout…",
+    "checkoutNote": "Payment is processed by Stripe. You can cancel anytime, straight from your subscription confirmation email.",
+    "checkoutNotice": {
+      "success": "Subscription confirmed — welcome. It can take a few seconds for your plan to update here.",
+      "cancelled": "Checkout cancelled — nothing was charged.",
+      "error": "Couldn't start checkout. Try again in a moment."
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "cta": "Stay on Free",
+        "features": {
+          "readingsPerMonth": "3 AI readings per month",
+          "shortSpreadsOnly": "One- and three-card spreads only",
+          "historyDays": "History kept for 7 days"
+        }
+      },
+      "plus": {
+        "name": "Arcanum Plus",
+        "cta": "Subscribe to Plus",
+        "features": {
+          "unlimitedReadings": "Unlimited readings",
+          "allSpreads": "Every spread, including the Celtic Cross",
+          "historyForever": "History kept forever",
+          "advancedFramings": "Reading with advanced framings"
+        }
+      },
+      "ritual": {
+        "name": "Arcanum Ritual",
+        "cta": "Subscribe to Ritual",
+        "features": {
+          "everythingInPlus": "Everything in Plus",
+          "followUp": "Follow-up questions on the same spread",
+          "exportPdf": "Export the reading as PDF",
+          "priorityQueue": "Priority in the generation queue"
+        }
+      }
+    }
+  },
+  "seo": {
+    "landing": {
+      "title": "Arcanum — a tarot reader, always open",
+      "description": "Arcanum reads the cards for the question you actually have, the moment you ask it. No booking, no waiting room, no generic horoscope."
+    },
+    "gameSelect": {
+      "title": "Choose your spread — Arcanum",
+      "description": "One card, three cards, horseshoe, or the Celtic Cross — choose how deep this tarot reading goes."
+    },
+    "gameBoard": {
+      "title": "Your reading — Arcanum"
+    },
+    "login": {
+      "title": "Sign in — Arcanum"
+    },
+    "myReadings": {
+      "title": "Your readings — Arcanum"
+    },
+    "pricing": {
+      "title": "Pricing — Arcanum",
+      "description": "Compare Arcanum's plans: free monthly readings, Plus with unlimited spreads, and Ritual with follow-ups and PDF export."
+    }
   }
 }

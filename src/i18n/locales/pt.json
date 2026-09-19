@@ -4,6 +4,7 @@
     "deck": "O Baralho",
     "reading": "Uma Leitura",
     "compare": "Por que Arcanum",
+    "pricing": "Planos",
     "cta": "Tirar uma Carta"
   },
   "hero": {
@@ -15,9 +16,18 @@
     "ctaPrimary": "Começar uma leitura",
     "ctaGhost": "Veja como a leitura é construída ↓",
     "readout": {
-      "wait": { "value": "0 min", "label": "de espera pelo oráculo" },
-      "cards": { "value": "78", "label": "cartas vivas no baralho" },
-      "uptime": { "value": "24 / 7", "label": "o instrumento nunca dorme" }
+      "wait": {
+        "value": "0 min",
+        "label": "de espera pelo oráculo"
+      },
+      "cards": {
+        "value": "78",
+        "label": "cartas vivas no baralho"
+      },
+      "uptime": {
+        "value": "24 / 7",
+        "label": "o instrumento nunca dorme"
+      }
     },
     "dialCaption": "leitura em curso — o instrumento respira"
   },
@@ -59,7 +69,18 @@
       "chariot": "O Carro",
       "strength": "A Força",
       "hermit": "O Eremita",
-      "wheelOfFortune": "A Roda da Fortuna"
+      "wheelOfFortune": "A Roda da Fortuna",
+      "justice": "A Justiça",
+      "hangedMan": "O Enforcado",
+      "death": "A Morte",
+      "temperance": "A Temperança",
+      "devil": "O Diabo",
+      "tower": "A Torre",
+      "star": "A Estrela",
+      "moon": "A Lua",
+      "sun": "O Sol",
+      "judgement": "O Julgamento",
+      "world": "O Mundo"
     }
   },
   "reading": {
@@ -129,5 +150,296 @@
   },
   "footer": {
     "copyright": "© Arcanum — um instrumento, não um oráculo de certezas."
+  },
+  "gameSelect": {
+    "back": "Voltar",
+    "plateLabel": "Lâmina VI — Escolha sua Tiragem",
+    "title": "Quanto fundo você quer ir?",
+    "lede": "Toda tiragem lê o mesmo baralho de setenta e oito cartas. O que muda é quanto da pergunta elas são chamadas a cobrir.",
+    "cardCount_one": "{{count}} carta",
+    "cardCount_other": "{{count}} cartas",
+    "spreads": {
+      "single": {
+        "name": "Uma Carta",
+        "description": "Rápida e direta. Boa para o foco do dia, um conselho pontual, ou para aprofundar numa pergunta bem específica."
+      },
+      "three": {
+        "name": "Três Cartas",
+        "description": "Versátil. A mesma tríade de cartas pode ser lida de vários jeitos — escolha o enquadramento abaixo."
+      },
+      "horseshoe": {
+        "name": "Ferradura",
+        "description": "Um meio-termo entre as três cartas e a Cruz Celta: passado, presente, influências ocultas, obstáculos, ambiente ao redor, conselho e resultado provável."
+      },
+      "celtic": {
+        "name": "Cruz Celta",
+        "description": "A tiragem clássica de dez cartas para uma pergunta específica, em profundidade real: presente, desafio, base, passado recente, meta consciente, futuro próximo, você, ambiente, esperanças e medos, e resultado."
+      }
+    },
+    "chooseCta": "Escolher",
+    "selectedBadge": "Selecionada",
+    "lockedBadge": "Exclusivo Plus",
+    "quotaLockedBadge": "Assinar Plus",
+    "signInNotice": "Entre para começar uma leitura — assim conseguimos contar suas leituras grátis por conta, não por navegador.",
+    "framingPrompt": "Escolha um enquadramento",
+    "framings": {
+      "pastPresentFuture": "Passado — Presente — Futuro",
+      "situationActionResult": "Situação — Ação — Resultado",
+      "youOtherRelationship": "Você — O Outro — A Relação",
+      "mindBodySpirit": "Mente — Corpo — Espírito",
+      "prosConsAdvice": "Prós — Contras — Conselho"
+    },
+    "summary": {
+      "none": "Escolha uma tiragem para continuar.",
+      "needsFraming": "{{spread}} — escolha um enquadramento para continuar.",
+      "ready": "Você escolheu: {{spread}}.",
+      "readyWithFraming": "Você escolheu: {{spread}}, no enquadramento {{framing}}."
+    },
+    "startCta": "Começar esta leitura"
+  },
+  "cards": {
+    "minorName": "{{rank}} de {{suit}}",
+    "suits": {
+      "wands": "Paus",
+      "cups": "Copas",
+      "swords": "Espadas",
+      "pentacles": "Ouros"
+    },
+    "ranks": {
+      "ace": "Ás",
+      "two": "Dois",
+      "three": "Três",
+      "four": "Quatro",
+      "five": "Cinco",
+      "six": "Seis",
+      "seven": "Sete",
+      "eight": "Oito",
+      "nine": "Nove",
+      "ten": "Dez"
+    },
+    "courts": {
+      "page": "Pajem",
+      "knight": "Cavaleiro",
+      "queen": "Rainha",
+      "king": "Rei"
+    }
+  },
+  "gameBoard": {
+    "back": "Trocar de tiragem",
+    "plateLabel": "Lâmina VIII — {{spread}}",
+    "title": "Tire suas cartas.",
+    "lede": "O baralho está aberto em leque diante de você. Percorra as cartas, escolha a que te chamar, e veja onde ela cai na tiragem.",
+    "questionStep": {
+      "plateLabel": "Lâmina VII — Nomeie a Pergunta",
+      "title": "O que você quer perguntar?",
+      "lede": "Perguntas abertas trazem leituras mais ricas. Seja específico sobre a decisão real diante de você — não um humor, não um sim ou não.",
+      "placeholder": "Devo aceitar o novo cargo, ou ficar onde as coisas estão estáveis?",
+      "cta": "Continuar para o baralho"
+    },
+    "questionCard": {
+      "label": "A pergunta trazida",
+      "edit": "Alterar pergunta"
+    },
+    "deckRemaining_one": "{{count}} carta no leque",
+    "deckRemaining_other": "{{count}} cartas no leque",
+    "pickForPosition": "Escolha a carta de {{position}}",
+    "dealingMessage": "Abrindo o leque…",
+    "collapseFan": "Recolher leque",
+    "expandFan": "Abrir leque",
+    "completeMessage": "Sua tiragem está completa.",
+    "reading": {
+      "generateCta": "Gerar leitura",
+      "freeTierNotice": "As 3 primeiras leituras são grátis.",
+      "readingsRemainingNotice_one": "{{count}} leitura grátis restante este mês.",
+      "readingsRemainingNotice_other": "{{count}} leituras grátis restantes este mês.",
+      "quotaReachedNotice": "Você usou suas leituras grátis deste mês.",
+      "upgradeCta": "Assinar para continuar",
+      "signInNotice": "Entre para gerar sua leitura — as 3 primeiras são grátis.",
+      "signInCta": "Entrar para gerar",
+      "loading": "Arcanum está lendo as cartas…",
+      "loadingCaption": "instrumento em leitura ao vivo",
+      "closingLabel": "Para levar com você",
+      "errorNetwork": "Não foi possível falar com o oráculo. Verifique sua conexão e tente de novo.",
+      "errorGeneric": "Algo saiu errado ao interpretar as cartas. Tente de novo.",
+      "retryCta": "Tentar de novo",
+      "plateLabel": "Lâmina IX — A Leitura",
+      "title": "O que as cartas revelam.",
+      "viewFull": "Leitura completa",
+      "viewCards": "Carta por carta",
+      "cardToggleAria": "Ver o significado de {{card}}"
+    },
+    "resetCta": "Embaralhar de novo",
+    "cardAriaLabel": "Carta {{index}} de {{total}}, virada para baixo",
+    "positions": {
+      "single": {
+        "card": "Sua carta"
+      },
+      "horseshoe": {
+        "past": "Passado",
+        "present": "Presente",
+        "hiddenInfluences": "Influências ocultas",
+        "obstacles": "Obstáculos",
+        "environment": "Ambiente ao redor",
+        "advice": "Conselho",
+        "outcome": "Resultado provável"
+      },
+      "celtic": {
+        "present": "Presente",
+        "challenge": "Desafio",
+        "foundation": "Base",
+        "recentPast": "Passado recente",
+        "consciousGoal": "Meta consciente",
+        "nearFuture": "Futuro próximo",
+        "self": "Você",
+        "environment": "Ambiente",
+        "hopesFears": "Esperanças e medos",
+        "outcome": "Resultado"
+      }
+    },
+    "framingPositions": {
+      "pastPresentFuture": {
+        "past": "Passado",
+        "present": "Presente",
+        "future": "Futuro"
+      },
+      "situationActionResult": {
+        "situation": "Situação",
+        "action": "Ação",
+        "result": "Resultado"
+      },
+      "youOtherRelationship": {
+        "you": "Você",
+        "other": "O Outro",
+        "relationship": "A Relação"
+      },
+      "mindBodySpirit": {
+        "mind": "Mente",
+        "body": "Corpo",
+        "spirit": "Espírito"
+      },
+      "prosConsAdvice": {
+        "pros": "Prós",
+        "cons": "Contras",
+        "advice": "Conselho"
+      }
+    }
+  },
+  "auth": {
+    "signIn": "Entrar",
+    "signOut": "Sair",
+    "account": "Conta",
+    "backCta": "Voltar",
+    "plateLabel": "Lâmina X — Entrar no Instrumento",
+    "title": "Guarde suas leituras.",
+    "lede": "Entrar é opcional — você pode pedir uma leitura sem conta. Uma conta serve para guardar suas leituras e retomar de onde parou.",
+    "notConfigured": "O login ainda não foi configurado neste ambiente.",
+    "loading": "Verificando sua sessão…",
+    "error": "Não foi possível entrar. Tente de novo.",
+    "retryCta": "Tentar de novo",
+    "signInCta": "Entrar com sua conta",
+    "signedInAs": "Você entrou como {{name}}.",
+    "continueCta": "Continuar",
+    "continueWithGoogle": "Continuar com Google",
+    "continueWithGithub": "Continuar com GitHub",
+    "orDivider": "ou",
+    "continueWithEmail": "Continuar com e-mail"
+  },
+  "myReadings": {
+    "navLink": "Minhas leituras",
+    "plateLabel": "Lâmina XI — Suas Leituras",
+    "title": "Leituras guardadas.",
+    "lede": "Toda leitura que você gera enquanto está conectado fica guardada aqui, para você voltar a ela depois.",
+    "backCta": "Voltar",
+    "signInNotice": "Entre para ver suas leituras guardadas.",
+    "loading": "Carregando suas leituras…",
+    "error": "Não foi possível carregar suas leituras.",
+    "empty": "Você ainda não tem leituras guardadas.",
+    "emptyCta": "Fazer uma leitura",
+    "retentionNotice_one": "Seu plano grátis guarda o histórico por {{count}} dia.",
+    "retentionNotice_other": "Seu plano grátis guarda o histórico por {{count}} dias.",
+    "emptyAfterRetention": "Suas leituras mais recentes ainda não aparecem, ou expiraram do seu histórico grátis.",
+    "hiddenByRetention_one": "{{count}} leitura mais antiga não aparece porque expirou no plano grátis.",
+    "hiddenByRetention_other": "{{count}} leituras mais antigas não aparecem porque expiraram no plano grátis.",
+    "upgradeCta": "Ver planos"
+  },
+  "pricing": {
+    "navLink": "Planos",
+    "back": "Voltar",
+    "plateLabel": "Lâmina XII — Planos",
+    "title": "Escolha o quanto de ritual você quer.",
+    "lede": "As tiragens de uma e três cartas são sempre gratuitas em quantidade limitada. Assinar desbloqueia as tiragens mais profundas e um histórico permanente.",
+    "toggleLabel": "Ciclo de cobrança",
+    "billing": {
+      "monthly": "Mensal",
+      "annual": "Anual",
+      "savings": "-33%"
+    },
+    "mostPopular": "Mais escolhido",
+    "free": "Grátis",
+    "perMonth": "mês",
+    "perYear": "ano",
+    "annualEquivalent": "equivale a {{value}}/mês",
+    "currentPlan": "Seu plano atual",
+    "redirecting": "Levando você ao checkout…",
+    "checkoutNote": "Pagamento processado pela Stripe. Você pode cancelar quando quiser, direto pelo e-mail de confirmação da assinatura.",
+    "checkoutNotice": {
+      "success": "Assinatura confirmada — bem-vindo(a). Pode levar alguns segundos para o plano atualizar aqui.",
+      "cancelled": "Checkout cancelado — nenhuma cobrança foi feita.",
+      "error": "Não foi possível iniciar o checkout. Tente de novo em instantes."
+    },
+    "plans": {
+      "free": {
+        "name": "Grátis",
+        "cta": "Continuar no grátis",
+        "features": {
+          "readingsPerMonth": "3 leituras de IA por mês",
+          "shortSpreadsOnly": "Apenas tiragens de 1 e 3 cartas",
+          "historyDays": "Histórico guardado por 7 dias"
+        }
+      },
+      "plus": {
+        "name": "Arcanum Plus",
+        "cta": "Assinar o Plus",
+        "features": {
+          "unlimitedReadings": "Tiragens ilimitadas",
+          "allSpreads": "Todas as tiragens, incluindo Cruz Celta",
+          "historyForever": "Histórico guardado para sempre",
+          "advancedFramings": "Leitura com enquadramentos avançados"
+        }
+      },
+      "ritual": {
+        "name": "Arcanum Ritual",
+        "cta": "Assinar o Ritual",
+        "features": {
+          "everythingInPlus": "Tudo do Plus",
+          "followUp": "Perguntas de acompanhamento na mesma tiragem",
+          "exportPdf": "Exportar a leitura em PDF",
+          "priorityQueue": "Prioridade na fila de geração"
+        }
+      }
+    }
+  },
+  "seo": {
+    "landing": {
+      "title": "Arcanum — um oráculo, sempre aberto",
+      "description": "Arcanum lê as cartas para a pergunta que você realmente tem, no momento em que você pergunta. Sem agendamento, sem sala de espera, sem horóscopo genérico."
+    },
+    "gameSelect": {
+      "title": "Escolha sua tiragem — Arcanum",
+      "description": "Uma carta, três cartas, ferradura ou Cruz Celta — escolha quanto fundo você quer ir nesta leitura de tarô."
+    },
+    "gameBoard": {
+      "title": "Sua leitura — Arcanum"
+    },
+    "login": {
+      "title": "Entrar — Arcanum"
+    },
+    "myReadings": {
+      "title": "Suas leituras — Arcanum"
+    },
+    "pricing": {
+      "title": "Planos — Arcanum",
+      "description": "Compare os planos Arcanum: leituras grátis por mês, o Plus com tiragens ilimitadas e o Ritual com acompanhamento e exportação em PDF."
+    }
   }
 }

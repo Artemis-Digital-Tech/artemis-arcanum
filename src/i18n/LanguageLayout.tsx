@@ -12,9 +12,12 @@ export default function LanguageLayout() {
   const { i18n } = useTranslation()
 
   useEffect(() => {
-    if (isSupportedLanguage(lang) && i18n.language !== lang) {
-      void i18n.changeLanguage(lang)
-    }
+    if (!isSupportedLanguage(lang)) return
+    if (i18n.language !== lang) void i18n.changeLanguage(lang)
+    // <html lang> was hardcoded to "en" in index.html regardless of route —
+    // wrong on every /pt/* page, and the one place a screen reader or
+    // crawler actually reads the page's declared language from.
+    document.documentElement.lang = lang
   }, [lang, i18n])
 
   if (!isSupportedLanguage(lang)) {
