@@ -5,7 +5,9 @@
     "reading": "A Reading",
     "compare": "Why Arcanum",
     "pricing": "Pricing",
-    "cta": "Draw a Card"
+    "cta": "Draw a Card",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
     "plateLabel": "Plate I — The Tarot Instrument",

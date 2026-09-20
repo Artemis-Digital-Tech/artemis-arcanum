@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
 import Seo from './components/Seo'
+import NavMenu from './components/NavMenu'
 import { isAuth0Configured } from './auth/auth0Config'
 
 interface LoginLocationState {
@@ -32,12 +33,12 @@ function Login() {
             </svg>
             ARCANUM <span className="idx">No. I</span>
           </Link>
-          <div className="nav-utility">
+          <NavMenu>
             <LanguageSwitcher />
             <Link to={returnTo} className="btn-ghost">
               &larr; {t('auth.backCta')}
             </Link>
-          </div>
+          </NavMenu>
         </div>
         <hr className="rule" />
       </header>

@@ -5,7 +5,9 @@
     "reading": "Uma Leitura",
     "compare": "Por que Arcanum",
     "pricing": "Planos",
-    "cta": "Tirar uma Carta"
+    "cta": "Tirar uma Carta",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
   },
   "hero": {
     "plateLabel": "Lâmina I — O Instrumento de Tarô",
