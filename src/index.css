@@ -261,6 +261,104 @@ header{
 }
 .account-menu-link:hover{ color:var(--brass-bright); }
 
+/* ---------- Mobile nav (hamburger) ---------- */
+
+.nav-mobile{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.nav-burger{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  padding:0;
+  background:none;
+  border:1px solid var(--line-bright);
+  color:var(--paper);
+  cursor:pointer;
+  transition:border-color .2s ease, color .2s ease;
+}
+.nav-burger:hover,
+.nav-burger[aria-expanded="true"]{
+  border-color:var(--brass-bright);
+  color:var(--brass-bright);
+}
+.nav-burger svg{ width:20px; height:20px; }
+
+.nav-panel{
+  position:absolute;
+  top:calc(100% + 14px);
+  right:0;
+  min-width:min(76vw, 290px);
+  display:flex;
+  flex-direction:column;
+  background:var(--ink-2);
+  border:1px solid var(--line-bright);
+  box-shadow:0 20px 44px -22px rgba(0,0,0,0.75);
+  z-index:50;
+}
+.nav-panel-links,
+.nav-panel-utility{
+  display:flex;
+  flex-direction:column;
+}
+.nav-panel-links{ border-bottom:1px solid var(--line-bright); }
+.nav-panel-utility > * + *{ border-top:1px solid var(--line); }
+
+/* One row style for everything the panel holds, whatever element it is. */
+.nav-panel-links a,
+.nav-panel-item,
+.nav-panel .account-menu-link{
+  display:block;
+  width:100%;
+  padding:14px 18px;
+  background:none;
+  border:none;
+  text-align:left;
+  font-family:var(--mono);
+  font-size:0.74rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  text-decoration:none;
+  cursor:pointer;
+  transition:background .2s ease, color .2s ease;
+}
+.nav-panel-links a:hover,
+.nav-panel-item:hover,
+.nav-panel .account-menu-link:hover{
+  background:var(--ink);
+  color:var(--brass-bright);
+}
+.nav-panel .lang-switch{ padding:14px 18px; }
+/* The page CTA keeps its brass fill, but spans the panel as its last row. */
+.nav-panel .nav-cta{
+  padding:15px 18px;
+  text-align:center;
+  border:none;
+}
+/* The back link's underline would collide with the row separators. */
+.nav-panel .btn-ghost{
+  padding:14px 18px;
+  border-bottom:none;
+}
+
+.account-panel{ display:flex; flex-direction:column; }
+.account-panel-identity{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 18px;
+  border-bottom:1px solid var(--line);
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.04em;
+}
+.account-panel .nav-panel-item + .nav-panel-item{ border-top:1px solid var(--line); }
+
 .auth-social{
   display:flex;
   flex-direction:column;
@@ -1715,7 +1813,6 @@ footer{
 @media (max-width: 980px){
   .pricing-grid{ grid-template-columns:1fr; }
   .wrap{ padding:0 24px; }
-  .navlinks{ display:none; }
   .hero{ padding:104px 0 64px; }
   .hero-inner{ grid-template-columns:1fr; gap:56px; }
   .dial-wrap{ max-width:280px; margin:0 auto; }
@@ -1740,11 +1837,11 @@ footer{
   .framing-panel{ padding-left:4px; }
   .confirm-bar-inner{ flex-direction:column; align-items:stretch; gap:14px; text-align:center; }
 
-  /* The header carries three items and a long wordmark; let it breathe instead of colliding. */
-  .nav{ height:auto; flex-wrap:wrap; gap:10px 16px; padding:14px 24px; }
+  /* Below this breakpoint the header is just the wordmark and the burger
+     (see NavMenu), so it goes back to a single fixed-height row. */
+  .nav{ height:64px; flex-wrap:nowrap; gap:16px; }
   .wordmark{ font-size:1.05rem; }
   .wordmark .idx{ display:none; }
-  .nav-utility{ gap:18px; flex-wrap:wrap; row-gap:8px; }
   .frame{ padding:14px; }
   .frame::before,
   .frame::after,

@@ -4,6 +4,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
 import AccountMenu from './components/AccountMenu'
+import NavMenu from './components/NavMenu'
 import Seo from './components/Seo'
 import { PLANS, annualAsMonthly, type BillingCycle, type PlanId } from './data/plans'
 import { usePlan } from './hooks/usePlan'
@@ -80,13 +81,13 @@ function Pricing() {
             </svg>
             ARCANUM <span className="idx">No. I</span>
           </Link>
-          <div className="nav-utility">
+          <NavMenu>
             <LanguageSwitcher />
             <AccountMenu />
             <Link to=".." className="btn-ghost">
               &larr; {t('pricing.back')}
             </Link>
-          </div>
+          </NavMenu>
         </div>
         <hr className="rule" />
       </header>

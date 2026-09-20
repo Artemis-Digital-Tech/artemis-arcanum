@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useReveal } from './useReveal'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
 import AccountMenu from './components/AccountMenu'
+import NavMenu from './components/NavMenu'
 import PricingNavLink from './components/PricingNavLink'
 import Seo from './components/Seo'
 
@@ -40,18 +41,21 @@ function App() {
             </svg>
             ARCANUM <span className="idx">No. I</span>
           </a>
-          <nav className="navlinks">
-            <a href="#mechanism">{t('nav.mechanism')}</a>
-            <a href="#deck">{t('nav.deck')}</a>
-            <a href="#reading">{t('nav.reading')}</a>
-            <a href="#compare">{t('nav.compare')}</a>
-            <PricingNavLink />
-          </nav>
-          <div className="nav-utility">
+          <NavMenu
+            links={
+              <>
+                <a href="#mechanism">{t('nav.mechanism')}</a>
+                <a href="#deck">{t('nav.deck')}</a>
+                <a href="#reading">{t('nav.reading')}</a>
+                <a href="#compare">{t('nav.compare')}</a>
+                <PricingNavLink />
+              </>
+            }
+          >
             <LanguageSwitcher />
             <AccountMenu />
             <Link className="nav-cta" to="jogo">{t('nav.cta')}</Link>
-          </div>
+          </NavMenu>
         </div>
         <hr className="rule" />
       </header>

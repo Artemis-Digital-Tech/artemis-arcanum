@@ -4,6 +4,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { Link, useLocation } from 'react-router-dom'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
 import AccountMenu from './components/AccountMenu'
+import NavMenu from './components/NavMenu'
 import Seo from './components/Seo'
 import { CardFrontFace } from './components/TarotCard'
 import { getCardDisplayName } from './data/cardNames'
@@ -36,13 +37,13 @@ function MyReadings() {
             </svg>
             ARCANUM <span className="idx">No. I</span>
           </Link>
-          <div className="nav-utility">
+          <NavMenu>
             <LanguageSwitcher />
             <AccountMenu />
             <Link to=".." className="btn-ghost">
               &larr; {t('myReadings.backCta')}
             </Link>
-          </div>
+          </NavMenu>
         </div>
         <hr className="rule" />
       </header>

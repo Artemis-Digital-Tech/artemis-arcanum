@@ -10,6 +10,7 @@ import ReadingResult from './components/ReadingResult'
 import { CardFrontFace } from './components/TarotCard'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
 import AccountMenu from './components/AccountMenu'
+import NavMenu from './components/NavMenu'
 import Seo from './components/Seo'
 import { getCardDisplayName } from './data/cardNames'
 import { BOARD_ASPECT, SPREAD_LAYOUTS, THREE_CARD_POSITION_LABELS } from './data/spreadLayouts'
@@ -243,13 +244,13 @@ function GameBoardSession({ state }: { state: GameLocationState }) {
             </svg>
             ARCANUM <span className="idx">No. I</span>
           </Link>
-          <div className="nav-utility">
+          <NavMenu>
             <LanguageSwitcher />
             <AccountMenu />
             <Link to="../jogo" className="btn-ghost">
               &larr; {t('gameBoard.back')}
             </Link>
-          </div>
+          </NavMenu>
         </div>
         <hr className="rule" />
       </header>

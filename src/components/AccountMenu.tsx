@@ -3,11 +3,15 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import { isAuth0Configured } from '../auth/auth0Config'
+import { useNavVariant } from './navVariant'
 
 /**
  * The header's account control. Renders nothing when Auth0 isn't configured
  * yet, rather than a permanently-loading widget — login is optional, not a
  * gate, so its absence should be silent.
+ *
+ * Inside the mobile hamburger panel it renders its actions flat instead of
+ * behind its own dropdown, which would be a dropdown inside a dropdown.
  */
 export default function AccountMenu() {
   if (!isAuth0Configured) return null
@@ -15,6 +19,7 @@ export default function AccountMenu() {
 }
 
 function AccountMenuInner() {
+  const variant = useNavVariant()
   const { t } = useTranslation()
   const location = useLocation()
   const { isAuthenticated, isLoading, user, logout } = useAuth0()
@@ -47,15 +52,62 @@ function AccountMenuInner() {
 
   if (isLoading) return null
 
-  if (!isAuthenticated) {
-    return (
-      <Link to="entrar" state={{ returnTo: location.pathname }} className="account-menu-link">
-        {t('auth.signIn')}
-      </Link>
-    )
-  }
+  const signInLink = (
+    <Link
+      to="entrar"
+      state={{ returnTo: location.pathname }}
+      className={variant === 'panel' ? 'nav-panel-item' : 'account-menu-link'}
+    >
+      {t('auth.signIn')}
+    </Link>
+  )
+
+  if (!isAuthenticated) return signInLink
 
   const label = user?.given_name || user?.name || user?.email || t('auth.account')
+
+  const avatar =
+    user?.picture && !avatarFailed ? (
+      <img
+        className="account-menu-avatar"
+        src={user.picture}
+        alt=""
+        onError={() => setAvatarFailed(true)}
+      />
+    ) : (
+      <span className="account-menu-avatar account-menu-avatar-fallback" aria-hidden="true">
+        {label.charAt(0).toUpperCase()}
+      </span>
+    )
+
+  const signOutButton = (className: string) => (
+    <button
+      type="button"
+      className={className}
+      role={className === 'account-menu-dropdown-item' ? 'menuitem' : undefined}
+      onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
+    >
+      {t('auth.signOut')}
+    </button>
+  )
+
+  if (variant === 'panel') {
+    return (
+      <div className="account-panel">
+        <span className="account-panel-identity">
+          {avatar}
+          <span className="account-menu-name mono">{label}</span>
+        </span>
+        <Link to="minhas-leituras" className="nav-panel-item">
+          {t('myReadings.navLink')}
+        </Link>
+        <Link to="precos" className="nav-panel-item">
+          {t('pricing.navLink')}
+        </Link>
+        {signOutButton('nav-panel-item')}
+      </div>
+    )
+  }
 
   return (
     <span className="account-menu" ref={rootRef}>
@@ -66,18 +118,7 @@ function AccountMenuInner() {
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
       >
-        {user?.picture && !avatarFailed ? (
-          <img
-            className="account-menu-avatar"
-            src={user.picture}
-            alt=""
-            onError={() => setAvatarFailed(true)}
-          />
-        ) : (
-          <span className="account-menu-avatar account-menu-avatar-fallback" aria-hidden="true">
-            {label.charAt(0).toUpperCase()}
-          </span>
-        )}
+        {avatar}
         <span className="account-menu-name mono">{label}</span>
         <svg className="account-menu-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -92,14 +133,7 @@ function AccountMenuInner() {
           <Link to="precos" className="account-menu-dropdown-item" role="menuitem">
             {t('pricing.navLink')}
           </Link>
-          <button
-            type="button"
-            className="account-menu-dropdown-item"
-            role="menuitem"
-            onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
-          >
-            {t('auth.signOut')}
-          </button>
+          {signOutButton('account-menu-dropdown-item')}
         </div>
       )}
     </span>
