@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAuth0 } from '@auth0/auth0-react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import DepthGauge from './components/DepthGauge'
 import LanguageSwitcher from './i18n/LanguageSwitcher'
 import AccountMenu from './components/AccountMenu'
@@ -16,16 +16,15 @@ const TICKS = SPREADS.map((s) => s.cardCount)
 function GameSelect() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const location = useLocation()
-  const { isAuthenticated, isLoading: authLoading } = useAuth0()
+  const { isAuthenticated } = useAuth0()
   const { plan, readingsRemaining } = usePlan()
   const [selectedId, setSelectedId] = useState<SpreadId | null>(null)
   const [framing, setFraming] = useState<FramingId | null>(null)
-  // The free-tier quota is only enforceable per account (see usePlan) — an
-  // anonymous visitor has no account to count against, which is exactly the
-  // loophole that let free readings go uncounted. Requiring sign-in here,
-  // before any spread is even picked, closes that gap at the source.
-  const requiresSignIn = isAuth0Configured && !authLoading && !isAuthenticated
+  // Picking a spread and drawing cards is open to anyone — the account is only
+  // asked for at the reading itself. Which also means the visitor's plan is
+  // unknowable here while signed out, so this screen asserts no limit it
+  // cannot honour; the reading step enforces both plan and quota.
+  const planKnown = !isAuth0Configured || isAuthenticated
 
   const selectedSpread = SPREADS.find((s) => s.id === selectedId) ?? null
   const needsFraming = selectedId === 'three'
@@ -38,6 +37,7 @@ function GameSelect() {
 
   type LockReason = 'plan' | 'quota' | null
   function lockReason(id: SpreadId): LockReason {
+    if (!planKnown) return null
     if (!plan.allowedSpreads.includes(id)) return 'plan'
     if (quotaExhausted) return 'quota'
     return null
@@ -114,7 +114,7 @@ function GameSelect() {
             </div>
             <h1>{t('gameSelect.title')}</h1>
             <p>{t('gameSelect.lede')}</p>
-            {!requiresSignIn && plan.monthlyReadingLimit !== null && (
+            {planKnown && plan.monthlyReadingLimit !== null && (
               <p className="free-quota-notice mono">
                 {readingsRemaining === 0
                   ? t('gameBoard.reading.quotaReachedNotice')
@@ -123,27 +123,6 @@ function GameSelect() {
             )}
           </div>
 
-          {requiresSignIn ? (
-            <>
-              <p className="auth-notice mono">{t('gameSelect.signInNotice')}</p>
-              <Link
-                to="../entrar"
-                state={{ returnTo: location.pathname }}
-                className="btn-primary"
-              >
-                {t('auth.signInCta')}
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M5 12h14M13 6l6 6-6 6"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-            </>
-          ) : (
           <div className="spread-list" role="radiogroup" aria-label={t('gameSelect.title')}>
             {SPREADS.map((spread) => {
               const isSelected = spread.id === selectedId
@@ -209,11 +188,9 @@ function GameSelect() {
               )
             })}
           </div>
-          )}
         </div>
       </main>
 
-      {!requiresSignIn && (
       <div className="confirm-bar">
         <div className="wrap confirm-bar-inner">
           <span className="confirm-summary">{summaryText()}</span>
@@ -230,7 +207,6 @@ function GameSelect() {
           </button>
         </div>
       </div>
-      )}
     </div>
   )
 }

@@ -68,6 +68,10 @@ function GameBoardSession({ state }: { state: GameLocationState }) {
   const requiresSignIn = isAuth0Configured && !isAuthenticated
   const { plan, hasReadingsLeft, readingsRemaining, recordFreeReadingUsed } = usePlan()
   const readingBlockedByQuota = !requiresSignIn && !hasReadingsLeft
+  // The spread was picked before there was an account to check it against, so
+  // the plan is enforced here rather than at selection — this is the only
+  // point where the visitor's real plan is known.
+  const spreadBlockedByPlan = !requiresSignIn && !plan.allowedSpreads.includes(spreadId)
 
   const spread = SPREADS.find((s) => s.id === spreadId)
   const slots = SPREAD_LAYOUTS[spreadId]
@@ -168,7 +172,7 @@ function GameBoardSession({ state }: { state: GameLocationState }) {
   const spreadName = spread ? t(`gameSelect.spreads.${spread.i18nKey}.name`) : ''
 
   async function handleGenerateReading() {
-    if (requiresSignIn || readingBlockedByQuota) return
+    if (requiresSignIn || readingBlockedByQuota || spreadBlockedByPlan) return
     setReadingStatus('loading')
     const request: ReadingRequest = {
       question,
@@ -350,7 +354,17 @@ function GameBoardSession({ state }: { state: GameLocationState }) {
                           </Link>
                         </span>
                       )}
-                      {readingStatus === 'idle' && !requiresSignIn && readingBlockedByQuota && (
+                      {readingStatus === 'idle' && !requiresSignIn && spreadBlockedByPlan && (
+                        <span className="readout-cta">
+                          <span className="reading-free-tier mono">
+                            {t('gameBoard.reading.spreadLockedNotice', { spread: spreadName })}
+                          </span>
+                          <Link to="../precos" className="btn-primary btn-small">
+                            {t('gameBoard.reading.upgradeCta')}
+                          </Link>
+                        </span>
+                      )}
+                      {readingStatus === 'idle' && !requiresSignIn && !spreadBlockedByPlan && readingBlockedByQuota && (
                         <span className="readout-cta">
                           <span className="reading-free-tier mono">
                             {t('gameBoard.reading.quotaReachedNotice')}
@@ -360,7 +374,7 @@ function GameBoardSession({ state }: { state: GameLocationState }) {
                           </Link>
                         </span>
                       )}
-                      {readingStatus === 'idle' && !requiresSignIn && !readingBlockedByQuota && (
+                      {readingStatus === 'idle' && !requiresSignIn && !readingBlockedByQuota && !spreadBlockedByPlan && (
                         <span className="readout-cta">
                           <span className="reading-free-tier mono">
                             {readingsRemaining === null

@@ -7,14 +7,15 @@
     "pricing": "Planos",
     "cta": "Tirar uma Carta",
     "openMenu": "Abrir menu",
-    "closeMenu": "Fechar menu"
+    "closeMenu": "Fechar menu",
+    "faq": "Perguntas"
   },
   "hero": {
-    "plateLabel": "Lâmina I — O Instrumento de Tarô",
-    "titlePre": "Um oráculo que enxerga",
+    "plateLabel": "Lâmina I — Tarot Online Grátis",
+    "titlePre": "Tarot online que enxerga",
     "titleEm": "sua",
     "titlePost": "pergunta, não o calendário.",
-    "lede": "Arcanum é um tarólogo que lê a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Pergunte, e as cartas de tarô falam no tempo de um embaralhar.",
+    "lede": "Jogue tarot online a qualquer hora: o Arcanum lê as cartas de tarô para a pergunta que pulsa em você agora — não a carta genérica do dia, não a espera por um humano disponível. Tire as cartas de graça e receba a leitura no tempo de um embaralhar.",
     "ctaPrimary": "Começar uma leitura",
     "ctaGhost": "Veja como a leitura é construída ↓",
     "readout": {
@@ -187,7 +188,6 @@
     "selectedBadge": "Selecionada",
     "lockedBadge": "Exclusivo Plus",
     "quotaLockedBadge": "Assinar Plus",
-    "signInNotice": "Entre para começar uma leitura — assim conseguimos contar suas leituras grátis por conta, não por navegador.",
     "framingPrompt": "Escolha um enquadramento",
     "framings": {
       "pastPresentFuture": "Passado — Presente — Futuro",
@@ -260,6 +260,7 @@
       "readingsRemainingNotice_one": "{{count}} leitura grátis restante este mês.",
       "readingsRemainingNotice_other": "{{count}} leituras grátis restantes este mês.",
       "quotaReachedNotice": "Você usou suas leituras grátis deste mês.",
+      "spreadLockedNotice": "A tiragem {{spread}} faz parte do Plus.",
       "upgradeCta": "Assinar para continuar",
       "signInNotice": "Entre para gerar sua leitura — as 3 primeiras são grátis.",
       "signInCta": "Entrar para gerar",
@@ -428,12 +429,12 @@
   },
   "seo": {
     "landing": {
-      "title": "Arcanum — um tarólogo, sempre aberto",
-      "description": "Arcanum é um tarólogo que lê as cartas de tarô para a pergunta que você realmente tem, no momento em que você pergunta. Sem agendamento, sem sala de espera, sem horóscopo genérico."
+      "title": "Tarot Online Grátis: jogue tarô agora com IA | Arcanum",
+      "description": "Jogue tarot online grátis: faça sua pergunta, tire as cartas dos 78 arcanos e receba a interpretação na hora. Tiragens de 1 e 3 cartas de graça."
     },
     "gameSelect": {
-      "title": "Escolha sua tiragem — Arcanum",
-      "description": "Uma carta, três cartas, ferradura ou Cruz Celta — escolha quanto fundo você quer ir nesta leitura de tarô."
+      "title": "Jogar Tarot Online — Escolha sua Tiragem | Arcanum",
+      "description": "Jogue tarot online: tiragem de uma carta, três cartas, ferradura ou Cruz Celta. Escolha a tiragem de tarô e faça sua pergunta às cartas."
     },
     "gameBoard": {
       "title": "Sua leitura — Arcanum"
@@ -445,8 +446,39 @@
       "title": "Suas leituras — Arcanum"
     },
     "pricing": {
-      "title": "Planos — Arcanum",
+      "title": "Planos — Tarot Online Grátis ou Ilimitado | Arcanum",
       "description": "Compare os planos Arcanum: leituras grátis por mês, o Plus com tiragens ilimitadas e o Ritual com acompanhamento e exportação em PDF."
     }
+  },
+  "faq": {
+    "tag": "Apêndice — Perguntas Frequentes",
+    "title": "Tarot online, de graça: o que você precisa saber.",
+    "subtitle": "Como jogar, quanto custa e o que esperar de uma leitura de tarô com o Arcanum.",
+    "items": [
+      {
+        "q": "Como jogar tarot online no Arcanum?",
+        "a": "Escolha uma tiragem, escreva a sua pergunta e tire as cartas de um baralho embaralhado na hora, só para você. A interpretação considera a sua pergunta, cada carta que caiu e a posição dela na tiragem."
+      },
+      {
+        "q": "O tarot online é grátis?",
+        "a": "Sim. Tirar as cartas é livre para qualquer pessoa, e com uma conta gratuita você recebe 3 leituras interpretadas por mês nas tiragens de uma e de três cartas. Os planos Plus e Ritual liberam leituras ilimitadas, a Ferradura e a Cruz Celta."
+      },
+      {
+        "q": "Preciso de cadastro para jogar tarot de graça?",
+        "a": "Para tirar as cartas, não. Para receber a interpretação, basta criar uma conta gratuita — é ela que conta suas leituras do mês e guarda o seu histórico."
+      },
+      {
+        "q": "Quais tiragens de tarot posso fazer?",
+        "a": "Uma carta, para uma resposta rápida; três cartas, com enquadramentos como passado, presente e futuro; a Ferradura, com sete cartas; e a Cruz Celta, a tiragem clássica de dez cartas."
+      },
+      {
+        "q": "O baralho de tarot é completo?",
+        "a": "Sim: as 78 cartas do tarô — 22 arcanos maiores e 56 arcanos menores —, que podem cair na posição normal ou invertida."
+      },
+      {
+        "q": "A leitura de tarot prevê o futuro?",
+        "a": "O Arcanum é um instrumento de reflexão, não um oráculo de certezas. Use a leitura para olhar a sua pergunta por outros ângulos — não para substituir orientação médica, jurídica ou financeira."
+      }
+    ]
   }
 }
