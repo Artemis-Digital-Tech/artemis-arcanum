@@ -273,6 +273,9 @@ function App() {
                     {t('deck.styleToggle.art')}
                   </button>
                 </div>
+                <Link className="deck-all-link" to="cartas">
+                  {t('deck.allCardsLink')} &rarr;
+                </Link>
               </div>
             </div>
           </div>
@@ -414,6 +417,8 @@ function App() {
             <a href="#deck">{t('nav.deck')}</a>
             <a href="#compare">{t('nav.compare')}</a>
             <a href="#faq">{t('nav.faq')}</a>
+            <Link to="cartas">{t('footer.links.cards')}</Link>
+            <Link to="sobre">{t('footer.links.about')}</Link>
           </div>
         </div>
       </footer>

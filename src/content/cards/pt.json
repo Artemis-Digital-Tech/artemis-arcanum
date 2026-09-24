@@ -1,0 +1,1895 @@
+{
+  "major-fool": {
+    "correspondence": "Ar / Urano",
+    "keywords": {
+      "upright": [
+        "novos começos",
+        "fé",
+        "espontaneidade",
+        "inocência",
+        "liberdade"
+      ],
+      "reversed": [
+        "imprudência",
+        "ingenuidade",
+        "hesitação",
+        "risco irrefletido"
+      ]
+    },
+    "meaning": {
+      "upright": "O salto no desconhecido movido por fé e entusiasmo; potencial puro, liberdade e abertura para o novo.",
+      "reversed": "O impulso sem cautela: decisões precipitadas, ingenuidade ou, ao contrário, medo de dar o passo."
+    },
+    "love": "No amor, O Louco fala de abertura: um encontro inesperado, uma relação que começa sem roteiro ou a vontade de viver o afeto com mais leveza. Invertido, pede atenção a entregas feitas no impulso e a promessas que ninguém pensou até o fim.",
+    "work": "No trabalho, aponta para começos: um projeto novo, uma mudança de área, a coragem de tentar algo sem garantia. Vale a energia do primeiro passo, desde que você olhe onde pisa.",
+    "advice": "Dê o passo que você vem adiando, mas leve consigo o mínimo de preparo. Liberdade e descuido não são a mesma coisa."
+  },
+  "major-magician": {
+    "correspondence": "Mercúrio",
+    "keywords": {
+      "upright": [
+        "manifestação",
+        "poder pessoal",
+        "habilidade",
+        "foco",
+        "iniciativa"
+      ],
+      "reversed": [
+        "manipulação",
+        "potencial desperdiçado",
+        "ilusão",
+        "dispersão"
+      ]
+    },
+    "meaning": {
+      "upright": "Ter todas as ferramentas para transformar vontade em realidade; ação inspirada e concentração de recursos.",
+      "reversed": "O poder é mal usado ou não exercido: manipulação, autoengano ou talento parado."
+    },
+    "love": "No amor, O Mago mostra iniciativa e presença: você tem o que precisa para se expressar e conquistar. Invertido, alerta para charme usado como jogo, ou para quem diz muito e faz pouco.",
+    "work": "No trabalho, é a carta da execução: habilidade, recursos à mão e foco para transformar uma ideia em entrega. Bom momento para apresentar, negociar e começar.",
+    "advice": "Reúna o que você já tem e concentre tudo em uma única intenção. O talento parado não vira resultado."
+  },
+  "major-highPriestess": {
+    "correspondence": "Lua",
+    "keywords": {
+      "upright": [
+        "intuição",
+        "mistério",
+        "sabedoria interior",
+        "subconsciente"
+      ],
+      "reversed": [
+        "segredos",
+        "intuição ignorada",
+        "desconexão interior",
+        "superficialidade"
+      ]
+    },
+    "meaning": {
+      "upright": "A voz silenciosa do saber interior e do inconsciente; um mistério a ser desvendado por dentro, não pela lógica.",
+      "reversed": "Perde-se contato com a intuição; segredos ocultos, ruído mental ou negação do que se sente."
+    },
+    "love": "No amor, A Sacerdotisa fala do que não foi dito: sentimentos guardados, sinais sutis, a necessidade de escutar antes de agir. Invertida, pode indicar segredos ou uma intuição que você está ignorando.",
+    "work": "No trabalho, pede discrição e observação. Nem tudo está à vista; espere mais informação antes de decidir e confie na leitura silenciosa que você já faz das pessoas.",
+    "advice": "Silencie o ruído e escute a sua própria intuição. A resposta pode já estar em você, esperando atenção."
+  },
+  "major-empress": {
+    "correspondence": "Vênus",
+    "keywords": {
+      "upright": [
+        "fertilidade",
+        "criatividade",
+        "abundância",
+        "nutrição",
+        "natureza"
+      ],
+      "reversed": [
+        "bloqueio criativo",
+        "dependência",
+        "autonegligência",
+        "excesso de zelo"
+      ]
+    },
+    "meaning": {
+      "upright": "Energia criadora e nutridora; abundância, sensualidade e um cuidado que gera e faz florescer.",
+      "reversed": "A criação emperra; excesso de cuidado com os outros, dependência ou descuido consigo mesmo."
+    },
+    "love": "No amor, A Imperatriz traz afeto, cuidado e prazer em estar junto: uma relação que floresce quando é nutrida. Invertida, mostra cuidado que virou sufocamento, ou o esquecimento de si mesma em nome do outro.",
+    "work": "No trabalho, fala de criatividade e de projetos que crescem com constância. Ambientes acolhedores e ideias bem cultivadas dão fruto.",
+    "advice": "Cuide do que você quer ver crescer, incluindo você. Abundância nasce de atenção contínua, não de pressa."
+  },
+  "major-emperor": {
+    "correspondence": "Áries",
+    "keywords": {
+      "upright": [
+        "autoridade",
+        "estrutura",
+        "estabilidade",
+        "liderança",
+        "disciplina"
+      ],
+      "reversed": [
+        "rigidez",
+        "autoritarismo",
+        "controle",
+        "falta de disciplina"
+      ]
+    },
+    "meaning": {
+      "upright": "Ordem construída com visão firme e limites claros; liderança, proteção e estabilidade.",
+      "reversed": "A estrutura vira rigidez ou tirania — ou falta a disciplina que sustentaria tudo."
+    },
+    "love": "No amor, O Imperador pede estrutura: compromisso, limites claros e segurança. Invertido, alerta para controle, rigidez ou uma relação em que só uma pessoa decide.",
+    "work": "No trabalho, é liderança, organização e responsabilidade. Bom momento para colocar ordem, definir regras e assumir o comando de um projeto.",
+    "advice": "Construa uma base firme e seja claro sobre o que você aceita. Autoridade de verdade protege, não oprime."
+  },
+  "major-hierophant": {
+    "correspondence": "Touro",
+    "keywords": {
+      "upright": [
+        "tradição",
+        "fé",
+        "orientação espiritual",
+        "valores",
+        "instituições"
+      ],
+      "reversed": [
+        "rebeldia",
+        "questionar dogmas",
+        "caminho próprio",
+        "hipocrisia"
+      ]
+    },
+    "meaning": {
+      "upright": "Sabedoria transmitida por tradição, mestres e instituições; pertencer a algo maior e estabelecido.",
+      "reversed": "Rompe-se com convenções em busca do próprio caminho — ou vive-se um dogma vazio e conformista."
+    },
+    "love": "No amor, O Hierofante fala de compromissos formais, valores compartilhados e tradição, como casamento ou a aprovação da família. Invertido, pode indicar uma relação que não cabe nas convenções, ou a pressão de seguir um modelo que não é seu.",
+    "work": "No trabalho, favorece aprender com quem já sabe: mentores, instituições, métodos consagrados. Também pode pedir que você siga o processo antes de tentar mudá-lo.",
+    "advice": "Procure orientação em quem já percorreu o caminho, mas mantenha o direito de questionar o que não faz sentido para você."
+  },
+  "major-lovers": {
+    "correspondence": "Gêmeos",
+    "keywords": {
+      "upright": [
+        "amor",
+        "harmonia",
+        "união",
+        "escolha",
+        "alinhamento de valores"
+      ],
+      "reversed": [
+        "desarmonia",
+        "escolha difícil",
+        "desalinhamento",
+        "tentação"
+      ]
+    },
+    "meaning": {
+      "upright": "União profunda e uma escolha do coração feita a partir dos próprios valores.",
+      "reversed": "Conflito nas relações ou uma decisão desalinhada com aquilo em que se acredita."
+    },
+    "love": "No amor, Os Enamorados falam de conexão verdadeira e de escolha: estar com alguém porque os valores se encontram. Invertida, a carta mostra desencontro, dúvida entre dois caminhos ou uma relação que perdeu o alinhamento.",
+    "work": "No trabalho, aponta para parcerias e para decisões que precisam estar de acordo com o que você valoriza. Uma escolha importante pede coerência, não só conveniência.",
+    "advice": "Escolha com o coração e com os seus valores ao mesmo tempo. Uma decisão alinhada pesa menos depois."
+  },
+  "major-chariot": {
+    "correspondence": "Câncer",
+    "keywords": {
+      "upright": [
+        "vontade",
+        "determinação",
+        "vitória",
+        "controle",
+        "direção"
+      ],
+      "reversed": [
+        "falta de rumo",
+        "descontrole",
+        "agressividade",
+        "forças opostas"
+      ]
+    },
+    "meaning": {
+      "upright": "Avança-se rumo à vitória pela força de vontade, unindo impulsos opostos sob um mesmo comando.",
+      "reversed": "Perde-se o controle ou o rumo; forças internas puxam para lados contrários."
+    },
+    "love": "No amor, O Carro mostra determinação para fazer a relação avançar, ou a força de seguir em frente depois de um fim. Invertido, alerta para disputas de controle e para querer vencer em vez de se entender.",
+    "work": "No trabalho, é a carta do avanço: metas claras, disciplina e vitória por esforço. Mantenha o rumo mesmo quando forças diferentes puxarem para lados opostos.",
+    "advice": "Defina a direção e segure as rédeas. Foco e vontade levam longe quando você não se deixa dispersar."
+  },
+  "major-strength": {
+    "correspondence": "Leão",
+    "keywords": {
+      "upright": [
+        "coragem interior",
+        "paciência",
+        "compaixão",
+        "autocontrole",
+        "domínio suave"
+      ],
+      "reversed": [
+        "insegurança",
+        "autodúvida",
+        "força bruta",
+        "ânimo baixo"
+      ]
+    },
+    "meaning": {
+      "upright": "Domar o instinto com gentileza e coragem; a força que vem de dentro, não da violência.",
+      "reversed": "A confiança vacila; ou se recorre à força bruta, ou faltam paciência e energia."
+    },
+    "love": "No amor, A Força fala de paciência, ternura e coragem para lidar com emoções difíceis sem ferir ninguém. Invertida, mostra insegurança, ciúme ou a sensação de não dar conta do que sente.",
+    "work": "No trabalho, é firmeza serena: persuadir em vez de impor, manter a calma sob pressão e liderar pelo exemplo.",
+    "advice": "Seja gentil com o que é selvagem em você. A força mais duradoura é a que não precisa gritar."
+  },
+  "major-hermit": {
+    "correspondence": "Virgem",
+    "keywords": {
+      "upright": [
+        "introspecção",
+        "busca interior",
+        "sabedoria",
+        "solidão",
+        "orientação"
+      ],
+      "reversed": [
+        "isolamento",
+        "solidão excessiva",
+        "retraimento",
+        "recusar ajuda"
+      ]
+    },
+    "meaning": {
+      "upright": "Recolher-se para buscar respostas dentro de si; sabedoria encontrada no silêncio e na pausa.",
+      "reversed": "A introspecção vira isolamento; afastamento excessivo ou recusa de orientação e contato."
+    },
+    "love": "No amor, O Eremita pede um tempo para entender o que você quer. Pode indicar uma fase de solidão escolhida ou a necessidade de espaço dentro da relação. Invertido, alerta para isolamento que já virou fuga.",
+    "work": "No trabalho, favorece estudo, especialização e trabalho individual. Afaste-se do barulho para pensar melhor antes do próximo passo.",
+    "advice": "Recolha-se por um tempo e acenda a sua própria luz. Algumas respostas só aparecem no silêncio."
+  },
+  "major-wheelOfFortune": {
+    "correspondence": "Júpiter",
+    "keywords": {
+      "upright": [
+        "ciclos",
+        "destino",
+        "sorte",
+        "ponto de virada",
+        "mudança"
+      ],
+      "reversed": [
+        "azar",
+        "resistir à mudança",
+        "ciclos ruins",
+        "sensação de descontrole"
+      ]
+    },
+    "meaning": {
+      "upright": "As voltas do destino trazem mudança; um ciclo gira e novas circunstâncias chegam.",
+      "reversed": "A roda parece travar num ponto ruim; resistência à mudança ou uma fase de má sorte."
+    },
+    "love": "No amor, A Roda da Fortuna fala de ciclos: encontros que parecem destino, reviravoltas e fases que mudam. Invertida, mostra a sensação de estar preso a um padrão que se repete.",
+    "work": "No trabalho, indica mudanças de cenário, oportunidades que surgem de repente e momentos de virada. Adapte-se ao movimento em vez de resistir a ele.",
+    "advice": "Aceite que tudo gira. Aproveite a fase boa com gratidão e atravesse a difícil lembrando que ela também passa."
+  },
+  "major-justice": {
+    "correspondence": "Libra",
+    "keywords": {
+      "upright": [
+        "verdade",
+        "justiça",
+        "causa e efeito",
+        "clareza",
+        "responsabilidade"
+      ],
+      "reversed": [
+        "injustiça",
+        "desonestidade",
+        "fugir das consequências",
+        "parcialidade"
+      ]
+    },
+    "meaning": {
+      "upright": "Verdade e equilíbrio: colhe-se o que se plantou e decide-se com imparcialidade.",
+      "reversed": "Injustiça, desonestidade ou a recusa em assumir as consequências dos próprios atos."
+    },
+    "love": "No amor, A Justiça pede honestidade e equilíbrio: cada um assumindo a sua parte. Invertida, aponta para injustiças na relação, culpa mal distribuída ou uma conversa que vem sendo evitada.",
+    "work": "No trabalho, fala de contratos, decisões formais e consequências. Aja com integridade; o que é justo tende a se sustentar.",
+    "advice": "Olhe os fatos com imparcialidade, inclusive a sua própria parte. Cada escolha tem consequência, e isso é um poder."
+  },
+  "major-hangedMan": {
+    "correspondence": "Água / Netuno",
+    "keywords": {
+      "upright": [
+        "pausa",
+        "entrega",
+        "nova perspectiva",
+        "sacrifício",
+        "suspensão"
+      ],
+      "reversed": [
+        "estagnação",
+        "resistência",
+        "indecisão",
+        "sacrifício inútil"
+      ]
+    },
+    "meaning": {
+      "upright": "Render-se e ver por outro ângulo; uma pausa que traz compreensão e liberação.",
+      "reversed": "A pausa vira estagnação; resiste-se à nova visão ou sacrifica-se em vão."
+    },
+    "love": "No amor, O Enforcado sugere uma pausa: ver a relação por outro ângulo antes de agir. Invertido, mostra sacrifício que não é correspondido ou espera que já perdeu o sentido.",
+    "work": "No trabalho, indica um projeto parado ou um momento de espera. Use o tempo para mudar a perspectiva; às vezes a solução vem de soltar em vez de forçar.",
+    "advice": "Pare de forçar e mude o ponto de vista. Render-se ao momento não é desistir, é enxergar diferente."
+  },
+  "major-death": {
+    "correspondence": "Escorpião",
+    "keywords": {
+      "upright": [
+        "fim",
+        "transformação",
+        "transição",
+        "renovação",
+        "deixar ir"
+      ],
+      "reversed": [
+        "resistência à mudança",
+        "apego",
+        "transição travada",
+        "medo do fim"
+      ]
+    },
+    "meaning": {
+      "upright": "Um ciclo termina para que outro nasça; transformação profunda e inevitável.",
+      "reversed": "Agarra-se ao que já acabou; a mudança necessária é adiada por medo ou apego."
+    },
+    "love": "No amor, A Morte fala de fim e transformação: uma fase que se encerra para que outra possa começar, dentro ou fora da relação. Invertida, mostra a resistência em deixar ir o que já acabou.",
+    "work": "No trabalho, indica mudança profunda: encerrar um ciclo, sair de uma função, reinventar um projeto. Raramente significa algo literal; quase sempre significa renovação.",
+    "advice": "Deixe terminar o que já terminou. O espaço que fica é onde o novo cabe."
+  },
+  "major-temperance": {
+    "correspondence": "Sagitário",
+    "keywords": {
+      "upright": [
+        "equilíbrio",
+        "moderação",
+        "paciência",
+        "harmonia",
+        "propósito"
+      ],
+      "reversed": [
+        "desequilíbrio",
+        "excesso",
+        "impaciência",
+        "desalinhamento"
+      ]
+    },
+    "meaning": {
+      "upright": "A arte de misturar opostos na medida certa; paciência, equilíbrio e cura.",
+      "reversed": "Falta de equilíbrio: excessos, pressa ou dificuldade de harmonizar as partes."
+    },
+    "love": "No amor, A Temperança traz harmonia, paciência e a arte do meio-termo: duas pessoas encontrando um ritmo comum. Invertida, alerta para excessos, impaciência ou uma relação desequilibrada.",
+    "work": "No trabalho, favorece colaboração, moderação e processos bem dosados. Resultados sólidos vêm de combinar as partes certas no tempo certo.",
+    "advice": "Busque a medida justa entre os extremos. O equilíbrio se constrói aos poucos, como quem mistura duas águas."
+  },
+  "major-devil": {
+    "correspondence": "Capricórnio",
+    "keywords": {
+      "upright": [
+        "apego",
+        "vícios",
+        "materialismo",
+        "ilusão",
+        "prisões autoimpostas"
+      ],
+      "reversed": [
+        "libertação",
+        "romper correntes",
+        "encarar a sombra",
+        "retomar o poder"
+      ]
+    },
+    "meaning": {
+      "upright": "As amarras do desejo, do medo ou do vício; correntes que, no fundo, são mais frouxas do que parecem.",
+      "reversed": "Reconhece-se e rompe-se um vício ou dependência; libertação da própria sombra."
+    },
+    "love": "No amor, O Diabo fala de atração intensa, mas também de apego, ciúme ou dependência. Invertido, é o momento de perceber a corrente e começar a se libertar dela.",
+    "work": "No trabalho, alerta para situações que prendem por dinheiro, medo ou hábito, e para tentações de atalhos. Pergunte-se o que realmente mantém você ali.",
+    "advice": "Dê nome ao que prende você. A corrente costuma ser mais frouxa do que parece quando olhada de frente."
+  },
+  "major-tower": {
+    "correspondence": "Marte",
+    "keywords": {
+      "upright": [
+        "ruptura súbita",
+        "colapso",
+        "revelação",
+        "caos",
+        "despertar"
+      ],
+      "reversed": [
+        "desastre evitado",
+        "medo da mudança",
+        "colapso lento",
+        "crise interna"
+      ]
+    },
+    "meaning": {
+      "upright": "Uma queda súbita destrói estruturas falsas; verdade revelada de forma abrupta que liberta ao final.",
+      "reversed": "A crise é adiada ou vivida por dentro; teme-se o colapso ou ele se arrasta lentamente."
+    },
+    "love": "No amor, A Torre indica uma verdade que vem à tona de repente: uma briga, uma revelação ou o fim de uma ilusão. Dói, mas limpa o terreno. Invertida, mostra a crise adiada ou vivida em silêncio.",
+    "work": "No trabalho, fala de mudanças bruscas: um plano que desaba, uma reestruturação, uma notícia que muda tudo. O que era frágil cai; o que é verdadeiro fica.",
+    "advice": "Não tente escorar o que já está ruindo. Depois da queda, construa sobre o que se mostrou real."
+  },
+  "major-star": {
+    "correspondence": "Aquário",
+    "keywords": {
+      "upright": [
+        "esperança",
+        "fé",
+        "renovação",
+        "inspiração",
+        "serenidade"
+      ],
+      "reversed": [
+        "desânimo",
+        "falta de fé",
+        "desconexão",
+        "desesperança"
+      ]
+    },
+    "meaning": {
+      "upright": "Depois da tempestade, calma e esperança; cura, fé e inspiração renovadas.",
+      "reversed": "A esperança se apaga; desânimo, descrença ou desconexão com o propósito."
+    },
+    "love": "No amor, A Estrela traz esperança e cura: reencontrar a fé no afeto depois de um período difícil. Invertida, mostra desânimo ou a sensação de que o amor não é para você.",
+    "work": "No trabalho, fala de inspiração, visão de longo prazo e reconhecimento que vem com o tempo. Siga o que dá sentido, mesmo que o resultado ainda esteja longe.",
+    "advice": "Renove a esperança e cuide de você com calma. A luz que guia não precisa estar perto para orientar."
+  },
+  "major-moon": {
+    "correspondence": "Peixes",
+    "keywords": {
+      "upright": [
+        "intuição",
+        "ilusão",
+        "medos",
+        "subconsciente",
+        "incerteza"
+      ],
+      "reversed": [
+        "confusão se dissipando",
+        "medos superados",
+        "verdade emergindo"
+      ]
+    },
+    "meaning": {
+      "upright": "O território das ilusões, dos sonhos e dos medos; nem tudo é o que parece — confie na intuição.",
+      "reversed": "A névoa começa a se dissipar; medos são encarados e a verdade vem à tona."
+    },
+    "love": "No amor, A Lua fala de incerteza: sentimentos confusos, ciúme, fantasias ou algo que não está claro. Invertida, a névoa começa a se dissipar e a verdade aparece aos poucos.",
+    "work": "No trabalho, pede cautela com informações incompletas e com promessas vagas. Não tome decisões grandes antes de enxergar melhor.",
+    "advice": "Não confunda medo com intuição. Espere a névoa baixar antes de escolher o caminho."
+  },
+  "major-sun": {
+    "correspondence": "Sol",
+    "keywords": {
+      "upright": [
+        "alegria",
+        "sucesso",
+        "vitalidade",
+        "clareza",
+        "positividade"
+      ],
+      "reversed": [
+        "otimismo nublado",
+        "sucesso adiado",
+        "desânimo temporário"
+      ]
+    },
+    "meaning": {
+      "upright": "Luz, alegria e sucesso; clareza e vitalidade que aquecem tudo ao redor.",
+      "reversed": "A alegria fica encoberta por um tempo; otimismo abalado ou conquista que tarda."
+    },
+    "love": "No amor, O Sol traz alegria, clareza e calor: uma relação leve, sincera e vivida às claras. Invertido, mostra que a alegria existe, mas está nublada por expectativas ou cansaço.",
+    "work": "No trabalho, é sucesso, reconhecimento e energia alta. Bom momento para mostrar o que você fez e colher resultados.",
+    "advice": "Permita-se aproveitar o que está bom. Clareza e entusiasmo são contagiosos."
+  },
+  "major-judgement": {
+    "correspondence": "Fogo / Plutão",
+    "keywords": {
+      "upright": [
+        "renascimento",
+        "chamado",
+        "avaliação",
+        "redenção",
+        "despertar"
+      ],
+      "reversed": [
+        "autocrítica",
+        "dúvida",
+        "ignorar o chamado",
+        "arrependimento"
+      ]
+    },
+    "meaning": {
+      "upright": "Um chamado ao renascimento; avalia-se o passado e desperta-se para um novo propósito.",
+      "reversed": "Ignora-se o chamado ou pesa a autocrítica; dúvida e arrependimento travam a virada."
+    },
+    "love": "No amor, O Julgamento fala de balanço: rever a história, perdoar, reatar ou encerrar com consciência. Invertido, mostra autocrítica excessiva ou a recusa em olhar para o passado.",
+    "work": "No trabalho, indica um chamado: uma avaliação, uma segunda chance, a vontade de fazer algo com mais propósito.",
+    "advice": "Faça as pazes com a sua história e responda ao chamado que você vem ouvindo. Renascer exige escolher."
+  },
+  "major-world": {
+    "correspondence": "Saturno",
+    "keywords": {
+      "upright": [
+        "realização",
+        "plenitude",
+        "conclusão",
+        "integração",
+        "conquista"
+      ],
+      "reversed": [
+        "pendências",
+        "ciclo incompleto",
+        "sensação de vazio",
+        "atraso"
+      ]
+    },
+    "meaning": {
+      "upright": "Um ciclo se completa em plenitude; integração, conquista e a sensação de pertencer.",
+      "reversed": "Falta pouco para fechar o ciclo; pendências ou uma realização que não satisfaz de fato."
+    },
+    "love": "No amor, O Mundo fala de plenitude e de um ciclo que se completa: a relação chega a um novo patamar ou você se sente inteiro por conta própria. Invertido, mostra algo quase concluído, faltando um último passo.",
+    "work": "No trabalho, é conclusão e realização: um projeto entregue, uma meta alcançada, uma fase que se fecha bem. Também pode indicar viagens ou horizontes maiores.",
+    "advice": "Reconheça o quanto você caminhou antes de começar a próxima jornada. Fechar bem um ciclo é parte da conquista."
+  },
+  "minor-wands-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "nova inspiração",
+        "faísca criativa",
+        "oportunidade",
+        "iniciativa"
+      ],
+      "reversed": [
+        "atraso",
+        "falta de direção",
+        "ideias que não decolam",
+        "hesitação"
+      ]
+    },
+    "meaning": {
+      "upright": "O impulso inicial de uma ideia ou projeto; energia criativa em estado puro pedindo ação.",
+      "reversed": "A faísca existe, mas encontra bloqueios, adiamentos ou falta de foco para se concretizar."
+    },
+    "love": "No amor, o Ás de Paus é faísca: atração nova, desejo que acorda ou vontade de reacender a paixão. Invertido, o interesse existe, mas falta coragem ou iniciativa para agir.",
+    "work": "No trabalho, anuncia uma ideia com energia para virar projeto, um convite ou uma oportunidade criativa. É hora de começar enquanto a chama está alta.",
+    "advice": "Aja enquanto a inspiração está viva. Uma faísca sem gesto vira só lembrança."
+  },
+  "minor-wands-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "planejamento",
+        "visão de futuro",
+        "decisão",
+        "expansão"
+      ],
+      "reversed": [
+        "medo do desconhecido",
+        "planos mal feitos",
+        "acomodação",
+        "indecisão"
+      ]
+    },
+    "meaning": {
+      "upright": "Depois da faísca, escolhe-se um rumo e planeja-se a expansão a partir de uma base já segura.",
+      "reversed": "Insegurança para dar o próximo passo; planos incompletos ou o receio de arriscar prendem no lugar."
+    },
+    "love": "No amor, o Dois de Paus fala de planos e de decidir para onde a relação vai. Invertido, mostra dúvida entre ficar no conhecido ou arriscar algo novo.",
+    "work": "No trabalho, é planejamento e visão: mapear o próximo passo, pensar em expansão, decidir o rumo a partir do que já está seguro.",
+    "advice": "Olhe o horizonte e escolha uma direção. Planejar é o primeiro passo, mas não pode ser o último."
+  },
+  "minor-wands-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "expansão em andamento",
+        "previsão",
+        "resultados a caminho",
+        "comércio"
+      ],
+      "reversed": [
+        "atrasos",
+        "obstáculos inesperados",
+        "falta de visão de longo prazo"
+      ]
+    },
+    "meaning": {
+      "upright": "Os primeiros planos começam a dar frutos; olha-se o horizonte esperando o que já foi posto em movimento.",
+      "reversed": "O que estava a caminho empaca; frustração com atrasos ou expectativas que não se cumprem."
+    },
+    "love": "No amor, o Três de Paus fala de expectativa e de horizontes maiores: uma relação que cresce, ou alguém que está longe. Invertido, mostra frustração com o que demora a chegar.",
+    "work": "No trabalho, os primeiros resultados começam a aparecer. Bom momento para expandir, negociar com outros lugares e acompanhar o que já está em movimento.",
+    "advice": "Confie no que você já colocou em andamento e prepare-se para o que está chegando."
+  },
+  "minor-wands-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "celebração",
+        "harmonia",
+        "lar",
+        "marcos felizes",
+        "comunidade"
+      ],
+      "reversed": [
+        "transição",
+        "harmonia frágil",
+        "celebração adiada",
+        "tensão em casa"
+      ]
+    },
+    "meaning": {
+      "upright": "Um momento de festejo e pertencimento; uma base estável construída merece ser comemorada.",
+      "reversed": "A harmonia existe, mas é instável, ou a celebração acontece de forma interna e discreta."
+    },
+    "love": "No amor, o Quatro de Paus é celebração: um marco feliz, o lar partilhado, a sensação de pertencer. Invertido, a harmonia existe, mas está instável ou é vivida de forma discreta.",
+    "work": "No trabalho, fala de conquistas que merecem ser comemoradas, de equipe unida e de uma base estável construída com esforço.",
+    "advice": "Pare para celebrar o que deu certo. Reconhecer a conquista fortalece a base para a próxima."
+  },
+  "minor-wands-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "conflito",
+        "competição",
+        "desacordo",
+        "rivalidade"
+      ],
+      "reversed": [
+        "fim do conflito",
+        "evitar a disputa",
+        "acordo",
+        "tensão interna"
+      ]
+    },
+    "meaning": {
+      "upright": "Choque de ideias e egos; competição que pode ser saudável ou apenas desgastante.",
+      "reversed": "Os atritos se dissipam ou são evitados; busca-se conciliação, às vezes reprimindo a discórdia."
+    },
+    "love": "No amor, o Cinco de Paus mostra atritos: discussões por orgulho, disputa de espaço ou rivais. Invertido, os conflitos se acalmam, mas vale ver se foram resolvidos ou apenas engolidos.",
+    "work": "No trabalho, é competição e choque de ideias. Pode ser estímulo saudável ou só desgaste; perceba qual dos dois está acontecendo.",
+    "advice": "Escolha as brigas que valem a pena. Nem toda disputa precisa de um vencedor."
+  },
+  "minor-wands-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "vitória",
+        "reconhecimento",
+        "sucesso público",
+        "confiança"
+      ],
+      "reversed": [
+        "reconhecimento adiado",
+        "ego inflado",
+        "confiança abalada",
+        "vitória vazia"
+      ]
+    },
+    "meaning": {
+      "upright": "Triunfo reconhecido pelos outros; o esforço rende aplausos e o projeto avança.",
+      "reversed": "O reconhecimento tarda, a confiança vacila ou o sucesso sobe à cabeça."
+    },
+    "love": "No amor, o Seis de Paus traz confiança e orgulho da relação, às vezes o reconhecimento público de um vínculo. Invertido, mostra insegurança ou a busca por aprovação dos outros.",
+    "work": "No trabalho, é vitória reconhecida: uma promoção, um elogio, um projeto que avança à vista de todos.",
+    "advice": "Aceite o reconhecimento sem deixar que ele defina o seu valor."
+  },
+  "minor-wands-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "defesa da posição",
+        "perseverança",
+        "coragem",
+        "manter-se firme"
+      ],
+      "reversed": [
+        "exaustão",
+        "ceder à pressão",
+        "sentir-se sobrecarregado",
+        "desistência"
+      ]
+    },
+    "meaning": {
+      "upright": "Defender o que se conquistou diante da oposição; manter a posição exige coragem.",
+      "reversed": "A pressão vence a resistência; cansaço ou dúvida levam a baixar a guarda."
+    },
+    "love": "No amor, o Sete de Paus fala de defender a relação ou os seus limites diante de pressões externas. Invertido, mostra cansaço de lutar ou a vontade de ceder.",
+    "work": "No trabalho, indica concorrência e a necessidade de sustentar a sua posição. Você tem argumentos; use-os com firmeza.",
+    "advice": "Defenda o que é seu sem se fechar para tudo. Firmeza não precisa ser rigidez."
+  },
+  "minor-wands-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "movimento rápido",
+        "ação",
+        "novidades",
+        "viagem",
+        "progresso acelerado"
+      ],
+      "reversed": [
+        "atrasos",
+        "pressa mal direcionada",
+        "informação retida",
+        "frustração"
+      ]
+    },
+    "meaning": {
+      "upright": "As coisas avançam depressa; mensagens, viagens e acontecimentos se sucedem.",
+      "reversed": "O ritmo emperra; atrasos e desencontros travam o que deveria fluir."
+    },
+    "love": "No amor, o Oito de Paus traz movimento rápido: mensagens, reencontros, sentimentos que se declaram de repente. Invertido, mostra desencontros e respostas que não chegam.",
+    "work": "No trabalho, as coisas aceleram: notícias, viagens, prazos curtos e decisões rápidas. Esteja pronto para agir.",
+    "advice": "Acompanhe o ritmo, mas mantenha a mira. Velocidade sem direção só espalha energia."
+  },
+  "minor-wands-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "resiliência",
+        "persistência",
+        "última defesa",
+        "vigilância"
+      ],
+      "reversed": [
+        "esgotamento",
+        "teimosia",
+        "defensividade excessiva",
+        "desconfiança"
+      ]
+    },
+    "meaning": {
+      "upright": "Ferido mas de pé; reúne-se força para o último esforço antes da conquista.",
+      "reversed": "A exaustão ou a desconfiança levam a resistir por resistir, além do necessário."
+    },
+    "love": "No amor, o Nove de Paus mostra alguém que já se feriu e ficou na defensiva. Invertido, alerta para desconfiança que impede a aproximação.",
+    "work": "No trabalho, é resiliência na reta final: você está cansado, mas perto de concluir. Proteja sua energia para o último esforço.",
+    "advice": "Resista com sabedoria, não por hábito. Pergunte-se se a guarda alta ainda protege ou já só isola."
+  },
+  "minor-wands-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "sobrecarga",
+        "responsabilidade",
+        "fardo",
+        "esforço final"
+      ],
+      "reversed": [
+        "delegar",
+        "largar o fardo",
+        "colapso",
+        "libertação"
+      ]
+    },
+    "meaning": {
+      "upright": "Carrega-se peso demais; um sucesso que veio acompanhado de responsabilidades pesadas.",
+      "reversed": "Chega o momento de soltar o fardo, delegar ou reconhecer que se assumiu demais."
+    },
+    "love": "No amor, o Dez de Paus indica sobrecarga: uma relação em que você carrega peso demais, ou responsabilidades que abafam o afeto. Invertido, é o momento de dividir o fardo.",
+    "work": "No trabalho, fala de excesso de tarefas e de um sucesso que trouxe responsabilidades pesadas. Delegar é necessário.",
+    "advice": "Solte o que não é seu de carregar. Pedir ajuda não diminui a conquista."
+  },
+  "minor-wands-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "entusiasmo",
+        "exploração",
+        "novas ideias",
+        "mensageiro"
+      ],
+      "reversed": [
+        "falta de direção",
+        "adiamento",
+        "imaturidade",
+        "notícias frustrantes"
+      ]
+    },
+    "meaning": {
+      "upright": "Curiosidade e vontade de começar algo novo; um mensageiro de oportunidades criativas.",
+      "reversed": "Entusiasmo sem foco, projetos que não saem do papel ou notícias que decepcionam."
+    },
+    "love": "No amor, o Pajem de Paus traz flerte, curiosidade e entusiasmo de começo. Invertido, mostra interesse passageiro ou promessas que não se sustentam.",
+    "work": "No trabalho, anuncia ideias novas, cursos, propostas criativas e vontade de explorar. Ótimo para testar, ainda sem compromissos longos.",
+    "advice": "Explore com curiosidade, e escolha uma ideia para levar adiante de verdade."
+  },
+  "minor-wands-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "ação",
+        "aventura",
+        "impulso",
+        "paixão",
+        "ousadia"
+      ],
+      "reversed": [
+        "precipitação",
+        "imprudência",
+        "energia dispersa",
+        "arrogância"
+      ]
+    },
+    "meaning": {
+      "upright": "Avança-se com coragem e paixão rumo ao objetivo, sem medo do risco.",
+      "reversed": "O ímpeto vira imprudência; pressa e impaciência levam a decisões precipitadas."
+    },
+    "love": "No amor, o Cavaleiro de Paus é paixão intensa e ousada, que chega rápido. Invertido, alerta para impulsividade e para alguém que some tão rápido quanto apareceu.",
+    "work": "No trabalho, é ação e coragem para arriscar: mudanças, viagens, iniciativas ousadas. Cuide para não atropelar etapas.",
+    "advice": "Avance com paixão, mas pense duas vezes antes de saltar. Coragem com plano vai mais longe."
+  },
+  "minor-wands-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "confiança",
+        "carisma",
+        "determinação",
+        "independência"
+      ],
+      "reversed": [
+        "insegurança",
+        "ciúme",
+        "exigência",
+        "dispersão"
+      ]
+    },
+    "meaning": {
+      "upright": "Presença magnética e autoconfiante que inspira os outros e realiza com paixão.",
+      "reversed": "A autoconfiança dá lugar à insegurança, ao ciúme ou à necessidade de aprovação."
+    },
+    "love": "No amor, a Rainha de Paus é magnetismo, autoconfiança e calor. Invertida, mostra ciúme, insegurança ou necessidade de aprovação.",
+    "work": "No trabalho, fala de carisma e determinação: alguém que inspira a equipe e realiza com energia e independência.",
+    "advice": "Ocupe o seu espaço com confiança. O seu entusiasmo é um recurso, não um excesso."
+  },
+  "minor-wands-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "liderança",
+        "visão",
+        "empreendedorismo",
+        "ousadia madura"
+      ],
+      "reversed": [
+        "autoritarismo",
+        "impulsividade",
+        "tirania",
+        "expectativas irreais"
+      ]
+    },
+    "meaning": {
+      "upright": "Líder visionário que inspira e conduz projetos com paixão e maturidade.",
+      "reversed": "A liderança vira controle ou impaciência; decisões impulsivas e intolerância."
+    },
+    "love": "No amor, o Rei de Paus é intensidade madura: alguém que sabe o que quer e conduz com generosidade. Invertido, alerta para controle, impaciência ou temperamento difícil.",
+    "work": "No trabalho, é liderança visionária e espírito empreendedor. Bom momento para assumir a frente de um projeto grande.",
+    "advice": "Lidere com visão e dê espaço para que os outros brilhem também."
+  },
+  "minor-cups-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "novo amor",
+        "emoção",
+        "compaixão",
+        "intuição"
+      ],
+      "reversed": [
+        "emoção bloqueada",
+        "vazio afetivo",
+        "mágoa reprimida",
+        "intuição ignorada"
+      ]
+    },
+    "meaning": {
+      "upright": "Um coração que se abre; começo de amor, criatividade ou conexão espiritual.",
+      "reversed": "Os sentimentos ficam retidos ou feridos; a fonte emocional parece seca ou bloqueada."
+    },
+    "love": "No amor, o Ás de Copas é coração aberto: um novo amor, um afeto que renasce ou uma conexão emocional profunda. Invertido, mostra sentimentos retidos ou feridas que ainda doem.",
+    "work": "No trabalho, fala de satisfação emocional e criatividade: um projeto que você ama, um ambiente que acolhe.",
+    "advice": "Deixe o afeto fluir, a começar por você mesmo."
+  },
+  "minor-cups-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "união",
+        "parceria",
+        "atração mútua",
+        "reconciliação"
+      ],
+      "reversed": [
+        "desequilíbrio",
+        "rompimento",
+        "desarmonia",
+        "tensão numa relação"
+      ]
+    },
+    "meaning": {
+      "upright": "Encontro de dois em igualdade; conexão profunda e mútua entre pessoas.",
+      "reversed": "A conexão se desequilibra; desentendimentos ou afastamento entre duas partes."
+    },
+    "love": "No amor, o Dois de Copas é a carta da união: atração mútua, parceria em igualdade, reconciliação. Invertido, mostra desequilíbrio ou distanciamento entre duas pessoas.",
+    "work": "No trabalho, favorece parcerias, sociedades e acordos em que as duas partes ganham.",
+    "advice": "Cultive a reciprocidade. Uma boa relação é aquela em que ninguém precisa se diminuir."
+  },
+  "minor-cups-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "celebração",
+        "amizade",
+        "comunidade",
+        "alegria compartilhada"
+      ],
+      "reversed": [
+        "excesso",
+        "fofoca",
+        "isolamento",
+        "desgaste em grupo"
+      ]
+    },
+    "meaning": {
+      "upright": "Alegria vivida em grupo; amizade, comemoração e apoio mútuo.",
+      "reversed": "A festa vira excesso, ou o grupo traz fofoca, desgaste ou sensação de exclusão."
+    },
+    "love": "No amor, o Três de Copas fala de alegria partilhada com amigos e de celebrar a relação. Invertido, alerta para fofoca, interferências ou excessos.",
+    "work": "No trabalho, indica equipe unida, colaboração leve e comemoração de resultados.",
+    "advice": "Apoie-se nas pessoas que celebram com você. Alegria dividida cresce."
+  },
+  "minor-cups-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "apatia",
+        "contemplação",
+        "tédio",
+        "insatisfação"
+      ],
+      "reversed": [
+        "nova motivação",
+        "aceitar uma oferta",
+        "despertar",
+        "sair da estagnação"
+      ]
+    },
+    "meaning": {
+      "upright": "Descontentamento e introspecção; oportunidades passam despercebidas por apatia.",
+      "reversed": "Desperta-se para o que estava sendo ignorado; volta a vontade de se engajar."
+    },
+    "love": "No amor, o Quatro de Copas mostra apatia ou insatisfação: você pode estar deixando passar um gesto de carinho. Invertido, o interesse desperta de novo.",
+    "work": "No trabalho, fala de tédio e desmotivação. Uma oportunidade pode estar diante de você, esperando que você olhe.",
+    "advice": "Levante os olhos. Às vezes o que falta já está sendo oferecido."
+  },
+  "minor-cups-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "perda",
+        "luto",
+        "arrependimento",
+        "decepção"
+      ],
+      "reversed": [
+        "aceitação",
+        "perdão",
+        "seguir em frente",
+        "recuperação emocional"
+      ]
+    },
+    "meaning": {
+      "upright": "A dor de uma perda domina o olhar, ofuscando o que ainda restou.",
+      "reversed": "Começa a cura; aceita-se a perda e volta-se a atenção para o que sobrou."
+    },
+    "love": "No amor, o Cinco de Copas fala de luto, arrependimento ou decepção. Invertido, começa a cura e a vontade de seguir em frente.",
+    "work": "No trabalho, indica frustração com algo que não deu certo. Reconheça a perda sem esquecer o que ainda está de pé.",
+    "advice": "Chore o que foi perdido e depois vire-se para o que ficou. Ainda há copos cheios atrás de você."
+  },
+  "minor-cups-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "nostalgia",
+        "memórias",
+        "inocência",
+        "reencontro",
+        "gentileza"
+      ],
+      "reversed": [
+        "preso ao passado",
+        "saudade paralisante",
+        "idealização",
+        "amadurecer"
+      ]
+    },
+    "meaning": {
+      "upright": "O calor de memórias e afetos antigos; gentileza e simplicidade do passado.",
+      "reversed": "Apego excessivo ao passado impede seguir — ou, ao contrário, desapega-se para amadurecer."
+    },
+    "love": "No amor, o Seis de Copas traz nostalgia, ternura e reencontros, às vezes alguém do passado. Invertido, alerta para idealizar o que já foi e deixar de viver o presente.",
+    "work": "No trabalho, fala de retomar projetos antigos, de ambientes gentis e de aprender com experiências anteriores.",
+    "advice": "Leve do passado a gentileza, não a prisão."
+  },
+  "minor-cups-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "escolhas",
+        "ilusões",
+        "fantasia",
+        "sonhos",
+        "tentações"
+      ],
+      "reversed": [
+        "clareza",
+        "decisão",
+        "foco",
+        "desilusão necessária"
+      ]
+    },
+    "meaning": {
+      "upright": "Muitas opções sedutoras, algumas ilusórias; é preciso discernir o real do imaginado.",
+      "reversed": "A névoa se dissipa; escolhe-se com clareza ou percebe-se o que era só fantasia."
+    },
+    "love": "No amor, o Sete de Copas mostra fantasias e muitas possibilidades, nem todas reais. Invertido, a ilusão se desfaz e fica mais fácil enxergar quem está de fato ali.",
+    "work": "No trabalho, indica excesso de opções e risco de dispersão. Separe o que é desejo do que é viável.",
+    "advice": "Escolha uma opção concreta e teste-a na realidade. Sonhar é bom; decidir é necessário."
+  },
+  "minor-cups-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "partida",
+        "busca por sentido",
+        "abandonar o insuficiente",
+        "retirada"
+      ],
+      "reversed": [
+        "medo de mudar",
+        "ficar por conforto",
+        "retorno",
+        "indecisão"
+      ]
+    },
+    "meaning": {
+      "upright": "Abandona-se algo emocionalmente incompleto em busca de algo mais profundo.",
+      "reversed": "Hesita-se entre ir e ficar; medo da mudança ou retorno ao que se havia deixado."
+    },
+    "love": "No amor, o Oito de Copas fala de partir de algo que já não preenche, mesmo sem briga. Invertido, mostra hesitação entre ir e ficar.",
+    "work": "No trabalho, indica deixar um emprego ou projeto que perdeu o sentido para buscar algo mais profundo.",
+    "advice": "Tenha coragem de se afastar do que é insuficiente. Ir embora também pode ser um ato de cuidado."
+  },
+  "minor-cups-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "satisfação",
+        "realização de desejos",
+        "contentamento",
+        "gratidão"
+      ],
+      "reversed": [
+        "insatisfação",
+        "desejos vazios",
+        "excesso",
+        "aprovação externa"
+      ]
+    },
+    "meaning": {
+      "upright": "A 'carta dos desejos': contentamento e realização emocional ou material.",
+      "reversed": "A satisfação parece incompleta; prazeres não preenchem ou faltam objetivos maiores."
+    },
+    "love": "No amor, o Nove de Copas é contentamento: sentir-se satisfeito com o que se vive. Invertido, mostra satisfação incompleta ou prazeres que não preenchem.",
+    "work": "No trabalho, fala de metas alcançadas e de orgulho pelo que conquistou. É conhecida como a carta dos desejos.",
+    "advice": "Reconheça o que já está bom e seja claro sobre o que você ainda deseja."
+  },
+  "minor-cups-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "felicidade plena",
+        "harmonia familiar",
+        "realização afetiva",
+        "paz"
+      ],
+      "reversed": [
+        "desarmonia familiar",
+        "valores desalinhados",
+        "felicidade aparente"
+      ]
+    },
+    "meaning": {
+      "upright": "Plenitude emocional compartilhada; lar e vínculos em harmonia.",
+      "reversed": "A imagem de harmonia se racha; conflitos ou distância entre entes queridos."
+    },
+    "love": "No amor, o Dez de Copas é plenitude afetiva: harmonia, família, um lar em paz. Invertido, mostra rachaduras na imagem de harmonia ou distância entre pessoas queridas.",
+    "work": "No trabalho, indica equilíbrio entre vida pessoal e profissional e um ambiente em que as pessoas se sentem em casa.",
+    "advice": "Invista nos vínculos que fazem você se sentir em casa. É deles que vem a paz duradoura."
+  },
+  "minor-cups-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "mensagem afetiva",
+        "criatividade",
+        "intuição",
+        "ternura"
+      ],
+      "reversed": [
+        "imaturidade emocional",
+        "bloqueio criativo",
+        "notícia decepcionante"
+      ]
+    },
+    "meaning": {
+      "upright": "Um convite emocional ou criativo; sensibilidade e imaginação despontando.",
+      "reversed": "Sentimentos imaturos ou reprimidos; a criatividade ou a mensagem não flui."
+    },
+    "love": "No amor, o Pajem de Copas traz uma mensagem afetiva, um convite ou um gesto carinhoso e sincero. Invertido, mostra imaturidade emocional ou sentimentos guardados.",
+    "work": "No trabalho, fala de ideias criativas e intuitivas, e de começar algo com sensibilidade.",
+    "advice": "Permita-se sentir e expressar, mesmo que de um jeito ainda desajeitado."
+  },
+  "minor-cups-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "romance",
+        "charme",
+        "proposta",
+        "seguir o coração",
+        "idealismo"
+      ],
+      "reversed": [
+        "inconstância",
+        "ilusão",
+        "promessas vazias",
+        "decepção amorosa"
+      ]
+    },
+    "meaning": {
+      "upright": "Chega uma oferta romântica ou criativa; age-se guiado pelo coração.",
+      "reversed": "O charme esconde inconstância; ilusões, promessas não cumpridas ou desilusão."
+    },
+    "love": "No amor, o Cavaleiro de Copas é romance: uma proposta, uma declaração, alguém que age pelo coração. Invertido, alerta para charme inconstante e promessas que não se cumprem.",
+    "work": "No trabalho, traz propostas criativas e vontade de seguir o que você ama. Veja se a proposta é tão sólida quanto é bonita.",
+    "advice": "Siga o coração, e confira se os pés continuam no chão."
+  },
+  "minor-cups-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "empatia",
+        "acolhimento",
+        "intuição",
+        "cuidado",
+        "sensibilidade"
+      ],
+      "reversed": [
+        "dependência emocional",
+        "carência",
+        "autossacrifício",
+        "instabilidade"
+      ]
+    },
+    "meaning": {
+      "upright": "Coração acolhedor e intuitivo que cuida e compreende os outros.",
+      "reversed": "A sensibilidade transborda em carência, dependência ou entrega até se anular."
+    },
+    "love": "No amor, a Rainha de Copas é acolhimento, empatia e escuta profunda. Invertida, mostra carência, dependência emocional ou entrega até se anular.",
+    "work": "No trabalho, fala de sensibilidade com as pessoas, intuição e cuidado. Ótima energia para funções que envolvem apoio e escuta.",
+    "advice": "Acolha os outros sem deixar de se acolher. Empatia também precisa de limites."
+  },
+  "minor-cups-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "equilíbrio emocional",
+        "maturidade",
+        "compaixão",
+        "diplomacia"
+      ],
+      "reversed": [
+        "repressão",
+        "manipulação emocional",
+        "frieza",
+        "volubilidade"
+      ]
+    },
+    "meaning": {
+      "upright": "Domínio sereno das emoções; apoio compassivo e maduro mesmo sob pressão.",
+      "reversed": "As emoções são reprimidas ou usadas para manipular; frieza ou instabilidade."
+    },
+    "love": "No amor, o Rei de Copas é maturidade emocional: alguém estável, compassivo e presente. Invertido, alerta para emoções reprimidas ou usadas para manipular.",
+    "work": "No trabalho, indica diplomacia, calma sob pressão e liderança que cuida das pessoas.",
+    "advice": "Sinta tudo, mas escolha com serenidade o que fazer com o que sente."
+  },
+  "minor-swords-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "clareza",
+        "verdade",
+        "avanço mental",
+        "nova ideia",
+        "discernimento"
+      ],
+      "reversed": [
+        "confusão",
+        "ideias turvas",
+        "força mal usada",
+        "injustiça"
+      ]
+    },
+    "meaning": {
+      "upright": "Um golpe de lucidez; a mente corta a confusão e revela a verdade.",
+      "reversed": "A clareza falta; ideias confusas, comunicação truncada ou razão usada para ferir."
+    },
+    "love": "No amor, o Ás de Espadas pede uma conversa honesta: a verdade dita com clareza corta a confusão. Invertido, alerta para mal-entendidos ou palavras usadas para ferir.",
+    "work": "No trabalho, é uma ideia nítida, um avanço mental, a decisão que finalmente fica clara.",
+    "advice": "Diga a verdade com precisão e cuidado. Clareza é uma forma de respeito."
+  },
+  "minor-swords-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "impasse",
+        "indecisão",
+        "trégua",
+        "evitar a escolha"
+      ],
+      "reversed": [
+        "decisão tomada",
+        "sair do bloqueio",
+        "verdade revelada",
+        "confusão"
+      ]
+    },
+    "meaning": {
+      "upright": "Uma escolha difícil é adiada; permanece-se vendado, em equilíbrio precário.",
+      "reversed": "O bloqueio se rompe: decide-se e encara-se a verdade — ou o impasse desanda em caos."
+    },
+    "love": "No amor, o Dois de Espadas mostra um impasse: evitar uma escolha ou uma conversa para manter uma paz frágil. Invertido, a decisão se impõe.",
+    "work": "No trabalho, indica indecisão entre duas opções e informação que falta. Tire a venda e olhe os dados.",
+    "advice": "Adiar a escolha também é escolher. Reúna o que falta e decida."
+  },
+  "minor-swords-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "dor",
+        "mágoa",
+        "ruptura",
+        "traição",
+        "coração partido"
+      ],
+      "reversed": [
+        "cura da mágoa",
+        "perdão",
+        "superar a dor",
+        "liberar o luto"
+      ]
+    },
+    "meaning": {
+      "upright": "A dor de uma perda ou traição atravessa o coração; um sofrimento inevitável.",
+      "reversed": "Começa a cicatrização; libera-se a mágoa, embora a dor ainda ecoe."
+    },
+    "love": "No amor, o Três de Espadas é mágoa: traição, rompimento ou palavras que machucaram. Invertido, a ferida começa a cicatrizar.",
+    "work": "No trabalho, fala de decepções e críticas duras. Dói, mas pode revelar o que precisava mudar.",
+    "advice": "Dê espaço para a dor sem morar nela. Nomear a mágoa é o começo da cura."
+  },
+  "minor-swords-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "descanso",
+        "recuperação",
+        "pausa",
+        "contemplação",
+        "trégua"
+      ],
+      "reversed": [
+        "inquietação",
+        "esgotamento",
+        "retomar cedo demais",
+        "estagnação"
+      ]
+    },
+    "meaning": {
+      "upright": "Um retiro necessário para se recuperar; pausa e silêncio antes de retomar.",
+      "reversed": "Ou não se consegue descansar, ou o repouso se prolonga em estagnação."
+    },
+    "love": "No amor, o Quatro de Espadas pede uma pausa para respirar e se recuperar antes de continuar. Invertido, mostra dificuldade de descansar ou uma distância que se prolonga demais.",
+    "work": "No trabalho, indica necessidade de descanso, férias ou um tempo para planejar antes de retomar.",
+    "advice": "Descanse de verdade. A mente também precisa de silêncio para voltar afiada."
+  },
+  "minor-swords-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "conflito",
+        "derrota",
+        "discórdia",
+        "vencer a qualquer custo"
+      ],
+      "reversed": [
+        "reconciliação",
+        "fim da disputa",
+        "remorso",
+        "aprender a ceder"
+      ]
+    },
+    "meaning": {
+      "upright": "Uma vitória vazia ou uma derrota amarga; o conflito deixa perdedores dos dois lados.",
+      "reversed": "Busca-se reparar o estrago; reconciliação, arrependimento ou fim das hostilidades."
+    },
+    "love": "No amor, o Cinco de Espadas mostra discussões em que alguém vence e os dois perdem. Invertido, abre espaço para reparar o estrago e fazer as pazes.",
+    "work": "No trabalho, fala de conflitos, competição desleal ou uma vitória que custa relações. Pergunte-se se vale o preço.",
+    "advice": "Nem toda discussão precisa ser ganha. Às vezes, soltar o argumento preserva o que importa."
+  },
+  "minor-swords-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "transição",
+        "travessia",
+        "deixar para trás",
+        "alívio gradual"
+      ],
+      "reversed": [
+        "resistência à mudança",
+        "bagagem emocional",
+        "viagem adiada"
+      ]
+    },
+    "meaning": {
+      "upright": "Afasta-se de águas turbulentas rumo a algo mais calmo; uma transição em curso.",
+      "reversed": "A mudança emperra; carrega-se o passado ou reluta-se em seguir adiante."
+    },
+    "love": "No amor, o Seis de Espadas é travessia: deixar para trás um período turbulento rumo a algo mais calmo. Invertido, mostra a dificuldade de soltar o passado.",
+    "work": "No trabalho, indica transição, mudança de emprego ou de cidade e alívio gradual depois de um período difícil.",
+    "advice": "Siga em frente mesmo carregando um pouco de tristeza. Águas calmas estão adiante."
+  },
+  "minor-swords-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "estratégia",
+        "astúcia",
+        "agir sozinho",
+        "evasão",
+        "engano"
+      ],
+      "reversed": [
+        "confissão",
+        "ser descoberto",
+        "mudar de tática",
+        "consciência pesada"
+      ]
+    },
+    "meaning": {
+      "upright": "Age-se com esperteza e discrição — às vezes de forma questionável — para vencer.",
+      "reversed": "O plano é exposto ou abandonado; assume-se um erro ou repensa-se a estratégia."
+    },
+    "love": "No amor, o Sete de Espadas alerta para segredos, meias-verdades ou alguém que age às escondidas. Invertido, a verdade aparece ou o erro é assumido.",
+    "work": "No trabalho, fala de estratégia e discrição, mas também de atalhos questionáveis. Aja com esperteza sem abrir mão da ética.",
+    "advice": "Seja estratégico e honesto ao mesmo tempo. O que se ganha escondido costuma custar caro depois."
+  },
+  "minor-swords-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "aprisionamento mental",
+        "limitação autoimposta",
+        "medo",
+        "vitimização"
+      ],
+      "reversed": [
+        "libertação",
+        "sair da armadilha mental",
+        "recuperar o próprio poder"
+      ]
+    },
+    "meaning": {
+      "upright": "Sentir-se preso e sem saída — mais pela própria mente do que por grades reais.",
+      "reversed": "Percebe-se que a prisão era mental; começa a libertação e a retomada da força."
+    },
+    "love": "No amor, o Oito de Espadas mostra a sensação de estar preso numa situação, muitas vezes por medo mais do que por fatos. Invertido, começa a libertação.",
+    "work": "No trabalho, indica crenças limitantes e a sensação de que não há saída. Há mais opções do que o medo deixa ver.",
+    "advice": "Questione a história que você conta para si. Muitas amarras são mentais."
+  },
+  "minor-swords-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "angústia",
+        "ansiedade",
+        "insônia",
+        "culpa",
+        "medo"
+      ],
+      "reversed": [
+        "alívio",
+        "esperança",
+        "enfrentar os medos",
+        "sair do desespero"
+      ]
+    },
+    "meaning": {
+      "upright": "Pensamentos sombrios tiram o sono; a mente amplifica medos e culpas.",
+      "reversed": "A angústia começa a ceder; pede-se ajuda e a esperança volta aos poucos."
+    },
+    "love": "No amor, o Nove de Espadas fala de ansiedade, ciúme ou culpa que tiram o sono. Invertido, a angústia começa a ceder.",
+    "work": "No trabalho, indica preocupação excessiva e cenários catastróficos que a mente amplifica. Converse com alguém de confiança.",
+    "advice": "Divida o peso com alguém. Pensamentos da madrugada raramente contam a história inteira."
+  },
+  "minor-swords-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "fim doloroso",
+        "colapso",
+        "fundo do poço",
+        "exaustão total"
+      ],
+      "reversed": [
+        "recuperação",
+        "recomeço após o fim",
+        "resistir",
+        "o pior já passou"
+      ]
+    },
+    "meaning": {
+      "upright": "Um ciclo termina de forma dolorosa; toca-se o fundo, mas ali mesmo há um recomeço.",
+      "reversed": "Levanta-se após a queda; o pior passou e vem a recuperação, ainda que lenta."
+    },
+    "love": "No amor, o Dez de Espadas é um fim doloroso, mas definitivo: o ponto em que não há como piorar. Invertido, começa a recuperação.",
+    "work": "No trabalho, fala de um colapso ou de uma derrota que encerra um ciclo. O fundo do poço também é chão para se erguer.",
+    "advice": "Aceite que acabou. O pior já passou, e o recomeço começa daqui."
+  },
+  "minor-swords-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "curiosidade",
+        "vigilância",
+        "ideias novas",
+        "comunicação"
+      ],
+      "reversed": [
+        "fofoca",
+        "dispersão",
+        "palavras impensadas",
+        "planos ocultos"
+      ]
+    },
+    "meaning": {
+      "upright": "Mente curiosa e alerta em busca da verdade; disposição para aprender e questionar.",
+      "reversed": "A energia mental vira fofoca, precipitação verbal ou uso desonesto da informação."
+    },
+    "love": "No amor, o Pajem de Espadas traz curiosidade e conversas francas, às vezes ditas sem cuidado. Invertido, alerta para fofoca ou palavras precipitadas.",
+    "work": "No trabalho, favorece estudo, pesquisa, perguntas certeiras e vontade de aprender.",
+    "advice": "Pergunte, investigue e aprenda, mas pense antes de falar."
+  },
+  "minor-swords-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "ação decidida",
+        "ambição",
+        "ímpeto intelectual",
+        "foco",
+        "coragem"
+      ],
+      "reversed": [
+        "pressa",
+        "agressividade",
+        "arrogância",
+        "agir sem pensar"
+      ]
+    },
+    "meaning": {
+      "upright": "Avança-se com rapidez e determinação atrás de um objetivo ou de uma ideia.",
+      "reversed": "A pressa vira imprudência; palavras ou atos agressivos e sem estratégia."
+    },
+    "love": "No amor, o Cavaleiro de Espadas é franqueza e pressa: alguém direto, às vezes duro demais. Invertido, alerta para impulsividade e palavras agressivas.",
+    "work": "No trabalho, indica ambição e ação decidida atrás de um objetivo. Cuidado para não passar por cima das pessoas.",
+    "advice": "Avance com foco, e ajuste o tom. A verdade chega melhor quando não vem como golpe."
+  },
+  "minor-swords-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "clareza",
+        "independência",
+        "honestidade",
+        "discernimento",
+        "limites"
+      ],
+      "reversed": [
+        "frieza",
+        "amargura",
+        "crítica excessiva",
+        "isolamento"
+      ]
+    },
+    "meaning": {
+      "upright": "Julgamento lúcido e imparcial; a verdade dita com franqueza e limites claros.",
+      "reversed": "A lucidez azeda em frieza, sarcasmo ou crítica que afasta os outros."
+    },
+    "love": "No amor, a Rainha de Espadas pede honestidade e limites claros, muitas vezes depois de uma experiência difícil. Invertida, a lucidez vira frieza ou crítica que afasta.",
+    "work": "No trabalho, fala de discernimento, independência e comunicação direta. Ótima para negociar e avaliar.",
+    "advice": "Seja clara sobre o que você aceita, e deixe espaço para a gentileza caber na franqueza."
+  },
+  "minor-swords-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "autoridade intelectual",
+        "verdade",
+        "ética",
+        "decisão racional"
+      ],
+      "reversed": [
+        "autoritarismo",
+        "manipulação",
+        "frieza calculista",
+        "abuso de poder"
+      ]
+    },
+    "meaning": {
+      "upright": "Mente clara e ética que decide com lógica e imparcialidade.",
+      "reversed": "A razão vira controle e manipulação; poder mental usado sem compaixão."
+    },
+    "love": "No amor, o Rei de Espadas é racionalidade e ética: decisões pensadas, conversas sérias, compromisso com a verdade. Invertido, alerta para controle e frieza.",
+    "work": "No trabalho, indica autoridade intelectual, julgamento imparcial e decisões baseadas em lógica.",
+    "advice": "Decida com a cabeça, mas lembre-se de que as pessoas não são só argumentos."
+  },
+  "minor-pentacles-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "nova oportunidade material",
+        "prosperidade",
+        "semente",
+        "estabilidade"
+      ],
+      "reversed": [
+        "oportunidade perdida",
+        "insegurança financeira",
+        "planos frágeis"
+      ]
+    },
+    "meaning": {
+      "upright": "Uma semente de prosperidade: emprego, dinheiro ou projeto concreto começando.",
+      "reversed": "A oportunidade escapa ou vem instável; falta base sólida para o que se quer construir."
+    },
+    "love": "No amor, o Ás de Ouros fala de uma relação que começa com base sólida, ou de gestos concretos de cuidado. Invertido, mostra instabilidade ou falta de compromisso.",
+    "work": "No trabalho, é uma semente de prosperidade: um emprego, uma proposta, dinheiro ou um projeto concreto começando.",
+    "advice": "Plante com cuidado. Oportunidades materiais crescem com constância, não com pressa."
+  },
+  "minor-pentacles-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "equilíbrio",
+        "adaptação",
+        "malabarismo de prioridades",
+        "flexibilidade"
+      ],
+      "reversed": [
+        "sobrecarga",
+        "desorganização",
+        "desequilíbrio",
+        "prioridades perdidas"
+      ]
+    },
+    "meaning": {
+      "upright": "Equilibra-se, com jogo de cintura, várias demandas ao mesmo tempo.",
+      "reversed": "As bolas caem; excesso de compromissos e desorganização tiram o equilíbrio."
+    },
+    "love": "No amor, o Dois de Ouros mostra o equilíbrio entre relação e outras demandas da vida. Invertido, alerta para falta de tempo e desorganização.",
+    "work": "No trabalho, fala de conciliar tarefas, finanças e prioridades com jogo de cintura.",
+    "advice": "Ajuste as prioridades com flexibilidade. Equilíbrio é movimento, não imobilidade."
+  },
+  "minor-pentacles-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "colaboração",
+        "competência",
+        "trabalho em equipe",
+        "aprendizado"
+      ],
+      "reversed": [
+        "desalinhamento",
+        "retrabalho",
+        "falta de trabalho em equipe"
+      ]
+    },
+    "meaning": {
+      "upright": "Constrói-se algo em conjunto, cada um contribuindo com sua habilidade.",
+      "reversed": "A equipe desanda; falhas de comunicação, retrabalho ou competência subaproveitada."
+    },
+    "love": "No amor, o Três de Ouros fala de construir juntos: planos, casa, projetos a dois. Invertido, mostra falta de colaboração ou de alinhamento.",
+    "work": "No trabalho, é a carta do trabalho em equipe e da competência reconhecida. Cada um contribui com o que sabe.",
+    "advice": "Construa com quem soma. Uma boa obra depende de muitas mãos bem combinadas."
+  },
+  "minor-pentacles-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "segurança",
+        "economia",
+        "controle",
+        "apego ao material"
+      ],
+      "reversed": [
+        "soltar o controle",
+        "medo de perder",
+        "avareza",
+        "generosidade"
+      ]
+    },
+    "meaning": {
+      "upright": "Guarda-se e protege-se o que se tem; uma segurança que pode virar rigidez.",
+      "reversed": "Ou se afrouxa o controle e se compartilha, ou o apego vira medo paralisante de perder."
+    },
+    "love": "No amor, o Quatro de Ouros mostra segurança, mas também possessividade ou medo de se abrir. Invertido, fala de aprender a soltar e a partilhar.",
+    "work": "No trabalho, indica controle de gastos, estabilidade e cautela, que podem virar rigidez.",
+    "advice": "Proteja o que é seu sem se fechar para o que pode chegar."
+  },
+  "minor-pentacles-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "dificuldade material",
+        "perda",
+        "insegurança",
+        "exclusão"
+      ],
+      "reversed": [
+        "recuperação",
+        "fim de fase difícil",
+        "ajuda à vista",
+        "esperança"
+      ]
+    },
+    "meaning": {
+      "upright": "Um período de escassez ou desamparo, material e emocional.",
+      "reversed": "A fase difícil começa a passar; surge ajuda, recuperação ou uma nova perspectiva."
+    },
+    "love": "No amor, o Cinco de Ouros fala de um período de insegurança ou de sentir-se deixado de fora. Invertido, a ajuda aparece e a fase difícil começa a passar.",
+    "work": "No trabalho, indica dificuldades financeiras, perda de emprego ou falta de apoio. Procure ajuda; ela pode estar mais perto do que parece.",
+    "advice": "Não enfrente a escassez sozinho. Pedir apoio é um recurso, não uma derrota."
+  },
+  "minor-pentacles-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "generosidade",
+        "ajuda",
+        "equilíbrio entre dar e receber",
+        "gratidão"
+      ],
+      "reversed": [
+        "dívidas",
+        "desequilíbrio de poder",
+        "ajuda com segundas intenções"
+      ]
+    },
+    "meaning": {
+      "upright": "Fluxo saudável de dar e receber; generosidade e apoio mútuo.",
+      "reversed": "O equilíbrio entre dar e receber se distorce; dependência, dívidas ou ajuda condicionada."
+    },
+    "love": "No amor, o Seis de Ouros fala de generosidade e de equilíbrio entre dar e receber. Invertido, alerta para dependência ou afeto condicionado.",
+    "work": "No trabalho, indica ajuda, investimentos, doações ou um fluxo justo de trocas.",
+    "advice": "Dê e receba com a mesma dignidade. Generosidade saudável não cria dívidas."
+  },
+  "minor-pentacles-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "paciência",
+        "avaliação",
+        "investimento de longo prazo",
+        "colheita"
+      ],
+      "reversed": [
+        "impaciência",
+        "esforço sem retorno",
+        "desistir cedo demais"
+      ]
+    },
+    "meaning": {
+      "upright": "Faz-se uma pausa para avaliar o que se plantou; os frutos vêm com paciência.",
+      "reversed": "Frustração com o ritmo lento; sensação de esforço em vão ou vontade de largar tudo."
+    },
+    "love": "No amor, o Sete de Ouros pede paciência: avaliar o que a relação tem dado e o que precisa de mais tempo. Invertido, mostra frustração com o ritmo lento.",
+    "work": "No trabalho, fala de investimentos de longo prazo e de uma pausa para avaliar resultados antes de continuar.",
+    "advice": "Avalie o que você plantou antes de decidir colher ou replantar."
+  },
+  "minor-pentacles-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "dedicação",
+        "aperfeiçoamento",
+        "disciplina",
+        "domínio de um ofício"
+      ],
+      "reversed": [
+        "perfeccionismo estéril",
+        "falta de foco",
+        "trabalho sem propósito"
+      ]
+    },
+    "meaning": {
+      "upright": "Aprimora-se uma habilidade com esforço e repetição; foco no ofício.",
+      "reversed": "O esforço perde o rumo: perfeccionismo vazio, tédio ou desleixo."
+    },
+    "love": "No amor, o Oito de Ouros fala de dedicação diária: cuidar da relação como quem aprimora um ofício. Invertido, mostra rotina sem atenção ou desleixo.",
+    "work": "No trabalho, é aperfeiçoamento, estudo e disciplina para dominar uma habilidade.",
+    "advice": "Dedique-se ao seu ofício com constância. Maestria é repetição com atenção."
+  },
+  "minor-pentacles-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "independência",
+        "autossuficiência",
+        "conforto conquistado",
+        "refinamento"
+      ],
+      "reversed": [
+        "dependência",
+        "gastos excessivos",
+        "segurança superficial"
+      ]
+    },
+    "meaning": {
+      "upright": "Desfruta-se, com autonomia, do conforto conquistado pelo próprio mérito.",
+      "reversed": "A independência vacila; excesso de gastos ou uma segurança que depende de outros."
+    },
+    "love": "No amor, o Nove de Ouros fala de autonomia e de estar bem consigo, com ou sem companhia. Invertido, mostra uma segurança que depende demais de outra pessoa.",
+    "work": "No trabalho, indica independência financeira e conforto conquistado pelo próprio mérito.",
+    "advice": "Aproveite o que você construiu. Autossuficiência também é uma forma de amor-próprio."
+  },
+  "minor-pentacles-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "riqueza duradoura",
+        "legado",
+        "família",
+        "estabilidade",
+        "tradição"
+      ],
+      "reversed": [
+        "instabilidade financeira",
+        "conflito por herança",
+        "valores frágeis"
+      ]
+    },
+    "meaning": {
+      "upright": "Prosperidade sólida e duradoura, partilhada em família e como legado.",
+      "reversed": "A base material ou familiar se abala; disputas, dívidas ou um legado ameaçado."
+    },
+    "love": "No amor, o Dez de Ouros fala de compromisso duradouro, família e planos de longo prazo. Invertido, alerta para conflitos familiares ou questões materiais que abalam a base.",
+    "work": "No trabalho, indica estabilidade, legado, negócios de família e prosperidade que dura.",
+    "advice": "Pense no longo prazo. O que você constrói hoje pode sustentar quem vem depois."
+  },
+  "minor-pentacles-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "nova oportunidade",
+        "estudo",
+        "foco em metas",
+        "ambição prática"
+      ],
+      "reversed": [
+        "procrastinação",
+        "falta de planejamento",
+        "oportunidade desperdiçada"
+      ]
+    },
+    "meaning": {
+      "upright": "Vontade de aprender e concretizar; uma oportunidade prática que pede foco.",
+      "reversed": "Adiamento e falta de plano fazem a oportunidade escorrer entre os dedos."
+    },
+    "love": "No amor, o Pajem de Ouros fala de interesse sincero e de ir devagar, com os pés no chão. Invertido, mostra adiamento ou falta de iniciativa.",
+    "work": "No trabalho, indica estudo, uma nova oportunidade prática e ambição de concretizar metas.",
+    "advice": "Transforme a vontade em plano. Um passo concreto vale mais que muitas intenções."
+  },
+  "minor-pentacles-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "constância",
+        "método",
+        "responsabilidade",
+        "trabalho persistente"
+      ],
+      "reversed": [
+        "estagnação",
+        "tédio",
+        "acomodação",
+        "perfeccionismo"
+      ]
+    },
+    "meaning": {
+      "upright": "Progresso lento porém seguro; confiabilidade e método levam ao objetivo.",
+      "reversed": "A constância vira estagnação ou rotina sem avanço; falta de iniciativa."
+    },
+    "love": "No amor, o Cavaleiro de Ouros é constância: alguém confiável que demonstra amor com atitudes. Invertido, mostra estagnação ou rotina sem novidade.",
+    "work": "No trabalho, fala de método, responsabilidade e progresso lento porém seguro.",
+    "advice": "Siga no seu ritmo, com método. Devagar e sempre também chega."
+  },
+  "minor-pentacles-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "prosperidade prática",
+        "nutrição",
+        "equilíbrio casa-trabalho",
+        "generosidade"
+      ],
+      "reversed": [
+        "sobrecarga",
+        "negligência consigo",
+        "insegurança material"
+      ]
+    },
+    "meaning": {
+      "upright": "Cuida com competência do concreto e das pessoas, unindo aconchego e realização.",
+      "reversed": "A entrega ao cuidado e ao trabalho leva ao esgotamento ou ao descuido de si."
+    },
+    "love": "No amor, a Rainha de Ouros é cuidado prático e aconchego: amor que se mostra em gestos concretos. Invertida, alerta para esgotamento por cuidar de todos menos de si.",
+    "work": "No trabalho, indica competência, organização e equilíbrio entre casa e trabalho.",
+    "advice": "Cuide do mundo concreto e das pessoas, sem se esquecer de incluir você na lista."
+  },
+  "minor-pentacles-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "prosperidade",
+        "liderança sólida",
+        "segurança",
+        "disciplina",
+        "sucesso material"
+      ],
+      "reversed": [
+        "ganância",
+        "materialismo",
+        "controle",
+        "teimosia"
+      ]
+    },
+    "meaning": {
+      "upright": "Domínio maduro do mundo material; provê e lidera com segurança e disciplina.",
+      "reversed": "O foco no material vira ganância, controle ou apego rígido ao status."
+    },
+    "love": "No amor, o Rei de Ouros fala de segurança, lealdade e compromisso estável. Invertido, alerta para controle, possessividade ou foco excessivo no material.",
+    "work": "No trabalho, é sucesso material, liderança sólida e disciplina nos negócios.",
+    "advice": "Construa segurança com generosidade. Prosperidade vale mais quando também sustenta os outros."
+  }
+}

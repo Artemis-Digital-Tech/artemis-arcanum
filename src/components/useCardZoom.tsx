@@ -44,11 +44,11 @@ interface CardZoom {
   /** Spread onto the element that should answer to hover — the whole card, not just its art. */
   zoomProps: {
     ref: React.RefObject<HTMLDivElement | null>
-    tabIndex: number
+    tabIndex?: number
     onMouseEnter: () => void
     onMouseLeave: () => void
-    onFocus: () => void
-    onBlur: () => void
+    onFocus?: () => void
+    onBlur?: () => void
   }
   zoomOverlay: ReactNode
 }
@@ -61,7 +61,7 @@ interface CardZoom {
  * the numeral/name layer sits on top of the art and would otherwise
  * swallow every pointer event before it reached the image.
  */
-export function useCardZoom(card: TarotCardData, name: string, corner: string): CardZoom {
+export function useCardZoom(card: TarotCardData, name: string, corner: string, focusable = true): CardZoom {
   const ref = useRef<HTMLDivElement>(null)
   const [placement, setPlacement] = useState<Placement | null>(null)
 
@@ -105,14 +105,11 @@ export function useCardZoom(card: TarotCardData, name: string, corner: string): 
     : null
 
   return {
-    zoomProps: {
-      ref,
-      tabIndex: 0,
-      onMouseEnter: open,
-      onMouseLeave: close,
-      onFocus: open,
-      onBlur: close,
-    },
+    // A face nested inside a link (the cards index) must not add its own tab
+    // stop; there the link carries focus and the preview follows the mouse only.
+    zoomProps: focusable
+      ? { ref, tabIndex: 0, onMouseEnter: open, onMouseLeave: close, onFocus: open, onBlur: close }
+      : { ref, onMouseEnter: open, onMouseLeave: close },
     zoomOverlay,
   }
 }

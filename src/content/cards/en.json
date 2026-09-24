@@ -1,0 +1,1895 @@
+{
+  "major-fool": {
+    "correspondence": "Air / Uranus",
+    "keywords": {
+      "upright": [
+        "new beginnings",
+        "faith",
+        "spontaneity",
+        "innocence",
+        "freedom"
+      ],
+      "reversed": [
+        "recklessness",
+        "naivety",
+        "hesitation",
+        "thoughtless risk"
+      ]
+    },
+    "meaning": {
+      "upright": "The leap into the unknown driven by faith and enthusiasm; pure potential, freedom and openness to the new.",
+      "reversed": "Impulse without caution: rash decisions, naivety, or the opposite, fear of taking the step."
+    },
+    "love": "In love, The Fool speaks of openness: an unexpected meeting, a relationship that starts without a script, or the wish to love more lightly. Reversed, it asks you to watch for commitments made on impulse and promises nobody thought through.",
+    "work": "At work, it points to beginnings: a new project, a change of field, the courage to try something with no guarantee. The energy of the first step is worth it, as long as you watch where you tread.",
+    "advice": "Take the step you have been putting off, but bring a minimum of preparation. Freedom and carelessness are not the same thing."
+  },
+  "major-magician": {
+    "correspondence": "Mercury",
+    "keywords": {
+      "upright": [
+        "manifestation",
+        "personal power",
+        "skill",
+        "focus",
+        "initiative"
+      ],
+      "reversed": [
+        "manipulation",
+        "wasted potential",
+        "illusion",
+        "scattered energy"
+      ]
+    },
+    "meaning": {
+      "upright": "Having every tool needed to turn will into reality; inspired action and resources brought to a single point.",
+      "reversed": "Power is misused or left unused: manipulation, self-deception or talent standing still."
+    },
+    "love": "In love, The Magician shows initiative and presence: you have what you need to express yourself and win someone over. Reversed, it warns of charm used as a game, or of someone who says a lot and does little.",
+    "work": "At work, this is the card of execution: skill, resources at hand and the focus to turn an idea into delivery. A good moment to present, negotiate and begin.",
+    "advice": "Gather what you already have and focus it on one intention. Idle talent never becomes a result."
+  },
+  "major-highPriestess": {
+    "correspondence": "Moon",
+    "keywords": {
+      "upright": [
+        "intuition",
+        "mystery",
+        "inner wisdom",
+        "subconscious"
+      ],
+      "reversed": [
+        "secrets",
+        "ignored intuition",
+        "inner disconnection",
+        "superficiality"
+      ]
+    },
+    "meaning": {
+      "upright": "The quiet voice of inner knowing and the unconscious; a mystery to be solved from within, not by logic.",
+      "reversed": "Contact with intuition is lost; hidden secrets, mental noise or denial of what you feel."
+    },
+    "love": "In love, The High Priestess speaks of what has not been said: feelings held back, subtle signs, the need to listen before acting. Reversed, it may point to secrets or an intuition you are ignoring.",
+    "work": "At work, it asks for discretion and observation. Not everything is visible yet; wait for more information before deciding, and trust the quiet read you already have of people.",
+    "advice": "Quiet the noise and listen to your own intuition. The answer may already be in you, waiting for attention."
+  },
+  "major-empress": {
+    "correspondence": "Venus",
+    "keywords": {
+      "upright": [
+        "fertility",
+        "creativity",
+        "abundance",
+        "nurturing",
+        "nature"
+      ],
+      "reversed": [
+        "creative block",
+        "dependence",
+        "self-neglect",
+        "overprotection"
+      ]
+    },
+    "meaning": {
+      "upright": "Creative, nurturing energy; abundance, sensuality and a care that makes things grow and flourish.",
+      "reversed": "Creation stalls; too much care for others, dependence or neglect of yourself."
+    },
+    "love": "In love, The Empress brings affection, care and pleasure in being together: a relationship that blooms when it is nurtured. Reversed, it shows care that has turned smothering, or forgetting yourself for the other person.",
+    "work": "At work, it speaks of creativity and projects that grow with steady attention. Supportive environments and well-tended ideas bear fruit.",
+    "advice": "Tend what you want to see grow, including yourself. Abundance comes from continuous attention, not haste."
+  },
+  "major-emperor": {
+    "correspondence": "Aries",
+    "keywords": {
+      "upright": [
+        "authority",
+        "structure",
+        "stability",
+        "leadership",
+        "discipline"
+      ],
+      "reversed": [
+        "rigidity",
+        "authoritarianism",
+        "control",
+        "lack of discipline"
+      ]
+    },
+    "meaning": {
+      "upright": "Order built with firm vision and clear boundaries; leadership, protection and stability.",
+      "reversed": "Structure turns into rigidity or tyranny, or the discipline that would hold everything together is missing."
+    },
+    "love": "In love, The Emperor asks for structure: commitment, clear boundaries and security. Reversed, it warns of control, rigidity or a relationship where only one person decides.",
+    "work": "At work, this is leadership, organization and responsibility. A good moment to bring order, set rules and take charge of a project.",
+    "advice": "Build a firm foundation and be clear about what you accept. Real authority protects; it does not oppress."
+  },
+  "major-hierophant": {
+    "correspondence": "Taurus",
+    "keywords": {
+      "upright": [
+        "tradition",
+        "faith",
+        "spiritual guidance",
+        "values",
+        "institutions"
+      ],
+      "reversed": [
+        "rebellion",
+        "questioning dogma",
+        "your own path",
+        "hypocrisy"
+      ]
+    },
+    "meaning": {
+      "upright": "Wisdom handed down by tradition, teachers and institutions; belonging to something larger and established.",
+      "reversed": "Breaking with convention to find your own path, or living an empty, conformist dogma."
+    },
+    "love": "In love, The Hierophant speaks of formal commitments, shared values and tradition, such as marriage or family approval. Reversed, it may point to a relationship that does not fit convention, or pressure to follow a model that is not yours.",
+    "work": "At work, it favors learning from those who already know: mentors, institutions, proven methods. It may also ask you to follow the process before trying to change it.",
+    "advice": "Seek guidance from people who have walked the road, but keep the right to question what does not make sense to you."
+  },
+  "major-lovers": {
+    "correspondence": "Gemini",
+    "keywords": {
+      "upright": [
+        "love",
+        "harmony",
+        "union",
+        "choice",
+        "aligned values"
+      ],
+      "reversed": [
+        "disharmony",
+        "hard choice",
+        "misalignment",
+        "temptation"
+      ]
+    },
+    "meaning": {
+      "upright": "Deep union and a choice of the heart made from your own values.",
+      "reversed": "Conflict in relationships, or a decision out of line with what you believe."
+    },
+    "love": "In love, The Lovers speak of real connection and of choice: being with someone because your values meet. Reversed, the card shows mismatch, doubt between two paths, or a relationship that has lost its alignment.",
+    "work": "At work, it points to partnerships and to decisions that need to agree with what you value. An important choice calls for coherence, not just convenience.",
+    "advice": "Choose with your heart and your values at the same time. An aligned decision weighs less afterwards."
+  },
+  "major-chariot": {
+    "correspondence": "Cancer",
+    "keywords": {
+      "upright": [
+        "willpower",
+        "determination",
+        "victory",
+        "control",
+        "direction"
+      ],
+      "reversed": [
+        "lack of direction",
+        "loss of control",
+        "aggression",
+        "opposing forces"
+      ]
+    },
+    "meaning": {
+      "upright": "Moving toward victory through willpower, uniting opposing drives under one command.",
+      "reversed": "Control or direction is lost; inner forces pull in opposite ways."
+    },
+    "love": "In love, The Chariot shows determination to move the relationship forward, or the strength to keep going after an ending. Reversed, it warns of power struggles and of wanting to win instead of understanding each other.",
+    "work": "At work, it is the card of progress: clear goals, discipline and victory through effort. Hold your course even when different forces pull in opposite directions.",
+    "advice": "Set the direction and hold the reins. Focus and will go far when you do not let yourself scatter."
+  },
+  "major-strength": {
+    "correspondence": "Leo",
+    "keywords": {
+      "upright": [
+        "inner courage",
+        "patience",
+        "compassion",
+        "self-control",
+        "gentle mastery"
+      ],
+      "reversed": [
+        "insecurity",
+        "self-doubt",
+        "brute force",
+        "low spirits"
+      ]
+    },
+    "meaning": {
+      "upright": "Taming instinct with gentleness and courage; strength that comes from within, not from violence.",
+      "reversed": "Confidence wavers; either brute force takes over, or patience and energy run short."
+    },
+    "love": "In love, Strength speaks of patience, tenderness and the courage to face difficult feelings without hurting anyone. Reversed, it shows insecurity, jealousy or the sense of not coping with what you feel.",
+    "work": "At work, it is calm firmness: persuading rather than imposing, keeping your head under pressure and leading by example.",
+    "advice": "Be gentle with what is wild in you. The most lasting strength is the one that does not need to shout."
+  },
+  "major-hermit": {
+    "correspondence": "Virgo",
+    "keywords": {
+      "upright": [
+        "introspection",
+        "inner search",
+        "wisdom",
+        "solitude",
+        "guidance"
+      ],
+      "reversed": [
+        "isolation",
+        "excessive solitude",
+        "withdrawal",
+        "refusing help"
+      ]
+    },
+    "meaning": {
+      "upright": "Withdrawing to look for answers within; wisdom found in silence and pause.",
+      "reversed": "Introspection turns into isolation; too much distance, or refusing guidance and contact."
+    },
+    "love": "In love, The Hermit asks for time to understand what you want. It may point to a chosen season of solitude, or to needing space within the relationship. Reversed, it warns of isolation that has become escape.",
+    "work": "At work, it favors study, specialization and solo work. Step away from the noise to think more clearly before the next move.",
+    "advice": "Withdraw for a while and light your own lamp. Some answers only appear in silence."
+  },
+  "major-wheelOfFortune": {
+    "correspondence": "Jupiter",
+    "keywords": {
+      "upright": [
+        "cycles",
+        "fate",
+        "luck",
+        "turning point",
+        "change"
+      ],
+      "reversed": [
+        "bad luck",
+        "resisting change",
+        "bad cycles",
+        "feeling out of control"
+      ]
+    },
+    "meaning": {
+      "upright": "The turns of fate bring change; a cycle rotates and new circumstances arrive.",
+      "reversed": "The wheel seems stuck in a bad place; resistance to change or a run of bad luck."
+    },
+    "love": "In love, the Wheel of Fortune speaks of cycles: meetings that feel fated, reversals and phases that change. Reversed, it shows the feeling of being stuck in a pattern that repeats.",
+    "work": "At work, it points to changing circumstances, opportunities that appear suddenly and turning points. Adapt to the movement instead of resisting it.",
+    "advice": "Accept that everything turns. Enjoy the good phase with gratitude and cross the hard one remembering it will pass too."
+  },
+  "major-justice": {
+    "correspondence": "Libra",
+    "keywords": {
+      "upright": [
+        "truth",
+        "justice",
+        "cause and effect",
+        "clarity",
+        "responsibility"
+      ],
+      "reversed": [
+        "injustice",
+        "dishonesty",
+        "avoiding consequences",
+        "bias"
+      ]
+    },
+    "meaning": {
+      "upright": "Truth and balance: you reap what you sowed and decide impartially.",
+      "reversed": "Injustice, dishonesty or refusing to own the consequences of your actions."
+    },
+    "love": "In love, Justice asks for honesty and balance: each person owning their part. Reversed, it points to unfairness in the relationship, blame poorly shared, or a conversation that keeps being avoided.",
+    "work": "At work, it speaks of contracts, formal decisions and consequences. Act with integrity; what is fair tends to hold.",
+    "advice": "Look at the facts impartially, including your own part. Every choice has a consequence, and that is a power."
+  },
+  "major-hangedMan": {
+    "correspondence": "Water / Neptune",
+    "keywords": {
+      "upright": [
+        "pause",
+        "surrender",
+        "new perspective",
+        "sacrifice",
+        "suspension"
+      ],
+      "reversed": [
+        "stagnation",
+        "resistance",
+        "indecision",
+        "pointless sacrifice"
+      ]
+    },
+    "meaning": {
+      "upright": "Surrendering and seeing from another angle; a pause that brings understanding and release.",
+      "reversed": "The pause turns into stagnation; the new view is resisted, or the sacrifice is in vain."
+    },
+    "love": "In love, The Hanged Man suggests a pause: seeing the relationship from another angle before acting. Reversed, it shows sacrifice that is not returned, or a wait that has lost its meaning.",
+    "work": "At work, it points to a stalled project or a time of waiting. Use it to shift perspective; sometimes the solution comes from letting go rather than forcing.",
+    "advice": "Stop forcing and change your point of view. Yielding to the moment is not giving up; it is seeing differently."
+  },
+  "major-death": {
+    "correspondence": "Scorpio",
+    "keywords": {
+      "upright": [
+        "ending",
+        "transformation",
+        "transition",
+        "renewal",
+        "letting go"
+      ],
+      "reversed": [
+        "resisting change",
+        "attachment",
+        "stalled transition",
+        "fear of endings"
+      ]
+    },
+    "meaning": {
+      "upright": "One cycle ends so another can be born; deep and inevitable transformation.",
+      "reversed": "Holding on to what is already over; necessary change is postponed out of fear or attachment."
+    },
+    "love": "In love, Death speaks of endings and transformation: a phase that closes so another can begin, within the relationship or outside it. Reversed, it shows resistance to letting go of what has already ended.",
+    "work": "At work, it points to deep change: closing a cycle, leaving a role, reinventing a project. It rarely means anything literal; it almost always means renewal.",
+    "advice": "Let what has ended be over. The space it leaves is where the new fits."
+  },
+  "major-temperance": {
+    "correspondence": "Sagittarius",
+    "keywords": {
+      "upright": [
+        "balance",
+        "moderation",
+        "patience",
+        "harmony",
+        "purpose"
+      ],
+      "reversed": [
+        "imbalance",
+        "excess",
+        "impatience",
+        "misalignment"
+      ]
+    },
+    "meaning": {
+      "upright": "The art of blending opposites in the right measure; patience, balance and healing.",
+      "reversed": "Lack of balance: excess, haste, or trouble harmonizing the parts."
+    },
+    "love": "In love, Temperance brings harmony, patience and the art of meeting halfway: two people finding a shared rhythm. Reversed, it warns of excess, impatience or an unbalanced relationship.",
+    "work": "At work, it favors collaboration, moderation and well-measured processes. Solid results come from combining the right parts at the right time.",
+    "advice": "Look for the right measure between extremes. Balance is built slowly, like pouring water between two cups."
+  },
+  "major-devil": {
+    "correspondence": "Capricorn",
+    "keywords": {
+      "upright": [
+        "attachment",
+        "addiction",
+        "materialism",
+        "illusion",
+        "self-imposed prisons"
+      ],
+      "reversed": [
+        "release",
+        "breaking chains",
+        "facing the shadow",
+        "reclaiming power"
+      ]
+    },
+    "meaning": {
+      "upright": "The bonds of desire, fear or addiction; chains that, deep down, are looser than they seem.",
+      "reversed": "An addiction or dependence is recognized and broken; freedom from your own shadow."
+    },
+    "love": "In love, The Devil speaks of intense attraction, but also of attachment, jealousy or dependence. Reversed, it is the moment to notice the chain and begin to free yourself from it.",
+    "work": "At work, it warns of situations that hold you through money, fear or habit, and of the temptation of shortcuts. Ask yourself what really keeps you there.",
+    "advice": "Name what holds you. The chain is usually looser than it looks once you face it."
+  },
+  "major-tower": {
+    "correspondence": "Mars",
+    "keywords": {
+      "upright": [
+        "sudden upheaval",
+        "collapse",
+        "revelation",
+        "chaos",
+        "awakening"
+      ],
+      "reversed": [
+        "disaster averted",
+        "fear of change",
+        "slow collapse",
+        "inner crisis"
+      ]
+    },
+    "meaning": {
+      "upright": "A sudden fall destroys false structures; truth revealed abruptly, which frees you in the end.",
+      "reversed": "The crisis is postponed or lived inwardly; collapse is feared, or it drags on slowly."
+    },
+    "love": "In love, The Tower points to a truth that surfaces suddenly: a fight, a revelation or the end of an illusion. It hurts, but it clears the ground. Reversed, it shows a crisis postponed or lived in silence.",
+    "work": "At work, it speaks of abrupt change: a plan that collapses, a restructuring, news that changes everything. What was fragile falls; what is true remains.",
+    "advice": "Do not try to prop up what is already crumbling. After the fall, build on what proved real."
+  },
+  "major-star": {
+    "correspondence": "Aquarius",
+    "keywords": {
+      "upright": [
+        "hope",
+        "faith",
+        "renewal",
+        "inspiration",
+        "serenity"
+      ],
+      "reversed": [
+        "discouragement",
+        "lack of faith",
+        "disconnection",
+        "hopelessness"
+      ]
+    },
+    "meaning": {
+      "upright": "After the storm, calm and hope; healing, faith and renewed inspiration.",
+      "reversed": "Hope dims; discouragement, disbelief or disconnection from your purpose."
+    },
+    "love": "In love, The Star brings hope and healing: finding faith in affection again after a hard time. Reversed, it shows discouragement or the feeling that love is not for you.",
+    "work": "At work, it speaks of inspiration, long-term vision and recognition that comes with time. Follow what gives meaning, even if the result is still far away.",
+    "advice": "Renew your hope and look after yourself calmly. A guiding light does not need to be close to show the way."
+  },
+  "major-moon": {
+    "correspondence": "Pisces",
+    "keywords": {
+      "upright": [
+        "intuition",
+        "illusion",
+        "fears",
+        "subconscious",
+        "uncertainty"
+      ],
+      "reversed": [
+        "confusion clearing",
+        "fears overcome",
+        "truth emerging"
+      ]
+    },
+    "meaning": {
+      "upright": "The territory of illusions, dreams and fears; not everything is what it seems, so trust your intuition.",
+      "reversed": "The fog begins to lift; fears are faced and the truth comes to light."
+    },
+    "love": "In love, The Moon speaks of uncertainty: confused feelings, jealousy, fantasies or something that is not clear. Reversed, the fog starts to lift and the truth appears little by little.",
+    "work": "At work, it calls for caution with incomplete information and vague promises. Do not make big decisions before you can see better.",
+    "advice": "Do not mistake fear for intuition. Wait for the fog to settle before choosing the path."
+  },
+  "major-sun": {
+    "correspondence": "Sun",
+    "keywords": {
+      "upright": [
+        "joy",
+        "success",
+        "vitality",
+        "clarity",
+        "positivity"
+      ],
+      "reversed": [
+        "clouded optimism",
+        "delayed success",
+        "temporary discouragement"
+      ]
+    },
+    "meaning": {
+      "upright": "Light, joy and success; clarity and vitality that warm everything around.",
+      "reversed": "Joy is covered for a while; shaken optimism or an achievement that is slow to arrive."
+    },
+    "love": "In love, The Sun brings joy, clarity and warmth: a relationship that is light, sincere and lived in the open. Reversed, it shows that the joy is there but clouded by expectations or tiredness.",
+    "work": "At work, it is success, recognition and high energy. A good moment to show what you have done and reap the results.",
+    "advice": "Let yourself enjoy what is going well. Clarity and enthusiasm are contagious."
+  },
+  "major-judgement": {
+    "correspondence": "Fire / Pluto",
+    "keywords": {
+      "upright": [
+        "rebirth",
+        "calling",
+        "evaluation",
+        "redemption",
+        "awakening"
+      ],
+      "reversed": [
+        "self-criticism",
+        "doubt",
+        "ignoring the call",
+        "regret"
+      ]
+    },
+    "meaning": {
+      "upright": "A call to rebirth; the past is weighed and you wake to a new purpose.",
+      "reversed": "The call is ignored or self-criticism weighs heavy; doubt and regret stall the turn."
+    },
+    "love": "In love, Judgement speaks of taking stock: revisiting the story, forgiving, reconnecting or ending with awareness. Reversed, it shows excessive self-criticism or refusing to look at the past.",
+    "work": "At work, it points to a calling: an evaluation, a second chance, the wish to do something with more purpose.",
+    "advice": "Make peace with your story and answer the call you have been hearing. Rebirth requires choosing."
+  },
+  "major-world": {
+    "correspondence": "Saturn",
+    "keywords": {
+      "upright": [
+        "fulfillment",
+        "wholeness",
+        "completion",
+        "integration",
+        "achievement"
+      ],
+      "reversed": [
+        "loose ends",
+        "incomplete cycle",
+        "sense of emptiness",
+        "delay"
+      ]
+    },
+    "meaning": {
+      "upright": "A cycle is completed in fullness; integration, achievement and a sense of belonging.",
+      "reversed": "The cycle is almost closed; loose ends, or an achievement that does not truly satisfy."
+    },
+    "love": "In love, The World speaks of wholeness and a cycle that completes: the relationship reaches a new level, or you feel whole on your own. Reversed, it shows something nearly finished, one last step still missing.",
+    "work": "At work, it is completion and fulfillment: a project delivered, a goal reached, a phase that closes well. It can also point to travel or wider horizons.",
+    "advice": "Acknowledge how far you have come before starting the next journey. Closing a cycle well is part of the achievement."
+  },
+  "minor-wands-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "new inspiration",
+        "creative spark",
+        "opportunity",
+        "initiative"
+      ],
+      "reversed": [
+        "delay",
+        "lack of direction",
+        "ideas that don't take off",
+        "hesitation"
+      ]
+    },
+    "meaning": {
+      "upright": "The first impulse of an idea or project; creative energy in its pure state, asking for action.",
+      "reversed": "The spark is there, but it meets blocks, delays or a lack of focus to come true."
+    },
+    "love": "In love, the Ace of Wands is a spark: new attraction, desire waking up, or the wish to rekindle passion. Reversed, the interest exists but courage or initiative to act is missing.",
+    "work": "At work, it announces an idea with the energy to become a project, an invitation or a creative opportunity. Start while the flame is high.",
+    "advice": "Act while the inspiration is alive. A spark without a gesture becomes only a memory."
+  },
+  "minor-wands-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "planning",
+        "vision",
+        "decision",
+        "expansion"
+      ],
+      "reversed": [
+        "fear of the unknown",
+        "poor planning",
+        "complacency",
+        "indecision"
+      ]
+    },
+    "meaning": {
+      "upright": "After the spark, a direction is chosen and expansion is planned from a base that is already secure.",
+      "reversed": "Insecurity about the next step; incomplete plans or fear of risk keep you in place."
+    },
+    "love": "In love, the Two of Wands speaks of plans and of deciding where the relationship is going. Reversed, it shows doubt between staying with the familiar and risking something new.",
+    "work": "At work, it is planning and vision: mapping the next step, thinking about expansion, choosing a direction from what is already secure.",
+    "advice": "Look at the horizon and choose a direction. Planning is the first step, but it cannot be the last."
+  },
+  "minor-wands-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "expansion under way",
+        "foresight",
+        "results on the way",
+        "trade"
+      ],
+      "reversed": [
+        "delays",
+        "unexpected obstacles",
+        "lack of long-term vision"
+      ]
+    },
+    "meaning": {
+      "upright": "The first plans begin to bear fruit; you watch the horizon for what has already been set in motion.",
+      "reversed": "What was on its way stalls; frustration with delays or expectations that are not met."
+    },
+    "love": "In love, the Three of Wands speaks of anticipation and wider horizons: a relationship that grows, or someone who is far away. Reversed, it shows frustration with what is slow to arrive.",
+    "work": "At work, the first results start to show. A good moment to expand, deal with other places and follow up on what is already moving.",
+    "advice": "Trust what you have already set in motion and get ready for what is coming."
+  },
+  "minor-wands-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "celebration",
+        "harmony",
+        "home",
+        "happy milestones",
+        "community"
+      ],
+      "reversed": [
+        "transition",
+        "fragile harmony",
+        "postponed celebration",
+        "tension at home"
+      ]
+    },
+    "meaning": {
+      "upright": "A moment of celebration and belonging; a stable foundation that deserves to be celebrated.",
+      "reversed": "Harmony exists but is unstable, or the celebration happens inwardly and quietly."
+    },
+    "love": "In love, the Four of Wands is celebration: a happy milestone, a shared home, the feeling of belonging. Reversed, the harmony is there but unstable, or lived quietly.",
+    "work": "At work, it speaks of achievements worth celebrating, a united team and a stable base built with effort.",
+    "advice": "Stop to celebrate what went well. Acknowledging the win strengthens the ground for the next one."
+  },
+  "minor-wands-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "conflict",
+        "competition",
+        "disagreement",
+        "rivalry"
+      ],
+      "reversed": [
+        "end of conflict",
+        "avoiding the dispute",
+        "agreement",
+        "inner tension"
+      ]
+    },
+    "meaning": {
+      "upright": "A clash of ideas and egos; competition that may be healthy or merely draining.",
+      "reversed": "Friction fades or is avoided; reconciliation is sought, sometimes by suppressing disagreement."
+    },
+    "love": "In love, the Five of Wands shows friction: arguments out of pride, a struggle for space, or rivals. Reversed, conflicts calm down, but check whether they were resolved or just swallowed.",
+    "work": "At work, it is competition and a clash of ideas. It can be a healthy push or just wear and tear; notice which one is happening.",
+    "advice": "Pick the fights worth having. Not every dispute needs a winner."
+  },
+  "minor-wands-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "victory",
+        "recognition",
+        "public success",
+        "confidence"
+      ],
+      "reversed": [
+        "delayed recognition",
+        "inflated ego",
+        "shaken confidence",
+        "empty victory"
+      ]
+    },
+    "meaning": {
+      "upright": "A triumph others recognize; effort earns applause and the project moves forward.",
+      "reversed": "Recognition is slow to come, confidence wavers, or success goes to your head."
+    },
+    "love": "In love, the Six of Wands brings confidence and pride in the relationship, sometimes a public acknowledgment of the bond. Reversed, it shows insecurity or seeking approval from others.",
+    "work": "At work, it is recognized victory: a promotion, praise, a project that moves forward in full view.",
+    "advice": "Accept the recognition without letting it define your worth."
+  },
+  "minor-wands-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "defending your position",
+        "perseverance",
+        "courage",
+        "standing firm"
+      ],
+      "reversed": [
+        "exhaustion",
+        "giving in to pressure",
+        "feeling overwhelmed",
+        "giving up"
+      ]
+    },
+    "meaning": {
+      "upright": "Defending what you have won in the face of opposition; holding your ground takes courage.",
+      "reversed": "Pressure wins over resistance; fatigue or doubt makes you lower your guard."
+    },
+    "love": "In love, the Seven of Wands speaks of defending the relationship or your boundaries against outside pressure. Reversed, it shows being tired of fighting or wanting to give in.",
+    "work": "At work, it points to competition and the need to hold your position. You have the arguments; use them firmly.",
+    "advice": "Defend what is yours without closing yourself to everything. Firmness does not have to be rigidity."
+  },
+  "minor-wands-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "rapid movement",
+        "action",
+        "news",
+        "travel",
+        "fast progress"
+      ],
+      "reversed": [
+        "delays",
+        "misdirected haste",
+        "withheld information",
+        "frustration"
+      ]
+    },
+    "meaning": {
+      "upright": "Things move fast; messages, trips and events follow one another.",
+      "reversed": "The pace jams; delays and missed connections hold back what should flow."
+    },
+    "love": "In love, the Eight of Wands brings quick movement: messages, reunions, feelings declared suddenly. Reversed, it shows missed connections and answers that do not arrive.",
+    "work": "At work, things speed up: news, travel, short deadlines and quick decisions. Be ready to act.",
+    "advice": "Keep up with the pace, but keep your aim. Speed without direction only scatters energy."
+  },
+  "minor-wands-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "resilience",
+        "persistence",
+        "last stand",
+        "vigilance"
+      ],
+      "reversed": [
+        "burnout",
+        "stubbornness",
+        "excessive defensiveness",
+        "distrust"
+      ]
+    },
+    "meaning": {
+      "upright": "Wounded but standing; gathering strength for the last effort before the win.",
+      "reversed": "Exhaustion or distrust leads you to resist for resistance's sake, beyond what is needed."
+    },
+    "love": "In love, the Nine of Wands shows someone who has been hurt and stays on the defensive. Reversed, it warns of distrust that keeps people from coming close.",
+    "work": "At work, it is resilience on the home stretch: you are tired but close to finishing. Protect your energy for the last push.",
+    "advice": "Resist wisely, not out of habit. Ask whether your raised guard still protects you or only isolates you."
+  },
+  "minor-wands-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "overload",
+        "responsibility",
+        "burden",
+        "final effort"
+      ],
+      "reversed": [
+        "delegating",
+        "dropping the burden",
+        "collapse",
+        "release"
+      ]
+    },
+    "meaning": {
+      "upright": "Carrying too much weight; a success that came with heavy responsibilities.",
+      "reversed": "The time comes to drop the burden, delegate, or admit you took on too much."
+    },
+    "love": "In love, the Ten of Wands points to overload: a relationship where you carry too much, or responsibilities that smother affection. Reversed, it is time to share the load.",
+    "work": "At work, it speaks of too many tasks and a success that brought heavy responsibilities. Delegating is necessary.",
+    "advice": "Put down what is not yours to carry. Asking for help does not shrink the achievement."
+  },
+  "minor-wands-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "enthusiasm",
+        "exploration",
+        "new ideas",
+        "messenger"
+      ],
+      "reversed": [
+        "lack of direction",
+        "procrastination",
+        "immaturity",
+        "frustrating news"
+      ]
+    },
+    "meaning": {
+      "upright": "Curiosity and the will to start something new; a messenger of creative opportunities.",
+      "reversed": "Enthusiasm without focus, projects that never leave the page, or news that disappoints."
+    },
+    "love": "In love, the Page of Wands brings flirting, curiosity and the enthusiasm of beginnings. Reversed, it shows fleeting interest or promises that do not hold.",
+    "work": "At work, it announces new ideas, courses, creative proposals and a wish to explore. Great for testing, still without long commitments.",
+    "advice": "Explore with curiosity, and choose one idea to truly carry forward."
+  },
+  "minor-wands-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "action",
+        "adventure",
+        "impulse",
+        "passion",
+        "daring"
+      ],
+      "reversed": [
+        "haste",
+        "recklessness",
+        "scattered energy",
+        "arrogance"
+      ]
+    },
+    "meaning": {
+      "upright": "Charging toward the goal with courage and passion, unafraid of risk.",
+      "reversed": "Drive turns into recklessness; haste and impatience lead to rash decisions."
+    },
+    "love": "In love, the Knight of Wands is intense, daring passion that arrives fast. Reversed, it warns of impulsiveness and of someone who vanishes as quickly as they appeared.",
+    "work": "At work, it is action and the courage to take risks: changes, travel, bold initiatives. Be careful not to skip steps.",
+    "advice": "Move forward with passion, but think twice before you leap. Courage with a plan goes further."
+  },
+  "minor-wands-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "confidence",
+        "charisma",
+        "determination",
+        "independence"
+      ],
+      "reversed": [
+        "insecurity",
+        "jealousy",
+        "demandingness",
+        "scattered focus"
+      ]
+    },
+    "meaning": {
+      "upright": "A magnetic, self-assured presence that inspires others and gets things done with passion.",
+      "reversed": "Self-confidence gives way to insecurity, jealousy or the need for approval."
+    },
+    "love": "In love, the Queen of Wands is magnetism, self-confidence and warmth. Reversed, it shows jealousy, insecurity or a need for approval.",
+    "work": "At work, it speaks of charisma and determination: someone who inspires the team and delivers with energy and independence.",
+    "advice": "Take up your space with confidence. Your enthusiasm is a resource, not an excess."
+  },
+  "minor-wands-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "leadership",
+        "vision",
+        "entrepreneurship",
+        "mature boldness"
+      ],
+      "reversed": [
+        "authoritarianism",
+        "impulsiveness",
+        "tyranny",
+        "unrealistic expectations"
+      ]
+    },
+    "meaning": {
+      "upright": "A visionary leader who inspires and drives projects with passion and maturity.",
+      "reversed": "Leadership turns into control or impatience; impulsive decisions and intolerance."
+    },
+    "love": "In love, the King of Wands is mature intensity: someone who knows what they want and leads with generosity. Reversed, it warns of control, impatience or a difficult temper.",
+    "work": "At work, it is visionary leadership and an entrepreneurial spirit. A good moment to take the lead on a big project.",
+    "advice": "Lead with vision and leave room for others to shine too."
+  },
+  "minor-cups-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "new love",
+        "emotion",
+        "compassion",
+        "intuition"
+      ],
+      "reversed": [
+        "blocked emotion",
+        "emotional emptiness",
+        "repressed hurt",
+        "ignored intuition"
+      ]
+    },
+    "meaning": {
+      "upright": "A heart that opens; the beginning of love, creativity or spiritual connection.",
+      "reversed": "Feelings are held back or hurt; the emotional source seems dry or blocked."
+    },
+    "love": "In love, the Ace of Cups is an open heart: a new love, affection reborn or a deep emotional connection. Reversed, it shows feelings held back or wounds that still ache.",
+    "work": "At work, it speaks of emotional satisfaction and creativity: a project you love, a place that welcomes you.",
+    "advice": "Let affection flow, starting with yourself."
+  },
+  "minor-cups-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "union",
+        "partnership",
+        "mutual attraction",
+        "reconciliation"
+      ],
+      "reversed": [
+        "imbalance",
+        "breakup",
+        "disharmony",
+        "tension in a relationship"
+      ]
+    },
+    "meaning": {
+      "upright": "Two people meeting as equals; a deep, mutual connection.",
+      "reversed": "The connection falls out of balance; misunderstandings or distance between two sides."
+    },
+    "love": "In love, the Two of Cups is the card of union: mutual attraction, partnership as equals, reconciliation. Reversed, it shows imbalance or distance between two people.",
+    "work": "At work, it favors partnerships, joint ventures and agreements where both sides win.",
+    "advice": "Cultivate reciprocity. A good relationship is one where nobody has to make themselves smaller."
+  },
+  "minor-cups-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "celebration",
+        "friendship",
+        "community",
+        "shared joy"
+      ],
+      "reversed": [
+        "excess",
+        "gossip",
+        "isolation",
+        "group fatigue"
+      ]
+    },
+    "meaning": {
+      "upright": "Joy lived together; friendship, celebration and mutual support.",
+      "reversed": "The party turns into excess, or the group brings gossip, strain or a sense of exclusion."
+    },
+    "love": "In love, the Three of Cups speaks of joy shared with friends and of celebrating the relationship. Reversed, it warns of gossip, interference or excess.",
+    "work": "At work, it points to a united team, easygoing collaboration and celebrating results.",
+    "advice": "Lean on the people who celebrate with you. Shared joy grows."
+  },
+  "minor-cups-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "apathy",
+        "contemplation",
+        "boredom",
+        "dissatisfaction"
+      ],
+      "reversed": [
+        "new motivation",
+        "accepting an offer",
+        "awakening",
+        "leaving stagnation"
+      ]
+    },
+    "meaning": {
+      "upright": "Discontent and introspection; opportunities go unnoticed out of apathy.",
+      "reversed": "Waking up to what was being ignored; the wish to engage returns."
+    },
+    "love": "In love, the Four of Cups shows apathy or dissatisfaction: you may be missing a gesture of affection. Reversed, interest wakes up again.",
+    "work": "At work, it speaks of boredom and low motivation. An opportunity may be right in front of you, waiting for you to look.",
+    "advice": "Lift your eyes. Sometimes what is missing is already being offered."
+  },
+  "minor-cups-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "loss",
+        "grief",
+        "regret",
+        "disappointment"
+      ],
+      "reversed": [
+        "acceptance",
+        "forgiveness",
+        "moving on",
+        "emotional recovery"
+      ]
+    },
+    "meaning": {
+      "upright": "The pain of a loss takes over, overshadowing what still remains.",
+      "reversed": "Healing begins; the loss is accepted and attention turns to what is left."
+    },
+    "love": "In love, the Five of Cups speaks of grief, regret or disappointment. Reversed, healing begins, along with the wish to move on.",
+    "work": "At work, it points to frustration over something that did not work out. Acknowledge the loss without forgetting what is still standing.",
+    "advice": "Mourn what was lost, then turn toward what remains. There are still full cups behind you."
+  },
+  "minor-cups-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "nostalgia",
+        "memories",
+        "innocence",
+        "reunion",
+        "kindness"
+      ],
+      "reversed": [
+        "stuck in the past",
+        "paralyzing nostalgia",
+        "idealization",
+        "growing up"
+      ]
+    },
+    "meaning": {
+      "upright": "The warmth of old memories and affections; the kindness and simplicity of the past.",
+      "reversed": "Too much attachment to the past keeps you from moving on, or, the opposite, you let go in order to grow."
+    },
+    "love": "In love, the Six of Cups brings nostalgia, tenderness and reunions, sometimes with someone from the past. Reversed, it warns of idealizing what was and not living the present.",
+    "work": "At work, it speaks of reviving old projects, kind environments and learning from past experience.",
+    "advice": "Take the kindness from the past, not the prison."
+  },
+  "minor-cups-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "choices",
+        "illusions",
+        "fantasy",
+        "dreams",
+        "temptation"
+      ],
+      "reversed": [
+        "clarity",
+        "decision",
+        "focus",
+        "necessary disillusionment"
+      ]
+    },
+    "meaning": {
+      "upright": "Many tempting options, some of them illusions; you need to tell the real from the imagined.",
+      "reversed": "The fog clears; you choose clearly, or realize what was only fantasy."
+    },
+    "love": "In love, the Seven of Cups shows fantasies and many possibilities, not all of them real. Reversed, the illusion fades and it becomes easier to see who is truly there.",
+    "work": "At work, it points to too many options and the risk of scattering. Separate what you wish for from what is feasible.",
+    "advice": "Pick one concrete option and test it against reality. Dreaming is good; deciding is necessary."
+  },
+  "minor-cups-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "departure",
+        "search for meaning",
+        "leaving what's not enough",
+        "withdrawal"
+      ],
+      "reversed": [
+        "fear of change",
+        "staying for comfort",
+        "return",
+        "indecision"
+      ]
+    },
+    "meaning": {
+      "upright": "Leaving behind something emotionally incomplete in search of something deeper.",
+      "reversed": "Hesitating between going and staying; fear of change or returning to what you had left."
+    },
+    "love": "In love, the Eight of Cups speaks of leaving something that no longer fulfills you, even without a fight. Reversed, it shows hesitation between going and staying.",
+    "work": "At work, it points to leaving a job or project that has lost its meaning to look for something deeper.",
+    "advice": "Have the courage to walk away from what is not enough. Leaving can also be an act of care."
+  },
+  "minor-cups-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "satisfaction",
+        "wishes fulfilled",
+        "contentment",
+        "gratitude"
+      ],
+      "reversed": [
+        "dissatisfaction",
+        "empty wishes",
+        "excess",
+        "outside approval"
+      ]
+    },
+    "meaning": {
+      "upright": "The 'wish card': contentment and emotional or material fulfillment.",
+      "reversed": "Satisfaction feels incomplete; pleasures do not fill you, or bigger goals are missing."
+    },
+    "love": "In love, the Nine of Cups is contentment: feeling satisfied with what you are living. Reversed, it shows incomplete satisfaction or pleasures that do not fill you.",
+    "work": "At work, it speaks of goals reached and pride in what you have achieved. It is known as the wish card.",
+    "advice": "Acknowledge what is already good and be clear about what you still wish for."
+  },
+  "minor-cups-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "complete happiness",
+        "family harmony",
+        "emotional fulfillment",
+        "peace"
+      ],
+      "reversed": [
+        "family disharmony",
+        "misaligned values",
+        "apparent happiness"
+      ]
+    },
+    "meaning": {
+      "upright": "Shared emotional fullness; home and bonds in harmony.",
+      "reversed": "The picture of harmony cracks; conflict or distance between loved ones."
+    },
+    "love": "In love, the Ten of Cups is emotional fullness: harmony, family, a home at peace. Reversed, it shows cracks in the picture of harmony or distance between loved ones.",
+    "work": "At work, it points to balance between personal and professional life, and a place where people feel at home.",
+    "advice": "Invest in the bonds that make you feel at home. Lasting peace comes from them."
+  },
+  "minor-cups-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "affectionate message",
+        "creativity",
+        "intuition",
+        "tenderness"
+      ],
+      "reversed": [
+        "emotional immaturity",
+        "creative block",
+        "disappointing news"
+      ]
+    },
+    "meaning": {
+      "upright": "An emotional or creative invitation; sensitivity and imagination emerging.",
+      "reversed": "Immature or repressed feelings; creativity or the message does not flow."
+    },
+    "love": "In love, the Page of Cups brings an affectionate message, an invitation, or a sweet and sincere gesture. Reversed, it shows emotional immaturity or feelings kept hidden.",
+    "work": "At work, it speaks of creative, intuitive ideas and of starting something with sensitivity.",
+    "advice": "Allow yourself to feel and express, even if it still comes out awkwardly."
+  },
+  "minor-cups-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "romance",
+        "charm",
+        "proposal",
+        "following the heart",
+        "idealism"
+      ],
+      "reversed": [
+        "inconstancy",
+        "illusion",
+        "empty promises",
+        "romantic disappointment"
+      ]
+    },
+    "meaning": {
+      "upright": "A romantic or creative offer arrives; you act guided by the heart.",
+      "reversed": "Charm hides inconstancy; illusions, broken promises or disillusionment."
+    },
+    "love": "In love, the Knight of Cups is romance: a proposal, a declaration, someone acting from the heart. Reversed, it warns of fickle charm and promises that are not kept.",
+    "work": "At work, it brings creative proposals and the wish to follow what you love. Check whether the offer is as solid as it is beautiful.",
+    "advice": "Follow your heart, and check that your feet are still on the ground."
+  },
+  "minor-cups-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "empathy",
+        "nurturing",
+        "intuition",
+        "care",
+        "sensitivity"
+      ],
+      "reversed": [
+        "emotional dependence",
+        "neediness",
+        "self-sacrifice",
+        "instability"
+      ]
+    },
+    "meaning": {
+      "upright": "A welcoming, intuitive heart that cares for and understands others.",
+      "reversed": "Sensitivity overflows into neediness, dependence, or giving until you disappear."
+    },
+    "love": "In love, the Queen of Cups is warmth, empathy and deep listening. Reversed, it shows neediness, emotional dependence or giving until you disappear.",
+    "work": "At work, it speaks of sensitivity with people, intuition and care. Great energy for roles that involve support and listening.",
+    "advice": "Hold space for others without abandoning yourself. Empathy also needs boundaries."
+  },
+  "minor-cups-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "emotional balance",
+        "maturity",
+        "compassion",
+        "diplomacy"
+      ],
+      "reversed": [
+        "repression",
+        "emotional manipulation",
+        "coldness",
+        "moodiness"
+      ]
+    },
+    "meaning": {
+      "upright": "Calm mastery of emotions; compassionate, mature support even under pressure.",
+      "reversed": "Emotions are repressed or used to manipulate; coldness or instability."
+    },
+    "love": "In love, the King of Cups is emotional maturity: someone steady, compassionate and present. Reversed, it warns of emotions repressed or used to manipulate.",
+    "work": "At work, it points to diplomacy, calm under pressure and leadership that looks after people.",
+    "advice": "Feel everything, but choose calmly what to do with what you feel."
+  },
+  "minor-swords-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "clarity",
+        "truth",
+        "mental breakthrough",
+        "new idea",
+        "discernment"
+      ],
+      "reversed": [
+        "confusion",
+        "clouded ideas",
+        "misused force",
+        "injustice"
+      ]
+    },
+    "meaning": {
+      "upright": "A stroke of lucidity; the mind cuts through confusion and reveals the truth.",
+      "reversed": "Clarity is missing; muddled ideas, broken communication, or reason used to wound."
+    },
+    "love": "In love, the Ace of Swords calls for an honest conversation: the truth said clearly cuts through confusion. Reversed, it warns of misunderstandings or words used to hurt.",
+    "work": "At work, it is a sharp idea, a mental breakthrough, the decision that finally becomes clear.",
+    "advice": "Tell the truth with precision and care. Clarity is a form of respect."
+  },
+  "minor-swords-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "stalemate",
+        "indecision",
+        "truce",
+        "avoiding the choice"
+      ],
+      "reversed": [
+        "decision made",
+        "breaking the block",
+        "truth revealed",
+        "confusion"
+      ]
+    },
+    "meaning": {
+      "upright": "A hard choice is put off; you stay blindfolded, in a precarious balance.",
+      "reversed": "The block breaks: you decide and face the truth, or the stalemate slides into chaos."
+    },
+    "love": "In love, the Two of Swords shows a stalemate: avoiding a choice or a conversation to keep a fragile peace. Reversed, the decision can no longer wait.",
+    "work": "At work, it points to indecision between two options and missing information. Take off the blindfold and look at the data.",
+    "advice": "Postponing the choice is also a choice. Gather what is missing and decide."
+  },
+  "minor-swords-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "pain",
+        "heartache",
+        "rupture",
+        "betrayal",
+        "broken heart"
+      ],
+      "reversed": [
+        "healing the hurt",
+        "forgiveness",
+        "getting over the pain",
+        "releasing grief"
+      ]
+    },
+    "meaning": {
+      "upright": "The pain of a loss or betrayal pierces the heart; an unavoidable suffering.",
+      "reversed": "Healing begins; the hurt is released, though the pain still echoes."
+    },
+    "love": "In love, the Three of Swords is heartache: betrayal, a breakup, or words that wounded. Reversed, the wound begins to heal.",
+    "work": "At work, it speaks of disappointments and harsh criticism. It hurts, but it can reveal what needed to change.",
+    "advice": "Make room for the pain without living in it. Naming the hurt is where healing starts."
+  },
+  "minor-swords-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "rest",
+        "recovery",
+        "pause",
+        "contemplation",
+        "truce"
+      ],
+      "reversed": [
+        "restlessness",
+        "burnout",
+        "returning too soon",
+        "stagnation"
+      ]
+    },
+    "meaning": {
+      "upright": "A necessary retreat to recover; pause and silence before picking things up again.",
+      "reversed": "Either you cannot rest, or the rest drags on into stagnation."
+    },
+    "love": "In love, the Four of Swords asks for a pause to breathe and recover before going on. Reversed, it shows trouble resting, or a distance that lasts too long.",
+    "work": "At work, it points to the need for rest, time off, or a moment to plan before resuming.",
+    "advice": "Rest for real. The mind also needs silence to come back sharp."
+  },
+  "minor-swords-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "conflict",
+        "defeat",
+        "discord",
+        "winning at any cost"
+      ],
+      "reversed": [
+        "reconciliation",
+        "end of the dispute",
+        "remorse",
+        "learning to yield"
+      ]
+    },
+    "meaning": {
+      "upright": "A hollow victory or a bitter defeat; the conflict leaves losers on both sides.",
+      "reversed": "You try to repair the damage; reconciliation, regret or the end of hostilities."
+    },
+    "love": "In love, the Five of Swords shows arguments where one person wins and both lose. Reversed, it opens room to repair the damage and make peace.",
+    "work": "At work, it speaks of conflict, unfair competition, or a win that costs relationships. Ask whether it is worth the price.",
+    "advice": "Not every argument needs to be won. Sometimes dropping the point preserves what matters."
+  },
+  "minor-swords-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "transition",
+        "crossing",
+        "leaving behind",
+        "gradual relief"
+      ],
+      "reversed": [
+        "resistance to change",
+        "emotional baggage",
+        "postponed journey"
+      ]
+    },
+    "meaning": {
+      "upright": "Moving away from troubled waters toward something calmer; a transition under way.",
+      "reversed": "The change stalls; you carry the past with you, or hesitate to move on."
+    },
+    "love": "In love, the Six of Swords is a crossing: leaving a turbulent period behind for something calmer. Reversed, it shows how hard it is to let go of the past.",
+    "work": "At work, it points to transition, a change of job or city, and gradual relief after a hard time.",
+    "advice": "Keep moving even if you carry some sadness. Calmer waters are ahead."
+  },
+  "minor-swords-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "strategy",
+        "cunning",
+        "acting alone",
+        "evasion",
+        "deception"
+      ],
+      "reversed": [
+        "confession",
+        "being found out",
+        "changing tactics",
+        "guilty conscience"
+      ]
+    },
+    "meaning": {
+      "upright": "Acting with cleverness and discretion, sometimes questionably, in order to win.",
+      "reversed": "The plan is exposed or abandoned; a mistake is owned or the strategy is rethought."
+    },
+    "love": "In love, the Seven of Swords warns of secrets, half-truths, or someone acting behind your back. Reversed, the truth comes out or the mistake is owned.",
+    "work": "At work, it speaks of strategy and discretion, but also of questionable shortcuts. Be smart without giving up on ethics.",
+    "advice": "Be strategic and honest at the same time. What is gained in hiding usually costs dearly later."
+  },
+  "minor-swords-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "mental imprisonment",
+        "self-imposed limits",
+        "fear",
+        "victimhood"
+      ],
+      "reversed": [
+        "release",
+        "escaping the mental trap",
+        "reclaiming your power"
+      ]
+    },
+    "meaning": {
+      "upright": "Feeling trapped with no way out, more by your own mind than by real bars.",
+      "reversed": "You realize the prison was mental; release begins and strength returns."
+    },
+    "love": "In love, the Eight of Swords shows the feeling of being trapped in a situation, often by fear more than by facts. Reversed, release begins.",
+    "work": "At work, it points to limiting beliefs and the sense that there is no way out. There are more options than fear lets you see.",
+    "advice": "Question the story you tell yourself. Many bonds are mental."
+  },
+  "minor-swords-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "anguish",
+        "anxiety",
+        "insomnia",
+        "guilt",
+        "fear"
+      ],
+      "reversed": [
+        "relief",
+        "hope",
+        "facing fears",
+        "leaving despair behind"
+      ]
+    },
+    "meaning": {
+      "upright": "Dark thoughts steal your sleep; the mind magnifies fears and guilt.",
+      "reversed": "The anguish starts to ease; you ask for help and hope slowly returns."
+    },
+    "love": "In love, the Nine of Swords speaks of anxiety, jealousy or guilt that keeps you awake. Reversed, the anguish begins to ease.",
+    "work": "At work, it points to excessive worry and worst-case scenarios the mind blows up. Talk to someone you trust.",
+    "advice": "Share the weight with someone. Thoughts at three in the morning rarely tell the whole story."
+  },
+  "minor-swords-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "painful ending",
+        "collapse",
+        "rock bottom",
+        "total exhaustion"
+      ],
+      "reversed": [
+        "recovery",
+        "starting over after the end",
+        "enduring",
+        "the worst is over"
+      ]
+    },
+    "meaning": {
+      "upright": "A cycle ends painfully; you hit bottom, but right there lies a new start.",
+      "reversed": "Rising after the fall; the worst is over and recovery comes, however slowly."
+    },
+    "love": "In love, the Ten of Swords is a painful but final ending: the point where it cannot get worse. Reversed, recovery begins.",
+    "work": "At work, it speaks of a collapse or a defeat that closes a cycle. Rock bottom is also ground to stand up from.",
+    "advice": "Accept that it is over. The worst has passed, and the new start begins here."
+  },
+  "minor-swords-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "curiosity",
+        "vigilance",
+        "new ideas",
+        "communication"
+      ],
+      "reversed": [
+        "gossip",
+        "scattered focus",
+        "thoughtless words",
+        "hidden plans"
+      ]
+    },
+    "meaning": {
+      "upright": "A curious, alert mind in search of the truth; a readiness to learn and question.",
+      "reversed": "Mental energy turns into gossip, careless words, or dishonest use of information."
+    },
+    "love": "In love, the Page of Swords brings curiosity and frank conversations, sometimes said without care. Reversed, it warns of gossip or hasty words.",
+    "work": "At work, it favors study, research, pointed questions and a wish to learn.",
+    "advice": "Ask, investigate and learn, but think before you speak."
+  },
+  "minor-swords-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "decisive action",
+        "ambition",
+        "intellectual drive",
+        "focus",
+        "courage"
+      ],
+      "reversed": [
+        "haste",
+        "aggression",
+        "arrogance",
+        "acting without thinking"
+      ]
+    },
+    "meaning": {
+      "upright": "Charging quickly and resolutely after a goal or an idea.",
+      "reversed": "Haste turns reckless; aggressive words or actions without strategy."
+    },
+    "love": "In love, the Knight of Swords is bluntness and hurry: someone direct, sometimes too harsh. Reversed, it warns of impulsiveness and aggressive words.",
+    "work": "At work, it points to ambition and decisive action toward a goal. Be careful not to run over people.",
+    "advice": "Move forward with focus, and adjust your tone. The truth lands better when it does not come as a blow."
+  },
+  "minor-swords-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "clarity",
+        "independence",
+        "honesty",
+        "discernment",
+        "boundaries"
+      ],
+      "reversed": [
+        "coldness",
+        "bitterness",
+        "excessive criticism",
+        "isolation"
+      ]
+    },
+    "meaning": {
+      "upright": "Clear, impartial judgment; the truth told frankly, with clear boundaries.",
+      "reversed": "Lucidity sours into coldness, sarcasm, or criticism that drives others away."
+    },
+    "love": "In love, the Queen of Swords asks for honesty and clear boundaries, often after a difficult experience. Reversed, lucidity turns into coldness or criticism that pushes people away.",
+    "work": "At work, it speaks of discernment, independence and direct communication. Excellent for negotiating and evaluating.",
+    "advice": "Be clear about what you accept, and leave room for kindness inside your frankness."
+  },
+  "minor-swords-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "intellectual authority",
+        "truth",
+        "ethics",
+        "rational decision"
+      ],
+      "reversed": [
+        "authoritarianism",
+        "manipulation",
+        "calculated coldness",
+        "abuse of power"
+      ]
+    },
+    "meaning": {
+      "upright": "A clear, ethical mind that decides with logic and impartiality.",
+      "reversed": "Reason turns into control and manipulation; mental power used without compassion."
+    },
+    "love": "In love, the King of Swords is rationality and ethics: considered decisions, serious conversations, commitment to the truth. Reversed, it warns of control and coldness.",
+    "work": "At work, it points to intellectual authority, impartial judgment and decisions grounded in logic.",
+    "advice": "Decide with your head, but remember that people are not just arguments."
+  },
+  "minor-pentacles-ace": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "new material opportunity",
+        "prosperity",
+        "seed",
+        "stability"
+      ],
+      "reversed": [
+        "missed opportunity",
+        "financial insecurity",
+        "fragile plans"
+      ]
+    },
+    "meaning": {
+      "upright": "A seed of prosperity: a job, money or a concrete project beginning.",
+      "reversed": "The opportunity slips away or arrives unstable; there is no solid base for what you want to build."
+    },
+    "love": "In love, the Ace of Pentacles speaks of a relationship that starts on solid ground, or concrete gestures of care. Reversed, it shows instability or a lack of commitment.",
+    "work": "At work, it is a seed of prosperity: a job, an offer, money or a concrete project beginning.",
+    "advice": "Plant with care. Material opportunities grow with consistency, not haste."
+  },
+  "minor-pentacles-two": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "balance",
+        "adaptation",
+        "juggling priorities",
+        "flexibility"
+      ],
+      "reversed": [
+        "overload",
+        "disorganization",
+        "imbalance",
+        "lost priorities"
+      ]
+    },
+    "meaning": {
+      "upright": "Balancing several demands at once, with flexibility and a light touch.",
+      "reversed": "The balls drop; too many commitments and disorganization throw you off balance."
+    },
+    "love": "In love, the Two of Pentacles shows the balance between the relationship and life's other demands. Reversed, it warns of lack of time and disorganization.",
+    "work": "At work, it speaks of juggling tasks, finances and priorities with flexibility.",
+    "advice": "Adjust your priorities flexibly. Balance is movement, not standing still."
+  },
+  "minor-pentacles-three": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "collaboration",
+        "competence",
+        "teamwork",
+        "learning"
+      ],
+      "reversed": [
+        "misalignment",
+        "rework",
+        "lack of teamwork"
+      ]
+    },
+    "meaning": {
+      "upright": "Something is built together, each person contributing their skill.",
+      "reversed": "The team falls apart; poor communication, rework or underused competence."
+    },
+    "love": "In love, the Three of Pentacles speaks of building together: plans, a home, shared projects. Reversed, it shows a lack of collaboration or alignment.",
+    "work": "At work, it is the card of teamwork and recognized competence. Everyone contributes what they know.",
+    "advice": "Build with people who add. Good work depends on many hands working well together."
+  },
+  "minor-pentacles-four": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "security",
+        "saving",
+        "control",
+        "attachment to material things"
+      ],
+      "reversed": [
+        "loosening control",
+        "fear of loss",
+        "greed",
+        "generosity"
+      ]
+    },
+    "meaning": {
+      "upright": "Keeping and protecting what you have; a security that can turn into rigidity.",
+      "reversed": "Either control loosens and you share, or attachment becomes a paralyzing fear of loss."
+    },
+    "love": "In love, the Four of Pentacles shows security, but also possessiveness or fear of opening up. Reversed, it speaks of learning to let go and share.",
+    "work": "At work, it points to controlled spending, stability and caution, which can turn into rigidity.",
+    "advice": "Protect what is yours without closing yourself to what may come."
+  },
+  "minor-pentacles-five": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "material hardship",
+        "loss",
+        "insecurity",
+        "exclusion"
+      ],
+      "reversed": [
+        "recovery",
+        "end of a hard phase",
+        "help in sight",
+        "hope"
+      ]
+    },
+    "meaning": {
+      "upright": "A period of scarcity or helplessness, material and emotional.",
+      "reversed": "The hard phase begins to pass; help, recovery or a new perspective appears."
+    },
+    "love": "In love, the Five of Pentacles speaks of a time of insecurity or of feeling left out. Reversed, help appears and the hard phase begins to pass.",
+    "work": "At work, it points to financial difficulty, job loss or lack of support. Look for help; it may be closer than it seems.",
+    "advice": "Do not face scarcity alone. Asking for support is a resource, not a defeat."
+  },
+  "minor-pentacles-six": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "generosity",
+        "help",
+        "balance between giving and receiving",
+        "gratitude"
+      ],
+      "reversed": [
+        "debt",
+        "power imbalance",
+        "help with strings attached"
+      ]
+    },
+    "meaning": {
+      "upright": "A healthy flow of giving and receiving; generosity and mutual support.",
+      "reversed": "The balance between giving and receiving is distorted; dependence, debt or conditional help."
+    },
+    "love": "In love, the Six of Pentacles speaks of generosity and balance between giving and receiving. Reversed, it warns of dependence or conditional affection.",
+    "work": "At work, it points to help, investment, donations or a fair flow of exchange.",
+    "advice": "Give and receive with the same dignity. Healthy generosity creates no debts."
+  },
+  "minor-pentacles-seven": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "patience",
+        "assessment",
+        "long-term investment",
+        "harvest"
+      ],
+      "reversed": [
+        "impatience",
+        "effort without return",
+        "giving up too early"
+      ]
+    },
+    "meaning": {
+      "upright": "Pausing to assess what was planted; the fruit comes with patience.",
+      "reversed": "Frustration with the slow pace; the sense of wasted effort or the urge to drop everything."
+    },
+    "love": "In love, the Seven of Pentacles asks for patience: weighing what the relationship has given and what needs more time. Reversed, it shows frustration with a slow pace.",
+    "work": "At work, it speaks of long-term investments and a pause to assess results before going on.",
+    "advice": "Assess what you planted before deciding to harvest or replant."
+  },
+  "minor-pentacles-eight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "dedication",
+        "improvement",
+        "discipline",
+        "mastery of a craft"
+      ],
+      "reversed": [
+        "sterile perfectionism",
+        "lack of focus",
+        "work without purpose"
+      ]
+    },
+    "meaning": {
+      "upright": "Refining a skill through effort and repetition; focus on the craft.",
+      "reversed": "Effort loses direction: empty perfectionism, boredom or carelessness."
+    },
+    "love": "In love, the Eight of Pentacles speaks of daily dedication: caring for the relationship the way you would refine a craft. Reversed, it shows routine without attention, or neglect.",
+    "work": "At work, it is improvement, study and the discipline to master a skill.",
+    "advice": "Devote yourself to your craft steadily. Mastery is repetition with attention."
+  },
+  "minor-pentacles-nine": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "independence",
+        "self-sufficiency",
+        "earned comfort",
+        "refinement"
+      ],
+      "reversed": [
+        "dependence",
+        "overspending",
+        "superficial security"
+      ]
+    },
+    "meaning": {
+      "upright": "Enjoying, independently, the comfort you earned on your own merit.",
+      "reversed": "Independence wavers; overspending, or a security that depends on others."
+    },
+    "love": "In love, the Nine of Pentacles speaks of autonomy and being well with yourself, with or without company. Reversed, it shows a security that depends too much on someone else.",
+    "work": "At work, it points to financial independence and comfort earned on your own merit.",
+    "advice": "Enjoy what you have built. Self-sufficiency is also a form of self-love."
+  },
+  "minor-pentacles-ten": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "lasting wealth",
+        "legacy",
+        "family",
+        "stability",
+        "tradition"
+      ],
+      "reversed": [
+        "financial instability",
+        "inheritance disputes",
+        "fragile values"
+      ]
+    },
+    "meaning": {
+      "upright": "Solid, lasting prosperity, shared with family and passed on as legacy.",
+      "reversed": "The material or family foundation is shaken; disputes, debt or a threatened legacy."
+    },
+    "love": "In love, the Ten of Pentacles speaks of lasting commitment, family and long-term plans. Reversed, it warns of family conflict or material issues shaking the foundation.",
+    "work": "At work, it points to stability, legacy, family business and prosperity that lasts.",
+    "advice": "Think long term. What you build today can support those who come after."
+  },
+  "minor-pentacles-page": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "new opportunity",
+        "study",
+        "goal focus",
+        "practical ambition"
+      ],
+      "reversed": [
+        "procrastination",
+        "lack of planning",
+        "wasted opportunity"
+      ]
+    },
+    "meaning": {
+      "upright": "The will to learn and make things concrete; a practical opportunity that calls for focus.",
+      "reversed": "Delay and lack of a plan let the opportunity slip through your fingers."
+    },
+    "love": "In love, the Page of Pentacles speaks of sincere interest and taking it slow, feet on the ground. Reversed, it shows postponement or a lack of initiative.",
+    "work": "At work, it points to study, a new practical opportunity and the ambition to reach your goals.",
+    "advice": "Turn the wish into a plan. One concrete step is worth more than many intentions."
+  },
+  "minor-pentacles-knight": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "consistency",
+        "method",
+        "responsibility",
+        "persistent work"
+      ],
+      "reversed": [
+        "stagnation",
+        "boredom",
+        "complacency",
+        "perfectionism"
+      ]
+    },
+    "meaning": {
+      "upright": "Slow but steady progress; reliability and method lead to the goal.",
+      "reversed": "Consistency turns into stagnation or routine without progress; a lack of initiative."
+    },
+    "love": "In love, the Knight of Pentacles is consistency: someone reliable who shows love through actions. Reversed, it shows stagnation or a routine with nothing new.",
+    "work": "At work, it speaks of method, responsibility and slow but steady progress.",
+    "advice": "Keep your own pace, with method. Slow and steady also arrives."
+  },
+  "minor-pentacles-queen": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "practical prosperity",
+        "nurturing",
+        "work-home balance",
+        "generosity"
+      ],
+      "reversed": [
+        "overload",
+        "self-neglect",
+        "material insecurity"
+      ]
+    },
+    "meaning": {
+      "upright": "Caring competently for the concrete and for people, uniting comfort and achievement.",
+      "reversed": "Devotion to care and work leads to exhaustion or neglect of yourself."
+    },
+    "love": "In love, the Queen of Pentacles is practical care and comfort: love shown through concrete gestures. Reversed, it warns of exhaustion from caring for everyone but yourself.",
+    "work": "At work, it points to competence, organization and balance between home and work.",
+    "advice": "Take care of the concrete world and of people, without forgetting to put yourself on the list."
+  },
+  "minor-pentacles-king": {
+    "correspondence": null,
+    "keywords": {
+      "upright": [
+        "prosperity",
+        "solid leadership",
+        "security",
+        "discipline",
+        "material success"
+      ],
+      "reversed": [
+        "greed",
+        "materialism",
+        "control",
+        "stubbornness"
+      ]
+    },
+    "meaning": {
+      "upright": "Mature mastery of the material world; provides and leads with security and discipline.",
+      "reversed": "Focus on the material turns into greed, control or rigid attachment to status."
+    },
+    "love": "In love, the King of Pentacles speaks of security, loyalty and stable commitment. Reversed, it warns of control, possessiveness or too much focus on the material.",
+    "work": "At work, it is material success, solid leadership and discipline in business.",
+    "advice": "Build security with generosity. Prosperity is worth more when it also supports others."
+  }
+}
