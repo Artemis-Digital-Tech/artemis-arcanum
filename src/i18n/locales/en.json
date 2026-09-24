@@ -7,14 +7,15 @@
     "pricing": "Pricing",
     "cta": "Draw a Card",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "faq": "FAQ"
   },
   "hero": {
-    "plateLabel": "Plate I — The Tarot Instrument",
-    "titlePre": "An oracle that reads",
+    "plateLabel": "Plate I — Free Online Tarot",
+    "titlePre": "Online tarot that reads",
     "titleEm": "your",
     "titlePost": "question, not the calendar.",
-    "lede": "Arcanum is a tarot reader that answers the question you actually have, not today's daily card and not a wait for a human reader. Ask, and the deck responds in the time it takes to shuffle.",
+    "lede": "Play tarot online any time: Arcanum reads the tarot cards for the question you actually have, not today's daily card and not a wait for a human reader. Draw the cards for free and get your reading in the time it takes to shuffle.",
     "ctaPrimary": "Begin a reading",
     "ctaGhost": "See how the reading is built ↓",
     "readout": {
@@ -187,7 +188,6 @@
     "selectedBadge": "Selected",
     "lockedBadge": "Plus only",
     "quotaLockedBadge": "Subscribe to Plus",
-    "signInNotice": "Sign in to start a reading — that's how we can count your free readings per account, not per browser.",
     "framingPrompt": "Choose a framing",
     "framings": {
       "pastPresentFuture": "Past — Present — Future",
@@ -260,6 +260,7 @@
       "readingsRemainingNotice_one": "{{count}} free reading left this month.",
       "readingsRemainingNotice_other": "{{count}} free readings left this month.",
       "quotaReachedNotice": "You've used your free readings for this month.",
+      "spreadLockedNotice": "The {{spread}} spread is part of Plus.",
       "upgradeCta": "Subscribe to continue",
       "signInNotice": "Sign in to generate your reading — your first 3 are free.",
       "signInCta": "Sign in to generate",
@@ -428,12 +429,12 @@
   },
   "seo": {
     "landing": {
-      "title": "Arcanum — a tarot reader, always open",
-      "description": "Arcanum is a tarot reader that reads the tarot cards for the question you actually have, the moment you ask it. No booking, no waiting room, no generic horoscope."
+      "title": "Free Online Tarot Reading: play tarot now with AI | Arcanum",
+      "description": "Play tarot online for free: ask your question, draw from all 78 cards, and get your reading instantly. One- and three-card spreads at no cost."
     },
     "gameSelect": {
-      "title": "Choose your spread — Arcanum",
-      "description": "One card, three cards, horseshoe, or the Celtic Cross — choose how deep this tarot reading goes."
+      "title": "Play Tarot Online — Choose Your Spread | Arcanum",
+      "description": "Play tarot online: a one-card, three-card, horseshoe, or Celtic Cross spread. Choose your tarot spread and ask the cards your question."
     },
     "gameBoard": {
       "title": "Your reading — Arcanum"
@@ -445,8 +446,39 @@
       "title": "Your readings — Arcanum"
     },
     "pricing": {
-      "title": "Pricing — Arcanum",
+      "title": "Pricing — Free or Unlimited Online Tarot | Arcanum",
       "description": "Compare Arcanum's plans: free monthly readings, Plus with unlimited spreads, and Ritual with follow-ups and PDF export."
     }
+  },
+  "faq": {
+    "tag": "Appendix — Frequently Asked",
+    "title": "Free online tarot: what you need to know.",
+    "subtitle": "How to play, what it costs, and what to expect from a tarot reading with Arcanum.",
+    "items": [
+      {
+        "q": "How do I play tarot online with Arcanum?",
+        "a": "Pick a spread, write your question, and draw from a deck shuffled fresh just for you. The interpretation takes into account your question, every card that landed, and its position in the spread."
+      },
+      {
+        "q": "Is online tarot free?",
+        "a": "Yes. Drawing the cards is open to anyone, and a free account gets you 3 interpreted readings a month on one- and three-card spreads. The Plus and Ritual plans unlock unlimited readings, the Horseshoe, and the Celtic Cross."
+      },
+      {
+        "q": "Do I need to sign up to play tarot for free?",
+        "a": "Not to draw the cards. To get the interpretation, just create a free account — it counts your monthly readings and keeps your history."
+      },
+      {
+        "q": "Which tarot spreads can I use?",
+        "a": "One card, for a quick answer; three cards, with framings such as past, present, and future; the seven-card Horseshoe; and the Celtic Cross, the classic ten-card spread."
+      },
+      {
+        "q": "Is it a full tarot deck?",
+        "a": "Yes: all 78 tarot cards — 22 major arcana and 56 minor arcana — which can land upright or reversed."
+      },
+      {
+        "q": "Does a tarot reading predict the future?",
+        "a": "Arcanum is an instrument for reflection, not an oracle of certainty. Use a reading to look at your question from new angles — not as a substitute for medical, legal, or financial advice."
+      }
+    ]
   }
 }

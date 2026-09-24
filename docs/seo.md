@@ -44,10 +44,14 @@
 
 ## O que ainda precisa de uma decisão ou um dado seu
 
-1. **Domínio de produção**: `robots.txt` e `sitemap.xml` têm
-   `REPLACE_WITH_YOUR_DOMAIN` como placeholder — não fabriquei um domínio
-   porque não sei qual é o real. Assim que o site tiver uma URL de
-   produção, faça um find-and-replace nesses dois arquivos.
+1. **Domínio de produção**: `sitemap.xml` e `robots.txt` são gerados no
+   build por `plugins/sitemap.ts`, a partir da lista de rotas indexáveis
+   (`/`, `/jogo`, `/precos`, em cada idioma de `SUPPORTED_LANGUAGES`). O
+   domínio vem de `SITE_URL` (ex.: `SITE_URL=https://arcanum.com.br`, no
+   `.env.local` ou nas variáveis de ambiente da Vercel); sem ela, na Vercel
+   é usado `VERCEL_PROJECT_PRODUCTION_URL`. Se nenhuma estiver definida, o
+   build avisa e não gera o sitemap. Ao criar uma página nova indexável,
+   adicione o `path` dela em `INDEXABLE_PATHS`.
 2. **Imagem para Open Graph** (`og:image`): não adicionei nenhuma — o
    projeto não tem uma imagem de preview social de verdade ainda, e usar
    um placeholder inventado seria pior do que não ter nenhuma (o link
@@ -63,3 +67,20 @@
    (compartilhamento em redes que não renderizam JS, crawlers mais
    simples), a solução é pré-renderização ou SSR, que é uma mudança de
    arquitetura maior e separada deste trabalho.
+
+## Palavras-chave e pré-renderização do `<head>`
+
+Palavras-chave principais: **tarot online**, **tarot grátis / tarot de graça**,
+**jogar tarot online**, **tarô**, **tiragem de tarot** (e em inglês: *free
+online tarot*, *play tarot online*, *tarot reading*).
+
+- Onde estão: `seo.*` (títulos e descrições), `hero.*` (H1 e lede da landing)
+  e `faq.*` nos arquivos de tradução. A FAQ da landing responde buscas de
+  cauda longa ("tarot online é grátis?", "precisa de cadastro?") e vira
+  JSON-LD `FAQPage` (`src/seo/structuredData.ts`). O texto das respostas
+  precisa continuar verdadeiro em relação aos planos (`src/data/plans.ts`).
+- `plugins/seo.ts` gera no build um `dist/<idioma>/<rota>/index.html` por
+  página indexável, já com título, descrição, `lang`, canonical, hreflang,
+  Open Graph e JSON-LD corretos. Assim, crawlers e previews de link que não
+  executam JavaScript veem o `<head>` certo de cada página (o corpo ainda é
+  renderizado no cliente).

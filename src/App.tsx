@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { useReveal } from './useReveal'
@@ -8,6 +8,7 @@ import NavMenu from './components/NavMenu'
 import PricingNavLink from './components/PricingNavLink'
 import Seo from './components/Seo'
 import { cardArtUrl } from './data/cardImages'
+import { landingJsonLd, type FaqItem } from './seo/structuredData'
 
 /** The majors shown in the deck catalogue: plate numeral, line glyph, and the card's own art. */
 const CATALOG_CARDS = [
@@ -105,22 +106,17 @@ function App() {
   useReveal()
   const { t, i18n } = useTranslation()
   const [deckStyle, setDeckStyle] = useState<'glyph' | 'art'>('glyph')
+  // returnObjects builds a fresh array per call; memoize so jsonLd stays stable.
+  const faqItems = useMemo(() => t('faq.items', { returnObjects: true }) as FaqItem[], [t])
+  const description = t('seo.landing.description')
+  const jsonLd = useMemo(
+    () => landingJsonLd(`${window.location.origin}/${i18n.language}`, i18n.language, description, faqItems),
+    [i18n.language, description, faqItems],
+  )
 
   return (
     <>
-      <Seo
-        title={t('seo.landing.title')}
-        description={t('seo.landing.description')}
-        path=""
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'WebSite',
-          name: 'Arcanum',
-          url: `${window.location.origin}/${i18n.language}`,
-          description: t('seo.landing.description'),
-          inLanguage: i18n.language,
-        }}
-      />
+      <Seo title={t('seo.landing.title')} description={t('seo.landing.description')} path="" jsonLd={jsonLd} />
       <div className="frame">
         <span className="c2"></span>
         <span className="c3"></span>
@@ -372,6 +368,29 @@ function App() {
           </div>
         </section>
 
+        {/* ============ FAQ ============ */}
+        <section className="section-pad faq" id="faq">
+          <div className="wrap">
+            <div className="section-head" data-reveal="true">
+              <div className="tag">{t('faq.tag')}</div>
+              <div>
+                <h2>{t('faq.title')}</h2>
+                <p>{t('faq.subtitle')}</p>
+              </div>
+            </div>
+            <div className="faq-list" data-reveal="true">
+              {faqItems.map((item) => (
+                <details className="faq-item" key={item.q}>
+                  <summary>
+                    <h3>{item.q}</h3>
+                  </summary>
+                  <p>{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ============ FINAL CTA ============ */}
         <section className="final">
           <div className="wrap">
@@ -394,6 +413,7 @@ function App() {
             <a href="#mechanism">{t('nav.mechanism')}</a>
             <a href="#deck">{t('nav.deck')}</a>
             <a href="#compare">{t('nav.compare')}</a>
+            <a href="#faq">{t('nav.faq')}</a>
           </div>
         </div>
       </footer>
