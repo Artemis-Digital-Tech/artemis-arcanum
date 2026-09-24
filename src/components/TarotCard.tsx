@@ -22,16 +22,20 @@ export function CardBackFace() {
 interface CardFrontFaceProps {
   card: TarotCardData
   name: string
+  /** A lighter file for small faces (the cards index); the zoom always reads the full art. */
+  artSrc?: string
+  /** False when the face sits inside a link, so it doesn't add a second tab stop. */
+  focusable?: boolean
 }
 
-export function CardFrontFace({ card, name }: CardFrontFaceProps) {
-  const corner = isMajor(card) ? toRoman(card.number) : rankBadge(card.rank)
-  const { zoomProps, zoomOverlay } = useCardZoom(card, name, corner)
+export function CardFrontFace({ card, name, artSrc, focusable = true }: CardFrontFaceProps) {
+  const corner = cardCorner(card)
+  const { zoomProps, zoomOverlay } = useCardZoom(card, name, corner, focusable)
 
   return (
     <div className="card-face card-front-face" {...zoomProps}>
       {/* Decorative: the name below it already carries the card's identity. */}
-      <img className="card-art" src={cardArtUrl(card.id)} alt="" loading="lazy" decoding="async" />
+      <img className="card-art" src={artSrc ?? cardArtUrl(card.id)} alt="" loading="lazy" decoding="async" />
       <div className="card-face-body">
         <span className="board-card-num">
           {corner}
@@ -43,6 +47,30 @@ export function CardFrontFace({ card, name }: CardFrontFaceProps) {
       {zoomOverlay}
     </div>
   )
+}
+
+/**
+ * The enlarged read of a card, in flow rather than as a hover overlay: the
+ * same chrome and `--card-art-filter-zoom` veil as the reading's zoom, for a
+ * card's own page. Sized by its container, like every face.
+ */
+export function CardPlateFace({ card, name, alt }: { card: TarotCardData; name: string; alt: string }) {
+  return (
+    <div className="card-face card-plate-face">
+      <img className="card-zoom-art" src={cardArtUrl(card.id)} alt={alt} width={440} height={789} fetchPriority="high" decoding="async" />
+      <div className="card-face-body">
+        <span className="board-card-num">
+          {cardCorner(card)}
+          {!isMajor(card) && <SuitMark suit={card.suit} className="board-card-suit" />}
+        </span>
+        <span className="board-card-name">{name}</span>
+      </div>
+    </div>
+  )
+}
+
+function cardCorner(card: TarotCardData): string {
+  return isMajor(card) ? toRoman(card.number) : rankBadge(card.rank)
 }
 
 function toRoman(n: number): string {

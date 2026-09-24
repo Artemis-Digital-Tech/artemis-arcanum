@@ -84,3 +84,20 @@ online tarot*, *play tarot online*, *tarot reading*).
   Open Graph e JSON-LD corretos. Assim, crawlers e previews de link que não
   executam JavaScript veem o `<head>` certo de cada página (o corpo ainda é
   renderizado no cliente).
+
+## Páginas de cartas e Sobre
+
+- `/:lang/cartas` (índice das 78 cartas em cinco "jornadas") e
+  `/:lang/cartas/:slug` (uma página por carta: significado normal e
+  invertido, no amor, no trabalho, conselho e como ler), mais `/:lang/sobre`.
+  São 83 páginas indexáveis por idioma, 166 URLs no sitemap.
+- Slugs vêm do nome em pt (`src/data/cardSlugs.ts`) e são os mesmos nos dois
+  idiomas, como as outras rotas (`/en/cartas/a-torre`).
+- O conteúdo das cartas fica em `src/content/cards/pt.json` e `en.json`
+  (mesmas chaves), carregado só nas páginas de cartas. Palavras-chave e
+  significados vêm de `tarot_base_conhecimento_rag.md`; "no amor", "no
+  trabalho" e "conselho" foram escritos para o site e valem uma revisão.
+- Cada página de carta sai no sitemap com a imagem da carta
+  (`<image:image>`), e o `<head>` pré-renderizado leva `og:image`, JSON-LD
+  `Article` + `BreadcrumbList`. O índice usa `CollectionPage` + `ItemList`; a
+  Sobre, `AboutPage` com a Artemis Digital Tech como publisher.

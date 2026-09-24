@@ -1595,7 +1595,8 @@ footer{
    need their own ground to sit on — two soft veils instead of a flat overlay,
    which would dull the illustration everywhere it isn't needed. */
 .card-front-face .card-face-body,
-.card-zoom .card-face-body{
+.card-zoom .card-face-body,
+.card-plate-face .card-face-body{
   justify-content:space-between;
   background:
     linear-gradient(to bottom, rgba(12,11,9,0.78), rgba(12,11,9,0) 24%),
@@ -2034,4 +2035,617 @@ footer{
 
   .readings-list{ --card-w: 74px; --card-h: 118px; }
   .reading-history-head{ grid-template-columns:1fr auto; }
+}
+
+/* ---------- Content pages (cards, about) ---------- */
+
+.content-page{
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+}
+.content-main{ flex:1; padding:72px 0 0; }
+.content-head{ max-width:64ch; margin-bottom:52px; }
+.content-head h1{
+  margin:0 0 20px;
+  font-size:clamp(2.1rem, 4.2vw, 3.3rem);
+  line-height:1.08;
+  letter-spacing:-0.012em;
+  max-width:21ch;
+  text-wrap:balance;
+}
+.content-head p{
+  font-family:var(--mono);
+  font-size:0.92rem;
+  line-height:1.75;
+  color:var(--paper-dim);
+  margin:0;
+}
+.content-final{ border-top:1px solid var(--line); margin-top:128px; padding:112px 0 104px; }
+.content-final h2{ font-size:clamp(2rem, 4vw, 3.2rem); text-wrap:balance; }
+.final .content-disclaimer{
+  margin:44px auto 0;
+  font-size:0.74rem;
+  max-width:62ch;
+  opacity:0.85;
+}
+
+.navlinks a.active{ color:var(--paper); }
+.navlinks a.active::after{ right:0; }
+.nav-panel-links a.active{ color:var(--paper); }
+
+.deck-all-link{
+  display:table;
+  margin-top:22px;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  text-decoration:none;
+  border-bottom:1px solid var(--brass);
+  padding-bottom:4px;
+  transition:color .2s ease, border-color .2s ease;
+}
+.deck-all-link:hover{ color:var(--paper); border-color:var(--paper); }
+
+/* Cards index: every group is one path that runs, turns at the edge, and comes back. */
+
+.journey-jump{
+  display:flex;
+  flex-wrap:wrap;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.journey-jump a{
+  flex:1 1 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:16px;
+  padding:16px 20px;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  text-decoration:none;
+  border-left:1px solid var(--line);
+  transition:color .2s ease, background-color .2s ease;
+}
+.journey-jump a:first-child{ border-left:none; }
+.journey-jump a span{ color:var(--brass-bright); font-variant-numeric:tabular-nums; }
+.journey-jump a:hover{ color:var(--paper); background:var(--ink-2); }
+
+.journey-section{ padding-top:96px; scroll-margin-top:78px; }
+.journey-head{
+  display:grid;
+  grid-template-columns:0.9fr 1.4fr;
+  gap:48px;
+  align-items:end;
+  margin-bottom:56px;
+}
+.journey-head-title{ display:flex; align-items:center; gap:16px; }
+.journey-head h2{
+  margin:0;
+  font-weight:440;
+  font-size:clamp(1.9rem, 3.2vw, 2.7rem);
+  line-height:1.1;
+  letter-spacing:-0.01em;
+}
+.journey-suit{ width:38px; height:38px; flex:none; color:var(--brass-bright); }
+.journey-head-path{
+  margin:0 0 10px;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+}
+.journey-head-theme{
+  margin:0;
+  font-family:var(--mono);
+  font-size:0.88rem;
+  line-height:1.7;
+  color:var(--paper-dim);
+  max-width:58ch;
+}
+
+.journey{
+  --node-y:30px;
+  --gap-x:18px;
+  --gap-y:44px;
+  --turn:28px;
+  list-style:none;
+  margin:0;
+  padding:0 var(--turn);
+  display:grid;
+  grid-template-columns:repeat(var(--per), minmax(0, 1fr));
+  column-gap:var(--gap-x);
+  row-gap:var(--gap-y);
+}
+.journey-node{ position:relative; min-width:0; }
+.journey-node::before{
+  content:"";
+  position:absolute;
+  top:var(--node-y);
+  height:1px;
+  background:var(--line-bright);
+  pointer-events:none;
+}
+.journey-link{
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+  color:inherit;
+  outline:none;
+}
+.journey-mark{
+  display:block;
+  height:18px;
+  line-height:18px;
+  text-align:center;
+  font-family:var(--mono);
+  font-size:0.68rem;
+  letter-spacing:0.1em;
+  color:var(--brass-bright);
+}
+.journey-dot{
+  position:absolute;
+  top:calc(var(--node-y) - 4px);
+  left:calc(50% - 4.5px);
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--ink);
+  border:1px solid var(--brass-bright);
+  z-index:1;
+  transition:background-color .25s ease, transform .4s cubic-bezier(.16,1,.3,1);
+}
+/* Holds the same card face the reading uses; the face sizes its chrome from
+   --card-w, taken here from the node's own width. */
+.journey-art{
+  position:relative;
+  display:block;
+  margin-top:28px;
+  aspect-ratio:5 / 8;
+  container-type:inline-size;
+  --card-w:100cqw;
+  transition:transform .5s cubic-bezier(.16,1,.3,1);
+}
+.journey-art .card-face{ transition:border-color .3s ease; }
+.journey-name{
+  display:block;
+  margin-top:12px;
+  text-align:center;
+  font-size:0.92rem;
+  line-height:1.28;
+  color:var(--paper-dim);
+  text-wrap:balance;
+  transition:color .2s ease;
+}
+/* On a full-size face the name is already set on the card; the caption below
+   is kept only for the phone list, where the face is too small to carry it. */
+@media (min-width: 641px){
+  .journey-name{ display:none; }
+}
+.journey-link:hover .journey-art,
+.journey-link:focus-visible .journey-art{ transform:translateY(-6px); }
+.journey-link:hover .journey-art .card-face,
+.journey-link:focus-visible .journey-art .card-face{ border-color:var(--brass-bright); }
+.journey-link:hover .journey-dot,
+.journey-link:focus-visible .journey-dot{ background:var(--brass-bright); transform:scale(1.3); }
+.journey-link:hover .journey-name,
+.journey-link:focus-visible .journey-name{ color:var(--paper); }
+.journey-link:focus-visible .journey-art .card-face{ outline:1.5px solid var(--brass-bright); outline-offset:3px; }
+
+@media (min-width: 981px){
+  .journey-node{ grid-row:var(--rd); grid-column:var(--cd); }
+  .journey-node[data-seg-d="right"]::before{ left:50%; width:calc(100% + var(--gap-x)); }
+  .journey-node[data-seg-d="left"]::before{ right:50%; width:calc(100% + var(--gap-x)); }
+  .journey-node[data-seg-d="turn-right"]::before{
+    left:50%; right:calc(-1 * var(--turn)); height:calc(100% + var(--gap-y));
+    background:none; border:1px solid var(--line-bright); border-left:0;
+    border-radius:0 var(--turn) var(--turn) 0;
+  }
+  .journey-node[data-seg-d="turn-left"]::before{
+    right:50%; left:calc(-1 * var(--turn)); height:calc(100% + var(--gap-y));
+    background:none; border:1px solid var(--line-bright); border-right:0;
+    border-radius:var(--turn) 0 0 var(--turn);
+  }
+  .journey-node[data-seg-d="end"]::before{ display:none; }
+}
+
+/* Card page */
+
+.card-main{ padding-top:40px; }
+.card-breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:28px;
+  font-family:var(--mono);
+  font-size:0.7rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+}
+.card-breadcrumb a{ color:var(--paper-dim); text-decoration:none; transition:color .2s ease; }
+.card-breadcrumb a:hover{ color:var(--paper); }
+.card-breadcrumb [aria-current]{ color:var(--paper); }
+
+.journey-strip{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:18px 0 16px;
+  margin-bottom:64px;
+}
+.journey-strip ol{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:flex-start;
+  position:relative;
+}
+.journey-strip ol::before{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  top:24px;
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--line-bright) 10%, var(--line-bright) 90%, transparent);
+}
+.journey-strip li{ flex:1 1 0; min-width:0; text-align:center; }
+.journey-strip a,
+.journey-strip li > span{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-decoration:none;
+  color:var(--paper-dim);
+}
+.journey-strip-mark{
+  height:16px;
+  line-height:16px;
+  font-family:var(--mono);
+  font-size:0.66rem;
+  letter-spacing:0.1em;
+  color:var(--brass-bright);
+}
+.journey-strip-dot{
+  position:relative;
+  z-index:1;
+  width:9px;
+  height:9px;
+  margin:4px 0 10px;
+  border-radius:50%;
+  border:1px solid var(--brass-bright);
+  background:var(--ink);
+  transition:background-color .25s ease;
+}
+.journey-strip-name{
+  padding:0 8px;
+  font-size:0.86rem;
+  line-height:1.25;
+  text-wrap:balance;
+  transition:color .2s ease;
+}
+.journey-strip a:hover .journey-strip-name{ color:var(--paper); }
+.journey-strip a:hover .journey-strip-dot{ background:var(--brass); }
+.journey-strip .is-current .journey-strip-dot{
+  background:var(--brass-bright);
+  box-shadow:0 0 0 4px var(--ink), 0 0 0 5px var(--brass);
+}
+.journey-strip .is-current .journey-strip-name{ color:var(--paper); }
+
+.card-folio{
+  display:grid;
+  grid-template-columns:minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap:76px;
+  align-items:start;
+}
+/* The card's own page shows the reading's enlarged read, in flow. */
+.card-plate{
+  margin:0;
+  position:sticky;
+  top:110px;
+  max-width:400px;
+  container-type:inline-size;
+  --card-w:100cqw;
+}
+.card-plate-face{
+  position:relative;
+  aspect-ratio:5 / 8;
+  box-shadow:0 30px 60px -24px rgba(0,0,0,0.95);
+  transition:transform 1.1s cubic-bezier(.16,1,.3,1), box-shadow 1.1s cubic-bezier(.16,1,.3,1);
+}
+.card-folio[data-orientation="reversed"] .card-plate-face{
+  transform:rotate(180deg);
+  box-shadow:0 -30px 60px -24px rgba(0,0,0,0.95);
+}
+.card-copy h1{ margin:0 0 12px; font-size:clamp(2.6rem, 5vw, 4.2rem); max-width:none; }
+.card-copy .plate-label{ margin-bottom:22px; }
+.card-position{
+  margin:0 0 32px;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+}
+.card-facts{
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 0 36px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.card-facts > div{ padding:14px 22px 14px 0; margin-right:22px; border-right:1px solid var(--line); }
+.card-facts > div:last-child{ border-right:none; margin-right:0; }
+.card-facts dt{
+  margin-bottom:5px;
+  font-family:var(--mono);
+  font-size:0.64rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+}
+.card-facts dd{ margin:0; font-size:1.06rem; }
+
+.orientation-toggle{
+  display:inline-flex;
+  gap:2px;
+  padding:4px;
+  margin-bottom:34px;
+  border:1px solid var(--line-bright);
+}
+.orientation-toggle button{
+  -webkit-appearance:none;
+  appearance:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 16px;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  background:none;
+  border:none;
+  cursor:pointer;
+  transition:color .2s ease, background-color .2s ease;
+}
+.orientation-toggle button:hover{ color:var(--paper); }
+.orientation-toggle button.is-active{ color:var(--ink); background:var(--brass-bright); }
+.orientation-toggle svg{ width:11px; height:16px; flex:none; }
+.orientation-toggle svg.is-flipped{ transform:rotate(180deg); }
+
+.card-meanings{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid var(--line);
+}
+.card-meaning{ padding:28px 30px 4px 0; }
+.card-meaning + .card-meaning{ padding:28px 0 4px 30px; border-left:1px solid var(--line); }
+.card-meaning h2{
+  margin:0 0 12px;
+  font-weight:440;
+  font-size:1.12rem;
+  line-height:1.3;
+  color:var(--paper);
+  transition:color .5s ease;
+}
+.card-meaning-text{ transition:color .5s ease; }
+/* The meaning not being read steps back in colour, never below readable contrast. */
+.card-meaning:not(.is-active) h2,
+.card-meaning:not(.is-active) .card-meaning-text{ color:var(--paper-dim); }
+.card-meaning.is-active h2::before{
+  content:"";
+  display:inline-block;
+  width:7px;
+  height:7px;
+  margin-right:10px;
+  border-radius:50%;
+  background:var(--brass-bright);
+  vertical-align:0.12em;
+}
+.card-meaning-text{ margin:0 0 20px; min-height:4.6em; font-size:1.2rem; line-height:1.55; }
+.card-keywords{ margin:0; font-family:var(--mono); font-size:0.8rem; line-height:1.7; color:var(--paper-dim); }
+.card-keywords span{
+  display:block;
+  margin-bottom:4px;
+  font-size:0.62rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+}
+.card-load-error{ font-family:var(--mono); font-size:0.88rem; color:var(--paper-dim); border-top:1px solid var(--line); padding-top:24px; }
+
+.card-readings{ margin-top:104px; border-top:1px solid var(--line); }
+.card-reading-row{
+  display:grid;
+  grid-template-columns:0.9fr 1.4fr;
+  gap:48px;
+  padding:40px 0;
+  border-bottom:1px solid var(--line);
+}
+.card-reading-row h2{
+  margin:0;
+  font-weight:440;
+  font-size:clamp(1.4rem, 2.2vw, 1.85rem);
+  line-height:1.2;
+  letter-spacing:-0.005em;
+}
+.card-reading-row p{ margin:0; max-width:62ch; font-size:1.14rem; line-height:1.62; }
+.card-reading-row .card-reading-note{
+  margin-top:16px;
+  font-family:var(--mono);
+  font-size:0.84rem;
+  line-height:1.7;
+  color:var(--paper-dim);
+}
+
+.card-pager{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:64px; }
+.card-pager-link{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  padding:24px 26px;
+  border:1px solid var(--line);
+  text-decoration:none;
+  transition:border-color .25s ease, background-color .25s ease;
+}
+.card-pager-link.is-next{ grid-column:2; align-items:flex-end; text-align:right; }
+.card-pager-link:hover{ border-color:var(--brass-bright); background:var(--ink-2); }
+.card-pager-dir{
+  font-family:var(--mono);
+  font-size:0.7rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+}
+.card-pager-name{ font-size:1.25rem; }
+
+/* About */
+
+.about{ border-top:1px solid var(--line); }
+.about-row{
+  display:grid;
+  grid-template-columns:0.9fr 1.4fr;
+  gap:48px;
+  padding:52px 0;
+  border-bottom:1px solid var(--line);
+}
+.about-row h2{
+  margin:0;
+  font-weight:440;
+  font-size:clamp(1.5rem, 2.4vw, 2rem);
+  line-height:1.15;
+  letter-spacing:-0.005em;
+}
+.about-body p{ margin:0 0 18px; max-width:62ch; font-size:1.14rem; line-height:1.65; }
+.about-body p:last-child{ margin-bottom:0; }
+.about-steps{ list-style:none; margin:0; padding:0; }
+.about-steps li{ display:grid; grid-template-columns:52px 1fr; gap:18px; padding-bottom:26px; }
+.about-steps li + li{ border-top:1px solid var(--line); padding-top:26px; }
+.about-steps li:last-child{ padding-bottom:0; }
+.about-step-mark{
+  padding-top:5px;
+  font-family:var(--mono);
+  font-size:0.8rem;
+  letter-spacing:0.1em;
+  color:var(--brass-bright);
+}
+.about-steps h3{ margin:0 0 8px; font-weight:440; font-size:1.3rem; }
+.about-steps p{ margin:0; max-width:60ch; font-family:var(--mono); font-size:0.88rem; line-height:1.72; color:var(--paper-dim); }
+.about-list{ list-style:none; margin:0; padding:0; }
+.about-list li{ position:relative; padding:0 0 18px 30px; max-width:60ch; font-size:1.12rem; line-height:1.6; }
+.about-list li:last-child{ padding-bottom:0; }
+.about-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0.8em;
+  width:16px;
+  height:1px;
+  background:var(--brass-bright);
+}
+.about-link{
+  display:table;
+  margin-top:10px;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--brass-bright);
+  text-decoration:none;
+  border-bottom:1px solid var(--brass);
+  padding-bottom:4px;
+  transition:color .2s ease, border-color .2s ease;
+}
+.about-link:hover{ color:var(--paper); border-color:var(--paper); }
+.about-body .about-signature{ font-size:1.6rem; font-style:italic; line-height:1.3; }
+
+@media (max-width: 980px){
+  .content-main{ padding-top:48px; }
+  .journey-head,
+  .card-reading-row,
+  .about-row{ grid-template-columns:1fr; gap:14px; }
+  .journey-section{ padding-top:72px; scroll-margin-top:64px; }
+  /* Single column: name first, then the art, then everything that reads it.
+     The copy column dissolves so its children can be ordered around the plate. */
+  .card-folio{ display:flex; flex-direction:column; gap:0; }
+  .card-copy{ display:contents; }
+  .card-copy > *{ order:5; }
+  .card-copy > .plate-label{ order:1; }
+  .card-copy > h1{ order:2; }
+  .card-copy > .card-position{ order:3; }
+  .card-plate{ order:4; position:static; width:min(260px, 72%); margin:0 0 36px; }
+  .card-readings{ margin-top:72px; }
+  .content-final{ margin-top:96px; padding:88px 0 80px; }
+}
+
+@media (max-width: 980px) and (min-width: 641px){
+  .journey{ grid-template-columns:repeat(4, minmax(0, 1fr)); }
+  .journey-node{ grid-row:var(--rt); grid-column:var(--ct); }
+  .journey-node[data-seg-t="right"]::before{ left:50%; width:calc(100% + var(--gap-x)); }
+  .journey-node[data-seg-t="left"]::before{ right:50%; width:calc(100% + var(--gap-x)); }
+  .journey-node[data-seg-t="turn-right"]::before{
+    left:50%; right:calc(-1 * var(--turn)); height:calc(100% + var(--gap-y));
+    background:none; border:1px solid var(--line-bright); border-left:0;
+    border-radius:0 var(--turn) var(--turn) 0;
+  }
+  .journey-node[data-seg-t="turn-left"]::before{
+    right:50%; left:calc(-1 * var(--turn)); height:calc(100% + var(--gap-y));
+    background:none; border:1px solid var(--line-bright); border-right:0;
+    border-radius:var(--turn) 0 0 var(--turn);
+  }
+  .journey-node[data-seg-t="end"]::before{ display:none; }
+}
+
+/* Phones: the path runs straight down, one card per stop. */
+@media (max-width: 640px){
+  /* Hairlines come from the 1px gaps showing the line colour between cells. */
+  .journey-jump{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); }
+  .journey-jump a{ padding:14px; border-left:none; background:var(--ink); }
+  .journey-jump a:first-child{ grid-column:1 / -1; }
+  .journey-head{ margin-bottom:28px; }
+  .journey{ display:block; padding:0; }
+  .journey-node::before{ left:21px; top:50%; width:1px; height:100%; }
+  .journey-node:last-child::before{ display:none; }
+  .journey-link{
+    display:grid;
+    grid-template-columns:44px 52px 1fr;
+    grid-template-areas:"dot art mark" "dot art name";
+    column-gap:16px;
+    align-items:center;
+    padding:10px 0;
+  }
+  .journey-dot{ position:static; grid-area:dot; justify-self:center; }
+  .journey-mark{ grid-area:mark; align-self:end; height:auto; text-align:left; }
+  .journey-art{ grid-area:art; margin:0; }
+  /* At list-thumbnail size the face's numeral and name would be illegible; the row already says both. */
+  .journey-art .card-face-body > *{ visibility:hidden; }
+  .journey-name{ grid-area:name; align-self:start; margin:3px 0 0; text-align:left; font-size:1.04rem; color:var(--paper); }
+  .journey-link:hover .journey-art,
+  .journey-link:focus-visible .journey-art{ transform:none; }
+
+  .journey-strip li[data-distance="2"]{ display:none; }
+  .journey-strip-name{ font-size:0.78rem; }
+  .card-meanings{ grid-template-columns:1fr; }
+  .card-meaning{ padding:26px 0 18px; }
+  .card-meaning + .card-meaning{ padding:26px 0 4px; border-left:none; border-top:1px solid var(--line); }
+  .card-meaning-text{ min-height:0; }
+  .card-pager{ grid-template-columns:1fr; gap:12px; }
+  .card-pager-link.is-next{ grid-column:auto; }
+  .card-facts > div{ padding:12px 16px 12px 0; margin-right:16px; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .card-plate-face,
+  .journey-art,
+  .journey-dot,
+  .card-meaning h2,
+  .card-meaning-text{ transition:none; }
 }

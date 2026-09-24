@@ -3,6 +3,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import { isAuth0Configured } from '../auth/auth0Config'
+import { useLangPath } from '../i18n/useLangPath'
 import { useNavVariant } from './navVariant'
 
 /**
@@ -22,6 +23,7 @@ function AccountMenuInner() {
   const variant = useNavVariant()
   const { t } = useTranslation()
   const location = useLocation()
+  const to = useLangPath()
   const { isAuthenticated, isLoading, user, logout } = useAuth0()
   const [avatarFailed, setAvatarFailed] = useState(false)
   const [open, setOpen] = useState(false)
@@ -54,7 +56,7 @@ function AccountMenuInner() {
 
   const signInLink = (
     <Link
-      to="entrar"
+      to={to('entrar')}
       state={{ returnTo: location.pathname }}
       className={variant === 'panel' ? 'nav-panel-item' : 'account-menu-link'}
     >
@@ -98,10 +100,10 @@ function AccountMenuInner() {
           {avatar}
           <span className="account-menu-name mono">{label}</span>
         </span>
-        <Link to="minhas-leituras" className="nav-panel-item">
+        <Link to={to('minhas-leituras')} className="nav-panel-item">
           {t('myReadings.navLink')}
         </Link>
-        <Link to="precos" className="nav-panel-item">
+        <Link to={to('precos')} className="nav-panel-item">
           {t('pricing.navLink')}
         </Link>
         {signOutButton('nav-panel-item')}
@@ -127,10 +129,10 @@ function AccountMenuInner() {
 
       {open && (
         <div className="account-menu-dropdown" role="menu">
-          <Link to="minhas-leituras" className="account-menu-dropdown-item" role="menuitem">
+          <Link to={to('minhas-leituras')} className="account-menu-dropdown-item" role="menuitem">
             {t('myReadings.navLink')}
           </Link>
-          <Link to="precos" className="account-menu-dropdown-item" role="menuitem">
+          <Link to={to('precos')} className="account-menu-dropdown-item" role="menuitem">
             {t('pricing.navLink')}
           </Link>
           {signOutButton('account-menu-dropdown-item')}

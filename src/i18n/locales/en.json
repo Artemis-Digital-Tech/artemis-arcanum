@@ -8,7 +8,9 @@
     "cta": "Draw a Card",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "cards": "Cards",
+    "about": "About"
   },
   "hero": {
     "plateLabel": "Plate I — Free Online Tarot",
@@ -89,7 +91,8 @@
       "sun": "The Sun",
       "judgement": "Judgement",
       "world": "The World"
-    }
+    },
+    "allCardsLink": "See what all 78 cards mean"
   },
   "reading": {
     "tag": "Plate IV — A Reading, In Progress",
@@ -157,7 +160,12 @@
     "cta": "Begin a reading"
   },
   "footer": {
-    "copyright": "© Arcanum — an instrument, not an oracle of certainty."
+    "copyright": "© Arcanum — an instrument, not an oracle of certainty.",
+    "links": {
+      "cards": "Cards",
+      "about": "About",
+      "pricing": "Pricing"
+    }
   },
   "gameSelect": {
     "back": "Back",
@@ -448,6 +456,18 @@
     "pricing": {
       "title": "Pricing — Free or Unlimited Online Tarot | Arcanum",
       "description": "Compare Arcanum's plans: free monthly readings, Plus with unlimited spreads, and Ritual with follow-ups and PDF export."
+    },
+    "cards": {
+      "title": "All 78 Tarot Card Meanings | Arcanum",
+      "description": "The meaning of every tarot card: the 22 Major Arcana and 56 Minor Arcana, upright, reversed, in love and at work, with the art of each card."
+    },
+    "card": {
+      "title": "{{name}} Tarot Card Meaning: Upright, Reversed & Love | Arcanum",
+      "description": "{{name}} tarot card: {{meaning}} Read the reversed meaning, love, work and the card’s advice."
+    },
+    "about": {
+      "title": "About Arcanum — online AI tarot | Arcanum",
+      "description": "What Arcanum is, how each tarot reading is made, the Rider-Waite-Smith deck we use, what Arcanum is not, and who makes it."
     }
   },
   "faq": {
@@ -480,5 +500,177 @@
         "a": "Arcanum is an instrument for reflection, not an oracle of certainty. Use a reading to look at your question from new angles — not as a substitute for medical, legal, or financial advice."
       }
     ]
+  },
+  "cardsPage": {
+    "plateLabel": "Plate XIII — The 78 Cards",
+    "title": "What every tarot card means, in five journeys.",
+    "lede": "The Major Arcana tell the Fool’s Journey, from 0 to XXI. Each suit of the Minor Arcana walks its own path, from Ace to King. Pick a card to read what it says upright, reversed, in love and at work.",
+    "jumpLabel": "Jump to",
+    "cardCount_one": "{{count}} card",
+    "cardCount_other": "{{count}} cards",
+    "majors": {
+      "name": "Major Arcana",
+      "path": "The Fool’s Journey, from 0 to XXI",
+      "theme": "Great themes, life lessons and archetypal stages. Read in order, they tell the growth of someone who sets out as The Fool and arrives at The World."
+    },
+    "suits": {
+      "wands": {
+        "path": "From the Ace to the King of Wands",
+        "theme": "Action, passion, creativity, energy, work and projects."
+      },
+      "cups": {
+        "path": "From the Ace to the King of Cups",
+        "theme": "Emotions, relationships, intuition and affection."
+      },
+      "swords": {
+        "path": "From the Ace to the King of Swords",
+        "theme": "Mind, thought, communication, truth and conflict."
+      },
+      "pentacles": {
+        "path": "From the Ace to the King of Pentacles",
+        "theme": "Matter, money, work, body and security."
+      }
+    },
+    "elements": {
+      "fire": "Fire",
+      "water": "Water",
+      "air": "Air",
+      "earth": "Earth"
+    },
+    "rankMarks": {
+      "ace": "Ace",
+      "page": "PG",
+      "knight": "KN",
+      "queen": "QN",
+      "king": "KG"
+    },
+    "cta": {
+      "title": "Read these cards for your question.",
+      "body": "The general meaning is the starting point. In a reading, Arcanum interprets each card for what you asked and for the position it landed in.",
+      "button": "Begin a reading"
+    }
+  },
+  "cardPage": {
+    "breadcrumb": "Cards",
+    "journeyLabel": "Where this card sits on the journey",
+    "position": "Card {{position}} of {{total}} on this journey",
+    "orientationLabel": "Card orientation",
+    "upright": "Upright",
+    "reversed": "Reversed",
+    "keywords": "Keywords",
+    "data": {
+      "arcana": "Arcana",
+      "major": "Major",
+      "minor": "Minor",
+      "number": "Number",
+      "suit": "Suit",
+      "element": "Element",
+      "correspondence": "Correspondence"
+    },
+    "howToRead": "How to read this card",
+    "majorNote": "The Major Arcana speak of structural forces. When {{name}} appears in a reading, its theme weighs on the whole spread. On the Fool’s Journey, it comes after {{prev}} and before {{next}}.",
+    "majorNoteFirst": "The Major Arcana speak of structural forces. {{name}} is where the Fool’s Journey begins: card 0, before {{next}}.",
+    "majorNoteLast": "The Major Arcana speak of structural forces. {{name}} closes the Fool’s Journey: card XXI, after {{prev}}.",
+    "minorNote": "In the Minor Arcana, the number combines with the suit’s theme. {{rankNote}} In {{suit}}, the suit of {{element}}, that applies to: {{theme}}",
+    "reversedNote": "Reversed, a card does not simply mean its opposite: read it as a block, a delay, an inward version, an excess or the shadow of its upright meaning.",
+    "rankNotes": {
+      "ace": "The Ace is the seed: a pure beginning, potential and opportunity.",
+      "two": "The Two speaks of duality, choice, partnership and balance.",
+      "three": "The Three is growth: first fruits, collaboration and expansion.",
+      "four": "The Four is structure and consolidation, sometimes stagnation.",
+      "five": "The Five is the low point of the suit: conflict, loss and instability.",
+      "six": "The Six brings harmony, relief, recovery and reciprocity.",
+      "seven": "The Seven is assessment, perseverance and inner challenge.",
+      "eight": "The Eight is movement, mastery and acceleration.",
+      "nine": "The Nine is near completion: the culmination and intensity of the theme.",
+      "ten": "The Ten is completion, fullness or excess: the end of a cycle.",
+      "page": "The Page is the apprentice: curiosity, messages and potential still green.",
+      "knight": "The Knight is the agent: action, movement and drive, for good or in excess.",
+      "queen": "The Queen is inner mastery: the maturity that lives and nurtures the suit’s energy.",
+      "king": "The King is outer mastery: skill, authority and responsibility."
+    },
+    "prev": "Previous",
+    "next": "Next",
+    "cta": {
+      "title": "Draw the cards for your question.",
+      "body": "{{name}} may land in your spread. In a reading, Arcanum interprets each card for what you asked and for the position it appears in.",
+      "button": "Begin a reading"
+    },
+    "disclaimer": "Tarot is a tool for reflection, not a prediction of the future, and it does not replace medical, legal, financial or psychological advice.",
+    "artAlt": "Illustration of {{name}} in the Arcanum deck",
+    "loadError": "This card could not be loaded. Reload the page to try again.",
+    "headings": {
+      "uprightTitle": "{{name}} upright",
+      "reversedTitle_m": "{{name}} reversed",
+      "reversedTitle_f": "{{name}} reversed",
+      "reversedTitle_pl": "{{name}} reversed",
+      "loveTitle": "{{name}} in love",
+      "workTitle": "{{name}} at work",
+      "adviceTitle": "The card’s advice"
+    },
+    "minorArcana": "Minor Arcana"
+  },
+  "aboutPage": {
+    "plateLabel": "Colophon — About Arcanum",
+    "title": "A tarot instrument for the question you have right now.",
+    "lede": "Arcanum is an AI tarot reader. You ask a question, draw the cards and get a reading written for it, right away, with no booking.",
+    "sections": {
+      "what": {
+        "title": "What Arcanum is",
+        "body": [
+          "Tarot readings usually come from two places: the daily card, which is the same for everyone, or a human reader, who has a schedule and charges per session. Arcanum sits between the two: a personal reading, available any time.",
+          "You choose the spread, write the question in your own words and draw the cards. The interpretation is made for that question and the cards that landed, not from a canned text."
+        ]
+      },
+      "how": {
+        "title": "How a reading is made",
+        "steps": [
+          {
+            "name": "The question",
+            "body": "You write what you want to understand. Open questions, about you and what is within your reach, tend to make the most useful readings."
+          },
+          {
+            "name": "The cards",
+            "body": "The full 78-card deck is shuffled right in your browser, and each card can land upright or reversed."
+          },
+          {
+            "name": "The interpretation",
+            "body": "An AI model writes the reading. Before interpreting each card, it consults a knowledge base of the Rider-Waite-Smith tradition, so the meanings come from tarot rather than from the model’s imagination."
+          }
+        ]
+      },
+      "deck": {
+        "title": "The deck",
+        "body": [
+          "The meanings follow the Rider-Waite-Smith tradition, published in 1909 with art by Pamela Colman Smith under the direction of A. E. Waite. It was the first deck to illustrate the Minor Arcana with scenes too, and it is the basis of most readings done today.",
+          "There are 22 Major Arcana and 56 Minor Arcana, split into Wands, Cups, Swords and Pentacles. Arcanum’s illustrations follow the style of sepia studies on old paper."
+        ],
+        "link": "See the meaning of all 78 cards"
+      },
+      "not": {
+        "title": "What Arcanum is not",
+        "items": [
+          "It is not a prediction of the future. Tarot sheds light on forces, patterns and possibilities; the decision is still yours.",
+          "It does not replace medical, legal, financial or psychological advice. For those matters, see a professional.",
+          "It does not speak for other people. The reading is about you and what is under your control."
+        ]
+      },
+      "data": {
+        "title": "Your question and your readings",
+        "body": [
+          "Your question and the cards drawn are sent to generate the interpretation. If you are signed in, the reading is saved in Your readings, for as long as your plan keeps history."
+        ]
+      },
+      "who": {
+        "title": "Who makes it",
+        "body": [
+          "Arcanum is a product of Artemis Digital Tech."
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ask the cards your question.",
+      "button": "Begin a reading"
+    }
   }
 }

@@ -14,6 +14,8 @@ interface SeoProps {
   path?: string
   noindex?: boolean
   jsonLd?: Record<string, unknown>
+  /** Path of the page's own image (a card's art); only pages with a real one pass it. */
+  image?: string
 }
 
 function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
@@ -47,10 +49,11 @@ function upsertLink(rel: string, href: string, hreflang?: string) {
  * Per-page document metadata: title, description, robots, canonical,
  * hreflang alternates, Open Graph/Twitter tags, and optional JSON-LD — all
  * upserted by attribute so client-side navigation never piles up duplicate
- * tags. Deliberately no `og:image`: the project has no real social-preview
- * asset yet, and inventing one would misrepresent the product.
+ * tags. `og:image` is set only for pages with a real image of their own (a
+ * card's art): the project has no generic social-preview asset yet, and
+ * inventing one would misrepresent the product.
  */
-export default function Seo({ title, description, path, noindex, jsonLd }: SeoProps) {
+export default function Seo({ title, description, path, noindex, jsonLd, image }: SeoProps) {
   const { lang } = useParams<{ lang: string }>()
 
   useEffect(() => {
@@ -65,9 +68,11 @@ export default function Seo({ title, description, path, noindex, jsonLd }: SeoPr
 
     upsertMeta('property', 'og:title', title)
     upsertMeta('property', 'og:description', description)
-    upsertMeta('property', 'og:type', 'website')
+    upsertMeta('property', 'og:type', image ? 'article' : 'website')
     upsertMeta('property', 'og:url', canonicalUrl)
     upsertMeta('property', 'og:locale', currentLang === 'pt' ? 'pt_BR' : 'en_US')
+    if (image) upsertMeta('property', 'og:image', `${origin}${image}`)
+    else document.head.querySelector('meta[property="og:image"]')?.remove()
     upsertMeta('name', 'twitter:card', 'summary')
     upsertMeta('name', 'twitter:title', title)
     upsertMeta('name', 'twitter:description', description)
@@ -88,7 +93,7 @@ export default function Seo({ title, description, path, noindex, jsonLd }: SeoPr
       script.textContent = JSON.stringify(jsonLd)
       document.head.appendChild(script)
     }
-  }, [title, description, path, noindex, jsonLd, lang])
+  }, [title, description, path, noindex, jsonLd, image, lang])
 
   return null
 }

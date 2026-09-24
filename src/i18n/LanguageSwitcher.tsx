@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { SUPPORTED_LANGUAGES } from './constants'
 
 const LABELS: Record<string, string> = {
@@ -8,6 +8,10 @@ const LABELS: Record<string, string> = {
 
 export default function LanguageSwitcher() {
   const { lang: currentLang } = useParams<{ lang: string }>()
+  const { pathname, hash } = useLocation()
+  // Every route exists in every language under the same path, so switching
+  // swaps only the language segment and keeps the visitor on the same page.
+  const rest = pathname.replace(/^\/[^/]+/, '')
 
   return (
     <div className="lang-switch" aria-label="Language">
@@ -15,7 +19,7 @@ export default function LanguageSwitcher() {
         <span key={lang}>
           {i > 0 && <span className="lang-switch-sep">/</span>}
           <Link
-            to={`/${lang}`}
+            to={`/${lang}${rest}${hash}`}
             className={lang === currentLang ? 'is-active' : undefined}
             aria-current={lang === currentLang ? 'true' : undefined}
           >

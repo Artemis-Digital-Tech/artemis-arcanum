@@ -2,6 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { isAuth0Configured } from '../auth/auth0Config'
+import { useLangPath } from '../i18n/useLangPath'
 
 /**
  * The header's "Planos" link. Signed-in visitors already have it in the
@@ -21,5 +22,6 @@ function PricingNavLinkInner() {
 
 function PricingNavLinkAnchor() {
   const { t } = useTranslation()
-  return <Link to="precos">{t('nav.pricing')}</Link>
+  const to = useLangPath()
+  return <Link to={to('precos')}>{t('nav.pricing')}</Link>
 }

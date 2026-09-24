@@ -2,7 +2,7 @@ if (import.meta.env.DEV) {
   import("react-grab");
 }
 
-import { StrictMode } from 'react'
+import { StrictMode, Suspense, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './index.css'
@@ -18,6 +18,11 @@ import Login from './Login.tsx'
 import MyReadings from './MyReadings.tsx'
 import Pricing from './Pricing.tsx'
 
+// Content pages load on demand, so the landing page's bundle doesn't carry them.
+const Cards = lazy(() => import('./Cards.tsx'))
+const CardDetail = lazy(() => import('./CardDetail.tsx'))
+const About = lazy(() => import('./About.tsx'))
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
@@ -32,6 +37,9 @@ createRoot(document.getElementById('root')!).render(
             <Route path="entrar" element={<Login />} />
             <Route path="minhas-leituras" element={<MyReadings />} />
             <Route path="precos" element={<Pricing />} />
+            <Route path="cartas" element={<Suspense fallback={null}><Cards /></Suspense>} />
+            <Route path="cartas/:slug" element={<Suspense fallback={null}><CardDetail /></Suspense>} />
+            <Route path="sobre" element={<Suspense fallback={null}><About /></Suspense>} />
           </Route>
           <Route path="*" element={<Navigate to={`/${DEFAULT_LANGUAGE}`} replace />} />
         </Routes>

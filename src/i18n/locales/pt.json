@@ -8,7 +8,9 @@
     "cta": "Tirar uma Carta",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu",
-    "faq": "Perguntas"
+    "faq": "Perguntas",
+    "cards": "Cartas",
+    "about": "Sobre"
   },
   "hero": {
     "plateLabel": "Lâmina I — Tarot Online Grátis",
@@ -89,7 +91,8 @@
       "sun": "O Sol",
       "judgement": "O Julgamento",
       "world": "O Mundo"
-    }
+    },
+    "allCardsLink": "Ver o significado das 78 cartas"
   },
   "reading": {
     "tag": "Lâmina IV — Uma Leitura, em Andamento",
@@ -157,7 +160,12 @@
     "cta": "Começar uma leitura"
   },
   "footer": {
-    "copyright": "© Arcanum — um instrumento, não um oráculo de certezas."
+    "copyright": "© Arcanum — um instrumento, não um oráculo de certezas.",
+    "links": {
+      "cards": "Cartas",
+      "about": "Sobre",
+      "pricing": "Planos"
+    }
   },
   "gameSelect": {
     "back": "Voltar",
@@ -448,6 +456,18 @@
     "pricing": {
       "title": "Planos — Tarot Online Grátis ou Ilimitado | Arcanum",
       "description": "Compare os planos Arcanum: leituras grátis por mês, o Plus com tiragens ilimitadas e o Ritual com acompanhamento e exportação em PDF."
+    },
+    "cards": {
+      "title": "Significado das 78 Cartas do Tarot | Arcanum",
+      "description": "O significado de todas as cartas do tarot: os 22 Arcanos Maiores e os 56 Menores, com o sentido normal, invertido, no amor e no trabalho, e a arte de cada carta."
+    },
+    "card": {
+      "title": "{{name}} no Tarot: significado normal, invertido e no amor | Arcanum",
+      "description": "{{name}} no tarot: {{meaning}} Veja o significado invertido, no amor, no trabalho e o conselho da carta."
+    },
+    "about": {
+      "title": "Sobre o Arcanum — tarot online com IA | Arcanum",
+      "description": "O que é o Arcanum, como cada leitura de tarot é feita, o baralho Rider-Waite-Smith que usamos, o que o Arcanum não é e quem faz o produto."
     }
   },
   "faq": {
@@ -480,5 +500,177 @@
         "a": "O Arcanum é um instrumento de reflexão, não um oráculo de certezas. Use a leitura para olhar a sua pergunta por outros ângulos — não para substituir orientação médica, jurídica ou financeira."
       }
     ]
+  },
+  "cardsPage": {
+    "plateLabel": "Lâmina XIII — As 78 Cartas",
+    "title": "O significado de cada carta do tarot, em cinco jornadas.",
+    "lede": "Os Arcanos Maiores contam a Jornada do Louco, do 0 ao XXI. Cada naipe dos Menores percorre o seu próprio caminho, do Ás ao Rei. Escolha uma carta para ler o que ela diz na posição normal, invertida, no amor e no trabalho.",
+    "jumpLabel": "Ir para",
+    "cardCount_one": "{{count}} carta",
+    "cardCount_other": "{{count}} cartas",
+    "majors": {
+      "name": "Arcanos Maiores",
+      "path": "A Jornada do Louco, do 0 ao XXI",
+      "theme": "Grandes temas, lições de vida e fases arquetípicas. Lidos em sequência, contam o amadurecimento de quem parte como O Louco e chega a O Mundo."
+    },
+    "suits": {
+      "wands": {
+        "path": "Do Ás ao Rei de Paus",
+        "theme": "Ação, paixão, criatividade, energia, trabalho e projetos."
+      },
+      "cups": {
+        "path": "Do Ás ao Rei de Copas",
+        "theme": "Emoções, relacionamentos, intuição e afeto."
+      },
+      "swords": {
+        "path": "Do Ás ao Rei de Espadas",
+        "theme": "Mente, pensamento, comunicação, verdade e conflito."
+      },
+      "pentacles": {
+        "path": "Do Ás ao Rei de Ouros",
+        "theme": "Matéria, dinheiro, trabalho, corpo e segurança."
+      }
+    },
+    "elements": {
+      "fire": "Fogo",
+      "water": "Água",
+      "air": "Ar",
+      "earth": "Terra"
+    },
+    "rankMarks": {
+      "ace": "Ás",
+      "page": "PJ",
+      "knight": "CV",
+      "queen": "RA",
+      "king": "RE"
+    },
+    "cta": {
+      "title": "Leia estas cartas para a sua pergunta.",
+      "body": "O significado geral é o ponto de partida. Numa leitura, o Arcanum interpreta cada carta para o que você perguntou e para a posição em que ela caiu.",
+      "button": "Começar uma leitura"
+    }
+  },
+  "cardPage": {
+    "breadcrumb": "Cartas",
+    "journeyLabel": "Onde esta carta fica na jornada",
+    "position": "Carta {{position}} de {{total}} nesta jornada",
+    "orientationLabel": "Orientação da carta",
+    "upright": "Normal",
+    "reversed": "Invertida",
+    "keywords": "Palavras-chave",
+    "data": {
+      "arcana": "Arcano",
+      "major": "Maior",
+      "minor": "Menor",
+      "number": "Número",
+      "suit": "Naipe",
+      "element": "Elemento",
+      "correspondence": "Correspondência"
+    },
+    "howToRead": "Como ler esta carta",
+    "majorNote": "Os Arcanos Maiores falam de forças estruturais. Quando {{name}} aparece numa leitura, o tema dela pesa sobre toda a tiragem. Na Jornada do Louco, vem depois de {{prev}} e antes de {{next}}.",
+    "majorNoteFirst": "Os Arcanos Maiores falam de forças estruturais. {{name}} é o ponto de partida da Jornada do Louco: a carta 0, antes de {{next}}.",
+    "majorNoteLast": "Os Arcanos Maiores falam de forças estruturais. {{name}} fecha a Jornada do Louco: a carta XXI, depois de {{prev}}.",
+    "minorNote": "Nos Arcanos Menores, o número se soma ao tema do naipe. {{rankNote}} Em {{suit}}, naipe de {{element}}, isso se aplica a: {{theme}}",
+    "reversedNote": "Invertida, a carta não significa simplesmente o oposto: leia como bloqueio, atraso, versão interior, excesso ou sombra do seu sentido normal.",
+    "rankNotes": {
+      "ace": "O Ás é a semente: começo puro, potencial e oportunidade.",
+      "two": "O Dois fala de dualidade, escolha, parceria e equilíbrio.",
+      "three": "O Três é crescimento: primeiros frutos, colaboração e expansão.",
+      "four": "O Quatro é estrutura e consolidação, às vezes estagnação.",
+      "five": "O Cinco é o ponto baixo do naipe: conflito, perda e instabilidade.",
+      "six": "O Seis traz harmonia, alívio, recuperação e reciprocidade.",
+      "seven": "O Sete é avaliação, perseverança e desafio interior.",
+      "eight": "O Oito é movimento, domínio e aceleração.",
+      "nine": "O Nove é quase conclusão: a culminância e a intensidade do tema.",
+      "ten": "O Dez é conclusão, plenitude ou excesso: o fim de um ciclo.",
+      "page": "O Pajem é o aprendiz: curiosidade, mensagens e potencial ainda verde.",
+      "knight": "O Cavaleiro é o agente: ação, movimento e ímpeto, para o bem ou em excesso.",
+      "queen": "A Rainha é o domínio interior: a maturidade que vive e nutre a energia do naipe.",
+      "king": "O Rei é o domínio exterior: maestria, autoridade e responsabilidade."
+    },
+    "prev": "Anterior",
+    "next": "Próxima",
+    "cta": {
+      "title": "Tire as cartas para a sua pergunta.",
+      "body": "{{name}} pode cair na sua tiragem. Numa leitura, o Arcanum interpreta cada carta para o que você perguntou e para a posição em que ela aparece.",
+      "button": "Começar uma leitura"
+    },
+    "disclaimer": "O tarô é uma ferramenta de reflexão, não uma previsão do futuro, nem substitui orientação médica, jurídica, financeira ou psicológica.",
+    "artAlt": "Ilustração da carta {{name}} no baralho do Arcanum",
+    "loadError": "Não foi possível carregar esta carta. Recarregue a página para tentar de novo.",
+    "headings": {
+      "uprightTitle": "{{name}} na posição normal",
+      "reversedTitle_m": "{{name}} invertido",
+      "reversedTitle_f": "{{name}} invertida",
+      "reversedTitle_pl": "{{name}} invertidos",
+      "loveTitle": "{{name}} no amor",
+      "workTitle": "{{name}} no trabalho",
+      "adviceTitle": "O conselho da carta"
+    },
+    "minorArcana": "Arcanos Menores"
+  },
+  "aboutPage": {
+    "plateLabel": "Colofão — Sobre o Arcanum",
+    "title": "Um instrumento de tarot para a pergunta que você tem agora.",
+    "lede": "O Arcanum é um tarólogo de IA. Você faz uma pergunta, tira as cartas e recebe uma leitura escrita para ela, na hora, sem agendamento.",
+    "sections": {
+      "what": {
+        "title": "O que é o Arcanum",
+        "body": [
+          "Leituras de tarot costumam vir de dois lugares: a carta do dia, que é a mesma para todo mundo, ou um tarólogo humano, que tem agenda e custa por sessão. O Arcanum fica entre os dois: uma leitura pessoal, disponível a qualquer hora.",
+          "Você escolhe a tiragem, escreve a pergunta com as suas palavras e tira as cartas. A interpretação é feita para aquela pergunta e para as cartas que caíram, não a partir de um texto pronto."
+        ]
+      },
+      "how": {
+        "title": "Como uma leitura é feita",
+        "steps": [
+          {
+            "name": "A pergunta",
+            "body": "Você escreve o que quer entender. Perguntas abertas, sobre você e o que está ao seu alcance, costumam render as leituras mais úteis."
+          },
+          {
+            "name": "As cartas",
+            "body": "O baralho completo de 78 cartas é embaralhado no seu próprio navegador, e cada carta pode cair na posição normal ou invertida."
+          },
+          {
+            "name": "A interpretação",
+            "body": "Um modelo de IA escreve a leitura. Antes de interpretar cada carta, ele consulta uma base de conhecimento da tradição Rider-Waite-Smith, para que os significados venham do tarot, e não da imaginação do modelo."
+          }
+        ]
+      },
+      "deck": {
+        "title": "O baralho",
+        "body": [
+          "Os significados seguem a tradição Rider-Waite-Smith, publicada em 1909, com arte de Pamela Colman Smith sob direção de A. E. Waite. Foi o primeiro baralho a ilustrar também os Arcanos Menores com cenas, e é a base da maior parte das leituras feitas hoje.",
+          "São 22 Arcanos Maiores e 56 Menores, divididos em Paus, Copas, Espadas e Ouros. As ilustrações do Arcanum seguem o estilo de estudos em sépia sobre papel antigo."
+        ],
+        "link": "Ver o significado das 78 cartas"
+      },
+      "not": {
+        "title": "O que o Arcanum não é",
+        "items": [
+          "Não é uma previsão do futuro. O tarot ilumina forças, padrões e possibilidades; a decisão continua sendo sua.",
+          "Não substitui orientação médica, jurídica, financeira ou psicológica. Em temas assim, procure um profissional.",
+          "Não fala por outras pessoas. A leitura é sobre você e sobre o que está sob o seu controle."
+        ]
+      },
+      "data": {
+        "title": "Sua pergunta e suas leituras",
+        "body": [
+          "A pergunta e as cartas tiradas são enviadas para gerar a interpretação. Se você estiver com a sua conta aberta, a leitura fica salva em Minhas leituras, pelo tempo que o seu plano guarda o histórico."
+        ]
+      },
+      "who": {
+        "title": "Quem faz",
+        "body": [
+          "O Arcanum é um produto da Artemis Digital Tech."
+        ]
+      }
+    },
+    "cta": {
+      "title": "Faça a sua pergunta às cartas.",
+      "button": "Começar uma leitura"
+    }
   }
 }
