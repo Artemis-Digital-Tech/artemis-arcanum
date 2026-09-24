@@ -1,5 +1,7 @@
 import { isMajor, type TarotCardData } from '../data/tarotDeck'
-import { getMajorGlyph, getSuitGlyph } from '../data/cardGlyphs'
+import { SuitMark } from '../data/suitGlyphs'
+import { cardArtUrl } from '../data/cardImages'
+import { useCardZoom } from './useCardZoom'
 
 export function CardBackFace() {
   return (
@@ -23,18 +25,22 @@ interface CardFrontFaceProps {
 }
 
 export function CardFrontFace({ card, name }: CardFrontFaceProps) {
-  const glyph = isMajor(card) ? getMajorGlyph(card.id) : getSuitGlyph(card.suit)
   const corner = isMajor(card) ? toRoman(card.number) : rankBadge(card.rank)
+  const { zoomProps, zoomOverlay } = useCardZoom(card, name, corner)
 
   return (
-    <div className="card-face card-front-face">
+    <div className="card-face card-front-face" {...zoomProps}>
+      {/* Decorative: the name below it already carries the card's identity. */}
+      <img className="card-art" src={cardArtUrl(card.id)} alt="" loading="lazy" decoding="async" />
       <div className="card-face-body">
-        <span className="board-card-num">{corner}</span>
-        <svg className="board-card-glyph" viewBox="0 0 40 40" fill="none">
-          {glyph}
-        </svg>
+        <span className="board-card-num">
+          {corner}
+          {/* A minor card's number says little on its own — the suit is what places it. */}
+          {!isMajor(card) && <SuitMark suit={card.suit} className="board-card-suit" />}
+        </span>
         <span className="board-card-name">{name}</span>
       </div>
+      {zoomOverlay}
     </div>
   )
 }

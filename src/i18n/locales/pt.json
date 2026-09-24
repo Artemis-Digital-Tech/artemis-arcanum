@@ -60,6 +60,11 @@
     "title": "Setenta e oito cartas, cada uma com sua própria voz.",
     "subtitle": "Toda carta que o instrumento pode tirar pertence ao baralho completo — dos arcanos maiores às cartas de corte — cada uma com seu significado normal e invertido. Nada de baralho reduzido para caber num app.",
     "scrollLabel": "Amostra do baralho de tarô",
+    "styleToggle": {
+      "label": "Estilo do baralho",
+      "glyph": "Traço",
+      "art": "Ilustração"
+    },
     "cards": {
       "fool": "O Louco",
       "magician": "O Mago",

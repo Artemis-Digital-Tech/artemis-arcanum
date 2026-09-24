@@ -60,6 +60,11 @@
     "title": "Seventy-eight cards, catalogued and current.",
     "subtitle": "Every card the instrument can draw is real, from the major arcana through the court cards, each with its own upright and reversed meaning. No shortened \"app deck.\"",
     "scrollLabel": "Sample of the tarot deck",
+    "styleToggle": {
+      "label": "Deck style",
+      "glyph": "Line",
+      "art": "Illustration"
+    },
     "cards": {
       "fool": "The Fool",
       "magician": "The Magician",

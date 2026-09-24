@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { useReveal } from './useReveal'
@@ -6,10 +7,104 @@ import AccountMenu from './components/AccountMenu'
 import NavMenu from './components/NavMenu'
 import PricingNavLink from './components/PricingNavLink'
 import Seo from './components/Seo'
+import { cardArtUrl } from './data/cardImages'
+
+/** The majors shown in the deck catalogue: plate numeral, line glyph, and the card's own art. */
+const CATALOG_CARDS = [
+  {
+    id: 'major-fool',
+    numeral: '00',
+    key: 'fool',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L20 4" stroke="currentColor" /><path d="M8 30 L20 6 L20 34" stroke="currentColor" strokeWidth="1.1" fill="none" /><circle cx="20" cy="10" r="3" stroke="currentColor" strokeWidth="1.1" /><path d="M12 28h16" stroke="currentColor" strokeWidth="1.1" /></svg>
+    ),
+  },
+  {
+    id: 'major-magician',
+    numeral: 'I',
+    key: 'magician',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="6" stroke="currentColor" strokeWidth="1.1" /><path d="M8 34c2-9 7-13 12-13s10 4 12 13" stroke="currentColor" strokeWidth="1.1" /><path d="M20 21v9" stroke="currentColor" strokeWidth="1.1" /></svg>
+    ),
+  },
+  {
+    id: 'major-highPriestess',
+    numeral: 'II',
+    key: 'highPriestess',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><path d="M20 6v28M9 20h22" stroke="currentColor" strokeWidth="1.1" /><circle cx="20" cy="20" r="12" stroke="currentColor" strokeWidth="1.1" /></svg>
+    ),
+  },
+  {
+    id: 'major-empress',
+    numeral: 'III',
+    key: 'empress',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="20" rx="13" ry="9" stroke="currentColor" strokeWidth="1.1" /><path d="M20 11v18M12 20h16" stroke="currentColor" strokeWidth="1" /></svg>
+    ),
+  },
+  {
+    id: 'major-emperor',
+    numeral: 'IV',
+    key: 'emperor',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><rect x="10" y="10" width="20" height="20" stroke="currentColor" strokeWidth="1.1" /><path d="M10 20h20M20 10v20" stroke="currentColor" strokeWidth="1" /></svg>
+    ),
+  },
+  {
+    id: 'major-hierophant',
+    numeral: 'V',
+    key: 'hierophant',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><path d="M20 5 L33 32 L7 32 Z" stroke="currentColor" strokeWidth="1.1" /><path d="M20 15v10M15 27h10" stroke="currentColor" strokeWidth="1" /></svg>
+    ),
+  },
+  {
+    id: 'major-lovers',
+    numeral: 'VI',
+    key: 'lovers',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="18" r="7" stroke="currentColor" strokeWidth="1.1" /><circle cx="26" cy="18" r="7" stroke="currentColor" strokeWidth="1.1" /></svg>
+    ),
+  },
+  {
+    id: 'major-chariot',
+    numeral: 'VII',
+    key: 'chariot',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><rect x="11" y="14" width="18" height="13" stroke="currentColor" strokeWidth="1.1" /><path d="M14 14l6-8 6 8" stroke="currentColor" strokeWidth="1.1" /></svg>
+    ),
+  },
+  {
+    id: 'major-strength',
+    numeral: 'VIII',
+    key: 'strength',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><path d="M20 4a16 16 0 1 0 0.001 0" stroke="currentColor" strokeWidth="1.1" /><path d="M20 4v6M20 30v6M4 20h6M30 20h6" stroke="currentColor" strokeWidth="1" /></svg>
+    ),
+  },
+  {
+    id: 'major-hermit',
+    numeral: 'IX',
+    key: 'hermit',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><path d="M14 8v22M26 8v22M14 30l12-2M14 10l12-2" stroke="currentColor" strokeWidth="1.1" /></svg>
+    ),
+  },
+  {
+    id: 'major-wheelOfFortune',
+    numeral: 'X',
+    key: 'wheelOfFortune',
+    glyph: (
+      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="currentColor" strokeWidth="1.1" /><circle cx="20" cy="20" r="2" fill="currentColor" /><path d="M20 7v3M20 30v3M7 20h3M30 20h3" stroke="currentColor" strokeWidth="1" /></svg>
+    ),
+  },
+]
 
 function App() {
   useReveal()
   const { t, i18n } = useTranslation()
+  const [deckStyle, setDeckStyle] = useState<'glyph' | 'art'>('glyph')
 
   return (
     <>
@@ -162,21 +257,40 @@ function App() {
               <div>
                 <h2>{t('deck.title')}</h2>
                 <p>{t('deck.subtitle')}</p>
+                <div className="deck-toggle" role="radiogroup" aria-label={t('deck.styleToggle.label')}>
+                  <button
+                    type="button"
+                    role="radio"
+                    aria-checked={deckStyle === 'glyph'}
+                    className={deckStyle === 'glyph' ? 'is-active' : ''}
+                    onClick={() => setDeckStyle('glyph')}
+                  >
+                    {t('deck.styleToggle.glyph')}
+                  </button>
+                  <button
+                    type="button"
+                    role="radio"
+                    aria-checked={deckStyle === 'art'}
+                    className={deckStyle === 'art' ? 'is-active' : ''}
+                    onClick={() => setDeckStyle('art')}
+                  >
+                    {t('deck.styleToggle.art')}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <div className="catalog-scroll" tabIndex={0} aria-label={t('deck.scrollLabel')}>
-            <article className="tarot-card"><span className="num">00</span><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L20 4" stroke="currentColor" /><path d="M8 30 L20 6 L20 34" stroke="currentColor" strokeWidth="1.1" fill="none" /><circle cx="20" cy="10" r="3" stroke="currentColor" strokeWidth="1.1" /><path d="M12 28h16" stroke="currentColor" strokeWidth="1.1" /></svg><span className="name">{t('deck.cards.fool')}</span></article>
-            <article className="tarot-card"><span className="num">I</span><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="6" stroke="currentColor" strokeWidth="1.1" /><path d="M8 34c2-9 7-13 12-13s10 4 12 13" stroke="currentColor" strokeWidth="1.1" /><path d="M20 21v9" stroke="currentColor" strokeWidth="1.1" /></svg><span className="name">{t('deck.cards.magician')}</span></article>
-            <article className="tarot-card"><span className="num">II</span><svg viewBox="0 0 40 40" fill="none"><path d="M20 6v28M9 20h22" stroke="currentColor" strokeWidth="1.1" /><circle cx="20" cy="20" r="12" stroke="currentColor" strokeWidth="1.1" /></svg><span className="name">{t('deck.cards.highPriestess')}</span></article>
-            <article className="tarot-card"><span className="num">III</span><svg viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="20" rx="13" ry="9" stroke="currentColor" strokeWidth="1.1" /><path d="M20 11v18M12 20h16" stroke="currentColor" strokeWidth="1" /></svg><span className="name">{t('deck.cards.empress')}</span></article>
-            <article className="tarot-card"><span className="num">IV</span><svg viewBox="0 0 40 40" fill="none"><rect x="10" y="10" width="20" height="20" stroke="currentColor" strokeWidth="1.1" /><path d="M10 20h20M20 10v20" stroke="currentColor" strokeWidth="1" /></svg><span className="name">{t('deck.cards.emperor')}</span></article>
-            <article className="tarot-card"><span className="num">V</span><svg viewBox="0 0 40 40" fill="none"><path d="M20 5 L33 32 L7 32 Z" stroke="currentColor" strokeWidth="1.1" /><path d="M20 15v10M15 27h10" stroke="currentColor" strokeWidth="1" /></svg><span className="name">{t('deck.cards.hierophant')}</span></article>
-            <article className="tarot-card"><span className="num">VI</span><svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="18" r="7" stroke="currentColor" strokeWidth="1.1" /><circle cx="26" cy="18" r="7" stroke="currentColor" strokeWidth="1.1" /></svg><span className="name">{t('deck.cards.lovers')}</span></article>
-            <article className="tarot-card"><span className="num">VII</span><svg viewBox="0 0 40 40" fill="none"><rect x="11" y="14" width="18" height="13" stroke="currentColor" strokeWidth="1.1" /><path d="M14 14l6-8 6 8" stroke="currentColor" strokeWidth="1.1" /></svg><span className="name">{t('deck.cards.chariot')}</span></article>
-            <article className="tarot-card"><span className="num">VIII</span><svg viewBox="0 0 40 40" fill="none"><path d="M20 4a16 16 0 1 0 0.001 0" stroke="currentColor" strokeWidth="1.1" /><path d="M20 4v6M20 30v6M4 20h6M30 20h6" stroke="currentColor" strokeWidth="1" /></svg><span className="name">{t('deck.cards.strength')}</span></article>
-            <article className="tarot-card"><span className="num">IX</span><svg viewBox="0 0 40 40" fill="none"><path d="M14 8v22M26 8v22M14 30l12-2M14 10l12-2" stroke="currentColor" strokeWidth="1.1" /></svg><span className="name">{t('deck.cards.hermit')}</span></article>
-            <article className="tarot-card"><span className="num">X</span><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="currentColor" strokeWidth="1.1" /><circle cx="20" cy="20" r="2" fill="currentColor" /><path d="M20 7v3M20 30v3M7 20h3M30 20h3" stroke="currentColor" strokeWidth="1" /></svg><span className="name">{t('deck.cards.wheelOfFortune')}</span></article>
+            {CATALOG_CARDS.map((card) => (
+              <article className={`tarot-card${deckStyle === 'art' ? ' is-art' : ''}`} key={card.id}>
+                {deckStyle === 'art' && (
+                  <img className="tarot-card-art" src={cardArtUrl(card.id)} alt="" loading="lazy" decoding="async" />
+                )}
+                <span className="num">{card.numeral}</span>
+                {deckStyle === 'glyph' && card.glyph}
+                <span className="name">{t(`deck.cards.${card.key}`)}</span>
+              </article>
+            ))}
           </div>
         </section>
 

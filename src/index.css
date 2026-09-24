@@ -9,6 +9,12 @@
   --line-bright:rgba(242,237,226,0.34);
   --serif:"Fraunces", serif;
   --mono:"Space Mono", monospace;
+  /* The card artwork is bright parchment and the pages are near-black, so it
+     is pulled down and cooled off to sit in the same room as everything else.
+     One knob, since every card surface on the site reads from it. */
+  --card-art-filter:brightness(0.42) contrast(1.1) saturate(0.8);
+  /* The enlarged read eases off a little, without dropping the veil. */
+  --card-art-filter-zoom:brightness(0.56) contrast(1.08) saturate(0.85);
 }
 
 *{box-sizing:border-box;}
@@ -663,6 +669,60 @@ section{ position:relative; }
 .tarot-card:hover{ transform:translateY(-10px); border-color:var(--brass-bright); }
 .tarot-card .num{ font-family:var(--mono); font-size:0.75rem; color:var(--brass-bright); letter-spacing:0.08em; }
 .tarot-card svg{ width:64px; height:64px; margin:auto; color:var(--paper); opacity:0.92; }
+
+/* ---- Deck catalogue, illustrated ---- */
+
+.tarot-card.is-art{ overflow:hidden; }
+.tarot-card-art{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:var(--card-art-filter);
+}
+/* Same pair of veils as the in-game card face: dark at the numeral and the
+   name, clear over the middle where the illustration does the talking. */
+.tarot-card.is-art::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(to bottom, rgba(12,11,9,0.8), rgba(12,11,9,0) 26%),
+    linear-gradient(to top, rgba(12,11,9,0.88), rgba(12,11,9,0) 34%);
+}
+.tarot-card.is-art .num,
+.tarot-card.is-art .name{ position:relative; z-index:1; }
+
+.deck-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap:2px;
+  border:1px solid var(--line-bright);
+  padding:4px;
+  margin-top:26px;
+}
+.deck-toggle button{
+  -webkit-appearance:none;
+  appearance:none;
+  font-family:var(--mono);
+  font-size:0.72rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--paper-dim);
+  background:none;
+  border:none;
+  padding:9px 16px;
+  cursor:pointer;
+  transition:color .2s ease, background-color .2s ease;
+}
+.deck-toggle button:hover{ color:var(--paper); }
+.deck-toggle button.is-active{
+  color:var(--ink);
+  background:var(--brass-bright);
+}
 .tarot-card .name{
   font-family:var(--serif);
   font-style:italic;
@@ -1437,6 +1497,20 @@ footer{
   border-radius:3px;
   background:var(--ink-2);
   box-shadow:0 16px 26px -20px rgba(0,0,0,0.9);
+  /* Keeps the artwork inside the rounded corners. */
+  overflow:hidden;
+}
+
+/* The card's own illustration, filling the face behind the chrome. The art is
+   a touch narrower than the 5:8 slot, so it covers rather than letterboxes. */
+.card-art{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:var(--card-art-filter);
 }
 .card-face-body{
   position:absolute;
@@ -1478,20 +1552,65 @@ footer{
 }
 .card-back-emblem svg{ display:block; width:100%; height:auto; }
 
-.card-front-face .card-face-body{ justify-content:space-between; }
+/* The artwork is light parchment, so the brass numeral and the italic name
+   need their own ground to sit on — two soft veils instead of a flat overlay,
+   which would dull the illustration everywhere it isn't needed. */
+.card-front-face .card-face-body,
+.card-zoom .card-face-body{
+  justify-content:space-between;
+  background:
+    linear-gradient(to bottom, rgba(12,11,9,0.78), rgba(12,11,9,0) 24%),
+    linear-gradient(to top, rgba(12,11,9,0.86), rgba(12,11,9,0) 32%);
+}
 .board-card-num{
   align-self:flex-start;
+  display:inline-flex;
+  align-items:center;
+  gap:calc(var(--card-w) * 0.045);
   font-family:var(--mono);
   font-size:calc(var(--card-w) * 0.095);
   line-height:1;
   color:var(--brass-bright);
   letter-spacing:0.04em;
 }
-.board-card-glyph{
-  width:72%;
-  height:auto;
-  color:var(--paper);
-  margin:auto;
+.board-card-suit{
+  width:calc(var(--card-w) * 0.12);
+  height:calc(var(--card-w) * 0.12);
+  display:block;
+  flex:none;
+}
+
+/* ---------- Card art, enlarged on hover ---------- */
+
+/* The whole face answers to hover, not just the art: the numeral/name layer
+   covers the image and would otherwise swallow the pointer before it lands. */
+.card-front-face{ cursor:zoom-in; }
+.card-front-face .card-face-body{ pointer-events:none; }
+.card-front-face:focus-visible{ outline:1.5px solid var(--brass-bright); outline-offset:-3px; }
+
+.card-zoom{
+  position:fixed;
+  z-index:80;
+  border:1px solid var(--line-bright);
+  border-radius:3px;
+  background:var(--ink-2);
+  box-shadow:0 30px 60px -24px rgba(0,0,0,0.95);
+  pointer-events:none;
+  overflow:hidden;
+}
+/* Slightly lighter than the inline veil — at this size the illustration is
+   the point — but still pulled down, so it stays part of the same page. */
+.card-zoom-art{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:var(--card-art-filter-zoom);
+}
+
+@media (hover: none){
+  .card-zoom{ display:none; }
 }
 .board-card-name{
   font-family:var(--serif);
