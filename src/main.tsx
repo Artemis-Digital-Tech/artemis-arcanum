@@ -22,6 +22,8 @@ import Pricing from './Pricing.tsx'
 const Cards = lazy(() => import('./Cards.tsx'))
 const CardDetail = lazy(() => import('./CardDetail.tsx'))
 const About = lazy(() => import('./About.tsx'))
+const Legal = lazy(() => import('./Legal.tsx'))
+const NewsletterUnsubscribe = lazy(() => import('./NewsletterUnsubscribe.tsx'))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -40,6 +42,11 @@ createRoot(document.getElementById('root')!).render(
             <Route path="cartas" element={<Suspense fallback={null}><Cards /></Suspense>} />
             <Route path="cartas/:slug" element={<Suspense fallback={null}><CardDetail /></Suspense>} />
             <Route path="sobre" element={<Suspense fallback={null}><About /></Suspense>} />
+            <Route path="privacidade" element={<Suspense fallback={null}><Legal /></Suspense>} />
+            <Route
+              path="newsletter/cancelar"
+              element={<Suspense fallback={null}><NewsletterUnsubscribe /></Suspense>}
+            />
           </Route>
           <Route path="*" element={<Navigate to={`/${DEFAULT_LANGUAGE}`} replace />} />
         </Routes>

@@ -14,6 +14,7 @@ export default function SiteFooter() {
           <Link to={to('cartas')}>{t('footer.links.cards')}</Link>
           <Link to={to('sobre')}>{t('footer.links.about')}</Link>
           <Link to={to('precos')}>{t('footer.links.pricing')}</Link>
+          <Link to={to('privacidade')}>{t('footer.links.privacy')}</Link>
         </div>
       </div>
     </footer>

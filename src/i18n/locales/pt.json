@@ -153,6 +153,27 @@
       }
     }
   },
+  "newsletter": {
+    "plateLabel": "Lâmina VI — A Carta do Dia",
+    "title": "Uma carta por dia, no seu e-mail.",
+    "subtitle": "Toda manhã tiramos uma carta e escrevemos o que ela pede que você observe no dia. Sem horóscopo, sem corrente — uma carta, uma leitura curta, e o resto do dia é seu.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Como quer ser chamado",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "voce@exemplo.com",
+    "cta": "Receber a carta do dia",
+    "sending": "Enviando…",
+    "honeypotLabel": "Não preencha este campo",
+    "fineprint": "Uma carta por dia. Você pode sair quando quiser, e não repassamos seu e-mail a ninguém.",
+    "doneTitle": "Pronto — o baralho já sabe seu endereço.",
+    "doneBody": "Sua primeira carta chega na próxima tiragem da manhã.",
+    "errorEmail": "Esse e-mail não parece válido. Confira e tente de novo.",
+    "errorGeneric": "Não conseguimos registrar agora. Tente de novo em instantes.",
+    "consentPre": "Concordo em receber a carta do dia por e-mail e aceito a",
+    "consentLink": "Política de Privacidade",
+    "consentPost": ".",
+    "errorConsent": "Marque a caixa de consentimento para continuar."
+  },
   "final": {
     "titlePre": "O baralho já está",
     "titleEm": "embaralhado.",
@@ -164,7 +185,8 @@
     "links": {
       "cards": "Cartas",
       "about": "Sobre",
-      "pricing": "Planos"
+      "pricing": "Planos",
+      "privacy": "Privacidade"
     }
   },
   "gameSelect": {
@@ -468,6 +490,10 @@
     "about": {
       "title": "Sobre o Arcanum — tarot online com IA | Arcanum",
       "description": "O que é o Arcanum, como cada leitura de tarot é feita, o baralho Rider-Waite-Smith que usamos, o que o Arcanum não é e quem faz o produto."
+    },
+    "legal": {
+      "title": "Privacidade e Termos — Arcanum",
+      "description": "Como o Arcanum coleta, usa e protege seus dados pessoais, e as regras de uso do site."
     }
   },
   "faq": {
@@ -671,6 +697,223 @@
     "cta": {
       "title": "Faça a sua pergunta às cartas.",
       "button": "Começar uma leitura"
+    }
+  },
+  "legalPage": {
+    "seoTitle": "Privacidade e Termos — Arcanum",
+    "seoDescription": "Como o Arcanum coleta, usa e protege seus dados pessoais, e as regras de uso do site, em conformidade com a LGPD.",
+    "plateLabel": "Lâmina — Privacidade e Termos",
+    "title": "Privacidade e Termos.",
+    "lede": "O que fazemos com os dados que você nos confia, e as regras de uso do Arcanum. Escrito para ser lido, não só arquivado.",
+    "updated": "Última atualização: 24 de setembro de 2026.",
+    "nav": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso"
+    },
+    "privacy": {
+      "heading": "Política de Privacidade",
+      "sections": [
+        {
+          "id": "quem-somos",
+          "title": "Quem somos",
+          "body": [
+            "O Arcanum é operado por [Razão Social a preencher], CNPJ [a preencher] (“Arcanum”, “nós”). Para os fins da Lei Geral de Proteção de Dados (Lei nº 13.709/2018, “LGPD”), somos o controlador dos dados pessoais tratados neste site."
+          ]
+        },
+        {
+          "id": "dados-coletados",
+          "title": "Quais dados coletamos",
+          "body": [
+            "Conta: quando você entra com Auth0, recebemos nome, e-mail e foto do perfil (do provedor que você escolher para logar).",
+            "Leituras: a pergunta que você digita, as cartas sorteadas e a interpretação gerada ficam salvas em Minhas Leituras enquanto sua conta estiver ativa, pelo prazo do seu plano.",
+            "Newsletter: se você assina a carta do dia, guardamos o e-mail e, se informado, o nome que você digitou no formulário.",
+            "Pagamento: assinaturas pagas são processadas pelo Stripe. O Arcanum não recebe nem armazena o número do seu cartão.",
+            "Navegação: usamos o Umami, uma ferramenta de estatísticas hospedada por nós mesmos, que não usa cookies e não identifica visitantes individualmente."
+          ]
+        },
+        {
+          "id": "finalidade",
+          "title": "Para que usamos seus dados, e com que base legal",
+          "body": [
+            "Executar sua leitura e manter sua conta e seu histórico: execução de contrato (LGPD, art. 7º, V).",
+            "Enviar a carta do dia por e-mail: consentimento (art. 7º, I) — pedido de forma explícita no formulário de inscrição, e revogável a qualquer momento.",
+            "Processar sua assinatura paga: execução de contrato e cumprimento de obrigação legal (cobrança e emissão fiscal).",
+            "Entender o uso do site de forma agregada, sem identificar visitantes: legítimo interesse (art. 7º, IX), limitado ao mínimo necessário."
+          ]
+        },
+        {
+          "id": "compartilhamento",
+          "title": "Com quem compartilhamos seus dados",
+          "body": [
+            "Não vendemos dados pessoais. Compartilhamos apenas com operadores que processam dados em nosso nome, para as finalidades acima:",
+            "Auth0 — autenticação e login.",
+            "Supabase — banco de dados e as funções que leem e gravam nele.",
+            "Stripe — processamento de pagamentos e cobrança recorrente.",
+            "Uma automação própria (n8n), que recebe a pergunta e as cartas sorteadas para gerar o texto da interpretação.",
+            "Umami — estatísticas de uso, hospedado por nós, sem repasse a terceiros."
+          ]
+        },
+        {
+          "id": "retencao",
+          "title": "Por quanto tempo guardamos seus dados",
+          "body": [
+            "Leituras: no plano grátis, ficam visíveis em Minhas Leituras por 7 dias após a criação; nos planos pagos, enquanto a assinatura estiver ativa.",
+            "Dados de conta (Auth0): mantidos enquanto sua conta existir.",
+            "Newsletter: mantemos seu e-mail enquanto você estiver inscrito. Ao cancelar, marcamos o registro como descadastrado e paramos de te enviar e-mails; dados de assinantes cancelados são removidos periodicamente.",
+            "Dados de cobrança: retidos pelo prazo exigido pela legislação fiscal e civil aplicável."
+          ]
+        },
+        {
+          "id": "transferencia",
+          "title": "Transferência internacional",
+          "body": [
+            "Alguns dos operadores listados acima podem processar dados em servidores fora do Brasil. Nesses casos, exigimos que o fornecedor ofereça garantias adequadas de proteção (como cláusulas contratuais padrão), conforme o art. 33 da LGPD. [Confirmar a região de hospedagem de cada fornecedor e detalhar aqui antes da publicação.]"
+          ]
+        },
+        {
+          "id": "seguranca",
+          "title": "Como protegemos seus dados",
+          "body": [
+            "Todas as tabelas do banco de dados têm Row Level Security habilitada: o acesso direto com a chave pública do site não lê nem grava nada. Toda escrita passa por uma função de borda que valida os dados antes de gravar.",
+            "Toda comunicação entre o seu navegador e nossos servidores é feita por HTTPS.",
+            "Não armazenamos dados de cartão de crédito — isso é feito inteiramente pelo Stripe."
+          ]
+        },
+        {
+          "id": "direitos",
+          "title": "Seus direitos como titular dos dados",
+          "body": [
+            "Nos termos do art. 18 da LGPD, você pode a qualquer momento pedir:",
+            "Confirmação de que tratamos seus dados, e acesso a eles.",
+            "Correção de dados incompletos, inexatos ou desatualizados.",
+            "Anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade com a lei.",
+            "Portabilidade dos seus dados a outro fornecedor.",
+            "Eliminação dos dados tratados com base no seu consentimento.",
+            "Informação sobre com quem compartilhamos seus dados.",
+            "Revogação do consentimento, a qualquer momento — para a newsletter, use o link de descadastro em qualquer e-mail recebido, ou a página de cancelamento.",
+            "Para exercer qualquer um desses direitos, escreva para [privacidade@arcanum.app — e-mail a confirmar]."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies e tecnologias semelhantes",
+          "body": [
+            "Não usamos cookies de publicidade ou rastreamento de terceiros. As estatísticas de navegação (Umami) funcionam sem cookies. A sessão de login (Auth0) fica salva no armazenamento local do seu navegador, não em um cookie — ela existe só no seu próprio dispositivo e sai quando você faz logout ou limpa os dados do site."
+          ]
+        },
+        {
+          "id": "encarregado",
+          "title": "Encarregado de proteção de dados (DPO)",
+          "body": [
+            "Dúvidas, solicitações ou reclamações sobre o tratamento dos seus dados podem ser enviadas para [nome do encarregado e e-mail de contato a preencher]."
+          ]
+        },
+        {
+          "id": "alteracoes-privacidade",
+          "title": "Alterações desta política",
+          "body": [
+            "Podemos atualizar esta política para refletir mudanças no produto ou na legislação. A data no topo desta página sempre mostra a versão mais recente. Mudanças relevantes serão comunicadas por e-mail ou aviso no site."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "heading": "Termos de Uso",
+      "sections": [
+        {
+          "id": "aceitacao",
+          "title": "Aceitação",
+          "body": [
+            "Ao usar o Arcanum, você concorda com estes termos. Se você não concordar, pedimos que não use o site."
+          ]
+        },
+        {
+          "id": "servico",
+          "title": "O que é o Arcanum",
+          "body": [
+            "O Arcanum é um instrumento de tarô para reflexão e autoconhecimento. As leituras são geradas a partir das cartas sorteadas e da sua pergunta, e têm caráter interpretativo e simbólico.",
+            "O Arcanum não substitui aconselhamento médico, psicológico, jurídico ou financeiro profissional. Decisões tomadas com base em uma leitura são de sua inteira responsabilidade."
+          ]
+        },
+        {
+          "id": "idade",
+          "title": "Idade mínima",
+          "body": [
+            "O Arcanum é destinado a maiores de 18 anos. Se você tem entre 13 e 18 anos, use o site apenas com a autorização e supervisão de um responsável legal, conforme o art. 14 da LGPD."
+          ]
+        },
+        {
+          "id": "conta",
+          "title": "Contas, planos e cobrança",
+          "body": [
+            "Criar uma conta exige um login válido. Você é responsável por manter suas credenciais em segurança.",
+            "Assinaturas pagas (Plus e Ritual) são cobradas de forma recorrente pelo Stripe, conforme o ciclo escolhido, até que você cancele. O cancelamento pode ser feito a qualquer momento e vale a partir do fim do período já pago."
+          ]
+        },
+        {
+          "id": "conduta",
+          "title": "Uso aceitável",
+          "body": [
+            "Não é permitido: tentar contornar os limites do plano gratuito, extrair dados do site de forma automatizada (scraping), fazer engenharia reversa do produto, ou usar o Arcanum para fins ilegais."
+          ]
+        },
+        {
+          "id": "propriedade",
+          "title": "Propriedade intelectual",
+          "body": [
+            "A marca Arcanum, a identidade visual, o código e as ilustrações do baralho pertencem ao Arcanum ou a seus licenciantes. A pergunta que você escreve continua sendo sua — ao enviá-la, você nos autoriza a processá-la para gerar e guardar sua leitura, nos termos desta política."
+          ]
+        },
+        {
+          "id": "responsabilidade",
+          "title": "Limitação de responsabilidade",
+          "body": [
+            "O Arcanum é oferecido “como está”. Não garantimos disponibilidade ininterrupta nem exatidão das interpretações geradas. Na máxima extensão permitida por lei, não nos responsabilizamos por decisões tomadas com base em uma leitura."
+          ]
+        },
+        {
+          "id": "alteracoes-termos",
+          "title": "Alterações destes termos",
+          "body": [
+            "Podemos atualizar estes termos a qualquer momento; a data no topo desta página indica a versão vigente. O uso continuado do site após uma alteração significa que você aceita os novos termos."
+          ]
+        },
+        {
+          "id": "lei",
+          "title": "Lei aplicável e foro",
+          "body": [
+            "Estes termos são regidos pela lei brasileira. Fica eleito o foro de [cidade/comarca a preencher] para dirimir controvérsias, ressalvado o foro do domicílio do consumidor, quando aplicável."
+          ]
+        }
+      ]
+    }
+  },
+  "unsubscribePage": {
+    "seoTitle": "Cancelar inscrição — Arcanum",
+    "seoDescription": "Cancele sua inscrição na carta do dia do Arcanum.",
+    "plateLabel": "Carta do Dia",
+    "backCta": "Voltar para o início",
+    "status": {
+      "checking": {
+        "title": "Só um instante…",
+        "body": "Estamos processando seu pedido."
+      },
+      "done": {
+        "title": "Inscrição cancelada.",
+        "body": "Você não vai mais receber a carta do dia. Se mudar de ideia, é só se inscrever de novo pelo site."
+      },
+      "missing": {
+        "title": "Link incompleto.",
+        "body": "Este link de cancelamento está sem o código de identificação. Use o link exatamente como veio no e-mail."
+      },
+      "not_found": {
+        "title": "Não encontramos essa inscrição.",
+        "body": "Esse link já pode ter sido usado, ou o endereço já não está mais na nossa lista."
+      },
+      "error": {
+        "title": "Algo deu errado.",
+        "body": "Não conseguimos processar o cancelamento agora. Tente de novo em instantes."
+      }
     }
   }
 }
