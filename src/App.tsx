@@ -7,6 +7,7 @@ import AccountMenu from './components/AccountMenu'
 import NavMenu from './components/NavMenu'
 import PricingNavLink from './components/PricingNavLink'
 import Seo from './components/Seo'
+import NewsletterForm from './components/NewsletterForm'
 import { cardArtUrl } from './data/cardImages'
 import { landingJsonLd, type FaqItem } from './seo/structuredData'
 
@@ -393,6 +394,22 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* ============ NEWSLETTER ============ */}
+        <section className="section-pad newsletter" id="newsletter">
+          <div className="wrap">
+            <div className="newsletter-inner" data-reveal="true">
+              <div className="newsletter-copy">
+                <div className="plate-label"><span className="dash"></span>{t('newsletter.plateLabel')}</div>
+                <h2>{t('newsletter.title')}</h2>
+                <p>{t('newsletter.subtitle')}</p>
+              </div>
+              <NewsletterForm />
+            </div>
+          </div>
+        </section>
+
+        <hr className="rule" />
 
         {/* ============ FINAL CTA ============ */}
         <section className="final">

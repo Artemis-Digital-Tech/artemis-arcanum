@@ -153,6 +153,27 @@
       }
     }
   },
+  "newsletter": {
+    "plateLabel": "Plate VI — The Card of the Day",
+    "title": "One card a day, in your inbox.",
+    "subtitle": "Every morning we draw a card and write what it asks you to notice that day. No horoscope, no chain letter — one card, a short reading, and the rest of the day is yours.",
+    "nameLabel": "Name",
+    "namePlaceholder": "What should we call you",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "cta": "Send me the daily card",
+    "sending": "Sending…",
+    "honeypotLabel": "Leave this field empty",
+    "fineprint": "One card a day. Leave whenever you like, and we never pass your address on.",
+    "doneTitle": "Done — the deck has your address.",
+    "doneBody": "Your first card arrives with the next morning draw.",
+    "errorEmail": "That email doesn't look right. Check it and try again.",
+    "errorGeneric": "We couldn't sign you up just now. Try again in a moment.",
+    "consentPre": "I agree to receive the daily card by email and accept the",
+    "consentLink": "Privacy Policy",
+    "consentPost": ".",
+    "errorConsent": "Check the consent box to continue."
+  },
   "final": {
     "titlePre": "The deck is already",
     "titleEm": "shuffled.",
@@ -164,7 +185,8 @@
     "links": {
       "cards": "Cards",
       "about": "About",
-      "pricing": "Pricing"
+      "pricing": "Pricing",
+      "privacy": "Privacy"
     }
   },
   "gameSelect": {
@@ -468,6 +490,10 @@
     "about": {
       "title": "About Arcanum — online AI tarot | Arcanum",
       "description": "What Arcanum is, how each tarot reading is made, the Rider-Waite-Smith deck we use, what Arcanum is not, and who makes it."
+    },
+    "legal": {
+      "title": "Privacy & Terms — Arcanum",
+      "description": "How Arcanum collects, uses and protects your personal data, and the rules for using the site."
     }
   },
   "faq": {
@@ -671,6 +697,223 @@
     "cta": {
       "title": "Ask the cards your question.",
       "button": "Begin a reading"
+    }
+  },
+  "legalPage": {
+    "seoTitle": "Privacy & Terms — Arcanum",
+    "seoDescription": "How Arcanum collects, uses and protects your personal data, and the rules for using the site.",
+    "plateLabel": "Plate — Privacy & Terms",
+    "title": "Privacy & Terms.",
+    "lede": "What we do with the data you trust us with, and the rules for using Arcanum. Written to be read, not just filed away.",
+    "updated": "Last updated: September 24, 2026.",
+    "nav": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "privacy": {
+      "heading": "Privacy Policy",
+      "sections": [
+        {
+          "id": "quem-somos",
+          "title": "Who we are",
+          "body": [
+            "Arcanum is operated by [Legal entity name to be filled in], [Company ID to be filled in] (“Arcanum”, “we”). Under Brazil’s data protection law (LGPD, Law No. 13.709/2018), we are the controller of the personal data processed on this site."
+          ]
+        },
+        {
+          "id": "dados-coletados",
+          "title": "What data we collect",
+          "body": [
+            "Account: when you sign in with Auth0, we receive your name, email and profile picture from whichever provider you choose to log in with.",
+            "Readings: the question you type, the cards drawn and the generated interpretation are saved to My Readings while your account is active, for as long as your plan keeps history.",
+            "Newsletter: if you subscribe to the daily card, we store your email and, if you provided one, the name you typed into the form.",
+            "Payment: paid subscriptions are processed by Stripe. Arcanum never receives or stores your card number.",
+            "Browsing: we use Umami, a self-hosted analytics tool that doesn’t use cookies and doesn’t identify individual visitors."
+          ]
+        },
+        {
+          "id": "finalidade",
+          "title": "What we use your data for, and on what legal basis",
+          "body": [
+            "Running your reading and keeping your account and history: performance of a contract (LGPD art. 7, V).",
+            "Sending the daily card by email: consent (art. 7, I) — asked for explicitly on the sign-up form, and revocable at any time.",
+            "Processing a paid subscription: performance of a contract and compliance with a legal obligation (billing and tax records).",
+            "Understanding site usage in aggregate, without identifying visitors: legitimate interest (art. 7, IX), kept to the minimum necessary."
+          ]
+        },
+        {
+          "id": "compartilhamento",
+          "title": "Who we share your data with",
+          "body": [
+            "We don’t sell personal data. We share it only with processors handling it on our behalf, for the purposes above:",
+            "Auth0 — authentication and login.",
+            "Supabase — the database and the functions that read from and write to it.",
+            "Stripe — payment processing and recurring billing.",
+            "Our own automation (n8n), which receives the question and drawn cards to generate the reading's text.",
+            "Umami — usage analytics, self-hosted, never passed on to anyone else."
+          ]
+        },
+        {
+          "id": "retencao",
+          "title": "How long we keep your data",
+          "body": [
+            "Readings: on the free plan, visible in My Readings for 7 days after creation; on paid plans, for as long as the subscription is active.",
+            "Account data (Auth0): kept for as long as your account exists.",
+            "Newsletter: we keep your email for as long as you're subscribed. Once you unsubscribe, we mark the record as opted out and stop emailing you; unsubscribed records are periodically removed.",
+            "Billing data: retained for as long as applicable tax and civil law requires."
+          ]
+        },
+        {
+          "id": "transferencia",
+          "title": "International transfers",
+          "body": [
+            "Some of the processors above may handle data on servers outside Brazil. In those cases we require the provider to offer adequate safeguards (such as standard contractual clauses), as required by LGPD art. 33. [Confirm each provider's hosting region and detail it here before publishing.]"
+          ]
+        },
+        {
+          "id": "seguranca",
+          "title": "How we protect your data",
+          "body": [
+            "Every database table has Row Level Security enabled: direct access with the site's public key reads or writes nothing. Every write goes through an edge function that validates the data first.",
+            "All traffic between your browser and our servers runs over HTTPS.",
+            "We never store credit card data — that's handled entirely by Stripe."
+          ]
+        },
+        {
+          "id": "direitos",
+          "title": "Your rights over your data",
+          "body": [
+            "Under LGPD art. 18, you can at any time request:",
+            "Confirmation that we process your data, and access to it.",
+            "Correction of incomplete, inaccurate or outdated data.",
+            "Anonymization, blocking or deletion of unnecessary data, or data processed unlawfully.",
+            "Portability of your data to another provider.",
+            "Deletion of data processed under your consent.",
+            "Information about who we share your data with.",
+            "Withdrawal of consent, at any time — for the newsletter, use the unsubscribe link in any email you received, or the cancellation page.",
+            "To exercise any of these rights, write to [privacidade@arcanum.app — email to confirm]."
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "Cookies and similar technology",
+          "body": [
+            "We don’t use advertising or third-party tracking cookies. Usage analytics (Umami) work without cookies. Your login session (Auth0) is saved in your browser's local storage, not a cookie — it exists only on your own device and ends when you sign out or clear the site's data."
+          ]
+        },
+        {
+          "id": "encarregado",
+          "title": "Data protection officer (DPO)",
+          "body": [
+            "Questions, requests or complaints about how your data is handled can be sent to [DPO name and contact email to be filled in]."
+          ]
+        },
+        {
+          "id": "alteracoes-privacidade",
+          "title": "Changes to this policy",
+          "body": [
+            "We may update this policy to reflect changes to the product or the law. The date at the top of this page always shows the latest version. Material changes will be announced by email or a notice on the site."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "heading": "Terms of Use",
+      "sections": [
+        {
+          "id": "aceitacao",
+          "title": "Acceptance",
+          "body": [
+            "By using Arcanum, you agree to these terms. If you don’t agree, please don’t use the site."
+          ]
+        },
+        {
+          "id": "servico",
+          "title": "What Arcanum is",
+          "body": [
+            "Arcanum is a tarot instrument for reflection and self-knowledge. Readings are generated from the cards drawn and the question you ask, and are interpretive and symbolic in nature.",
+            "Arcanum is not a substitute for professional medical, psychological, legal or financial advice. Decisions made based on a reading are entirely your own responsibility."
+          ]
+        },
+        {
+          "id": "idade",
+          "title": "Minimum age",
+          "body": [
+            "Arcanum is intended for people 18 and older. If you're between 13 and 18, only use the site with a legal guardian's authorization and supervision, per LGPD art. 14."
+          ]
+        },
+        {
+          "id": "conta",
+          "title": "Accounts, plans and billing",
+          "body": [
+            "Creating an account requires a valid login. You're responsible for keeping your credentials secure.",
+            "Paid subscriptions (Plus and Ritual) are billed on a recurring basis through Stripe, per the cycle you chose, until you cancel. Cancellation can happen at any time and takes effect at the end of the period already paid for."
+          ]
+        },
+        {
+          "id": "conduta",
+          "title": "Acceptable use",
+          "body": [
+            "You may not: try to work around the free plan's limits, scrape data from the site in an automated way, reverse-engineer the product, or use Arcanum for unlawful purposes."
+          ]
+        },
+        {
+          "id": "propriedade",
+          "title": "Intellectual property",
+          "body": [
+            "The Arcanum brand, visual identity, code and deck illustrations belong to Arcanum or its licensors. The question you write stays yours — by submitting it, you authorize us to process it to generate and store your reading, under this policy."
+          ]
+        },
+        {
+          "id": "responsabilidade",
+          "title": "Limitation of liability",
+          "body": [
+            "Arcanum is provided “as is.” We don’t guarantee uninterrupted availability or the accuracy of generated interpretations. To the fullest extent permitted by law, we aren’t liable for decisions made based on a reading."
+          ]
+        },
+        {
+          "id": "alteracoes-termos",
+          "title": "Changes to these terms",
+          "body": [
+            "We may update these terms at any time; the date at the top of this page shows the version in force. Continuing to use the site after a change means you accept the new terms."
+          ]
+        },
+        {
+          "id": "lei",
+          "title": "Governing law and venue",
+          "body": [
+            "These terms are governed by Brazilian law. The courts of [city/venue to be filled in] have jurisdiction over any dispute, without prejudice to the consumer's home venue, where applicable."
+          ]
+        }
+      ]
+    }
+  },
+  "unsubscribePage": {
+    "seoTitle": "Unsubscribe — Arcanum",
+    "seoDescription": "Unsubscribe from Arcanum’s daily card email.",
+    "plateLabel": "Card of the Day",
+    "backCta": "Back to the homepage",
+    "status": {
+      "checking": {
+        "title": "One moment…",
+        "body": "We’re processing your request."
+      },
+      "done": {
+        "title": "Unsubscribed.",
+        "body": "You won’t receive the daily card anymore. If you change your mind, just sign up again on the site."
+      },
+      "missing": {
+        "title": "Incomplete link.",
+        "body": "This unsubscribe link is missing its identifier. Use the link exactly as it came in the email."
+      },
+      "not_found": {
+        "title": "We couldn’t find that subscription.",
+        "body": "This link may have already been used, or the address is no longer on our list."
+      },
+      "error": {
+        "title": "Something went wrong.",
+        "body": "We couldn’t process the cancellation right now. Try again in a moment."
+      }
     }
   }
 }
